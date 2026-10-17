@@ -27,15 +27,12 @@ export default function MobileDrawer({ isOpen, onClose }) {
         <div>
           {/* Header */}
           <div className="flex items-center justify-between pb-4 border-b border-[#B89E58]/30">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center">
               <img
-                src="/sea-logo-badge.jpg"
-                alt="SEA"
-                className="w-7 h-7 rounded-full object-cover border border-[#D4AB3F]"
+                src="/sea-logo-horizontal.png"
+                alt="Shubh Engineering Academy"
+                className="h-8 sm:h-9 w-auto object-contain"
               />
-              <span className="text-xs font-black tracking-tight text-[#2B3A55] uppercase font-display">
-                SHUBH ACADEMY
-              </span>
             </div>
             <button
               onClick={onClose}

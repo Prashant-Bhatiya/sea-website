@@ -31,29 +31,11 @@ export default function Header({ onOpenMobileMenu }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
         
         {/* Official Brand Logo */}
-        <Link to="/" className="flex items-center gap-2 group shrink-0 py-0.5 max-w-[70%] sm:max-w-none">
-          {/* Mobile View: Compact Badge Logo + Clean Text (Prevents header overflow) */}
-          <div className="flex items-center gap-2 sm:hidden">
-            <img
-              src="/sea-logo-badge.jpg"
-              alt="SEA"
-              className="w-8 h-8 rounded-full object-cover border border-[#D4AB3F] shadow-xs shrink-0"
-            />
-            <div className="flex flex-col min-w-0">
-              <span className="text-[12px] font-black tracking-tight text-[#2B3A55] uppercase leading-tight font-display truncate">
-                SHUBH ACADEMY
-              </span>
-              <span className="text-[9px] text-[#B89E58] font-bold tracking-wider leading-none">
-                CIVIL ENGINEERING
-              </span>
-            </div>
-          </div>
-
-          {/* Tablet & Desktop View: Full Official Horizontal Brand Logo */}
+        <Link to="/" className="flex items-center gap-2 group shrink-0 py-0.5">
           <img
             src="/sea-logo-horizontal.png"
             alt="Shubh Engineering Academy - Inspire . Learn . Achieve"
-            className="hidden sm:block h-10 sm:h-12 w-auto max-w-[240px] md:max-w-none object-contain transition-transform duration-200 group-hover:scale-[1.02]"
+            className="h-10 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
           />
         </Link>
 
