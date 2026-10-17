@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary": "#2B3A55",
+          "primary-container": "#1E2B42",
+          "primary-fixed": "#D7E3FF",
+          "primary-fixed-dim": "#B7C7E8",
+          "secondary": "#D4AB3F",
+          "secondary-container": "#B89E58",
+          "secondary-fixed": "#FFE29C",
+          "tertiary": "#566277",
+          "tertiary-container": "#3F4A5E",
+          "tertiary-fixed": "#D9E2F2",
+          "surface": "#FFF9E9",
+          "surface-container-lowest": "#FFFFFF",
+          "surface-container-low": "#FAF7F0",
+          "surface-container": "#F4EEDD",
+          "surface-container-high": "#EEE8D7",
+          "surface-container-highest": "#E8E2D2",
+          "background": "#F6F0DF",
+          "on-primary": "#FFFFFF",
+          "on-primary-container": "#D7E3FF",
+          "on-secondary": "#1E1C12",
+          "on-secondary-container": "#FFFFFF",
+          "on-surface": "#1E1C12",
+          "on-surface-variant": "#566277",
+          "outline": "#75777E",
+          "outline-variant": "#C5C6CE",
+          "inverse-surface": "#2B3A55",
+          "inverse-on-surface": "#F6F0DF"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-xs": "0.25rem",
+          "margin": "3rem",
+          "gutter-mobile": "1rem",
+          "margin-mobile": "1.25rem",
+          "space-xl": "2.5rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "label-lg": ["Plus Jakarta Sans"],
+          "display-lg-mobile": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "body-md": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "title-md": ["Plus Jakarta Sans"],
+          "title-lg": ["Plus Jakarta Sans"],
+          "headline-lg-mobile": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "display-lg": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+          "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+          "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+          "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+          "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+          "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+          "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+          "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+          "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+          "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+          "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+          "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+          "display-lg": ["52px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+          "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }]
+        }
+      }
+    }
+  }
+</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-[#FAF7F0]/95 backdrop-blur-xl border-b border-[#B89E58]/30 shadow-[0_2px_12px_rgba(43,58,85,0.06)]"><div class="bg-[#2B3A55] text-white py-space-xs px-margin"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between text-label-sm font-label-sm"><div class="flex items-center gap-space-sm"><span class="bg-[#D4AB3F] text-[#1E1C12] font-extrabold px-space-xs py-0.5 rounded font-label-sm uppercase tracking-wide">Official Helpline</span><span class="text-[#F6F0DF] font-medium font-label-sm">Call: <strong class="text-[#D4AB3F]">+91 79 2320 0000</strong> | Gandhinagar HQ &amp; Ahmedabad Branches</span></div><div class="hidden md:flex items-center gap-space-md font-label-sm text-[#FAF7F0]/90"><span>GPSC Class 1 &amp; 2 Executive Engineer Batches</span><span class="text-[#B89E58]">|</span><span class="text-[#D4AB3F] font-semibold">Direct GSSSB / GPSSB AAE 2025</span></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-3.5"><img alt="Shubh Engineering Academy Logo" class="h-11 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wau4Qotv1UKkd7aDu8wuRyAkM-8JJqfZiW_fQlFrPLuRnYwVmHIjM3nvcljdEdjBkpkXY4pwx1ol4Y2muDmc2PPUTw1JY0xU4Cg4KGA-WBZp2Ioxkfk07KH-wlAqrBZ8XZWM8uu9_WdPyVcTJNQCVOa36hHn6IkHx3xzA9oeP9kTBbu0Ef-3pRUMiickzghxzjtSezQ19DqKufyKm2UJcHGr7dpRzJewhafpDI_Blu8wv734IoaKj6u1Oj"/><div class="flex flex-col"><span class="font-title-md text-title-md text-[#2B3A55] font-extrabold tracking-tight uppercase leading-none">Shubh Engineering Academy</span><span class="font-label-sm text-[11px] text-[#566277] uppercase tracking-wider font-semibold mt-1">GPSC • GSSSB • GPSSB Civil Technical Wing</span></div></div><nav class="hidden xl:flex items-center gap-space-md"><a class="font-title-md text-title-md text-[#566277] hover:text-[#2B3A55] transition-colors px-space-sm py-1.5" data-path="targeted-exams" href="#">Targeted Exams</a><a class="font-title-md text-title-md text-[#566277] hover:text-[#2B3A55] transition-colors px-space-sm py-1.5" data-path="batches-and-admissions" href="#">Batches &amp; Admissions</a><a class="font-title-md text-title-md text-[#566277] hover:text-[#2B3A55] transition-colors px-space-sm py-1.5" data-path="excellence-and-results" href="#">Excellence &amp; Results</a><a class="font-title-md text-title-md text-[#566277] hover:text-[#2B3A55] transition-colors px-space-sm py-1.5" data-path="alumni-network" href="#">Alumni Network</a><a class="font-title-md text-title-md text-[#2B3A55] font-bold border-b-2 border-[#D4AB3F] px-space-sm py-1.5" data-path="contact-and-centers" href="#">Contact &amp; Centers</a></nav><div class="flex items-center gap-space-md"><a class="bg-[#D4AB3F] text-[#1E1C12] font-bold px- space-md px-4 py-2 rounded-lg font-label-lg text-label-lg hover:bg-[#B89E58] hover:text-white transition-all shadow-sm" data-path="student-portal" href="#">Student Portal</a><div class="flex items-center gap-space-sm pl-space-xs border-l border-[#B89E58]/30"><img alt="Director Desk" class="w-9 h-9 rounded-full object-cover ring-2 ring-[#D4AB3F]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrq1sbV9oXsvteuhuxtj0zsHAcElTf6l70H_Bv12DV82aFnVS1wldB2nDqXAaUsw3cXSx415XlXs1TCW572jZxfU7paLKsSEXRaGLBb3Yike2NFP7L-LPp6yYKgHW6ttBpItE8feysGe4_BMzz2AGeRgKxzwF7eUaMMVkbDk65_mIV01EV1UMK0iu-y6DWrLEznUWil_M8V-_mk0r31NFTb5lPLp07jSxPHhVlBZMwZZDdw3YV_IuVqg"/><div class="hidden lg:flex flex-col"><span class="font-label-sm text-label-sm font-bold text-[#2B3A55] leading-tight">Director Desk</span><span class="font-label-sm text-[11px] text-[#566277] leading-tight">GPSC Mentorship</span></div></div></div></div></header><main class="w-full pt-20 bg-[#F6F0DF]"><div class="flex flex-col w-full">
+<!-- Top Context Header Section (Sub-Hero) -->
+<section class="relative w-full bg-[#2B3A55] text-white py-space-xl overflow-hidden border-b border-[#B89E58]/40">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AB3F_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="relative max-w-7xl mx-auto px-margin">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="max-w-3xl space-y-space-sm">
+<div class="inline-flex items-center gap-space-xs bg-[#FAF7F0]/10 border border-[#D4AB3F]/40 px-3 py-1 rounded-full text-[#D4AB3F] font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-[#D4AB3F] animate-pulse"></span>
+            GPSC &amp; GSSSB Technical Admissions 2025-26
+          </div>
+<h1 class="font-display-lg text-display-lg font-extrabold tracking-tight text-white leading-tight">
+            Visit Our Campuses or Talk to a Civil Exam Counselor
+          </h1>
+<p class="font-body-lg text-body-lg text-[#FAF7F0]/90 leading-relaxed max-w-2xl">
+            Meet senior technical faculty in person at Shubh Engineering Academy, inspect Gujarat's largest specialized civil competitive library, or reserve your 1-on-1 strategy audit for Class 1, 2, and AAE recruitment examinations.
+          </p>
+</div>
+<!-- Quick Metrics Pill Grid -->
+<div class="flex flex-wrap items-center gap-space-sm bg-[#1E2B42]/70 border border-[#B89E58]/40 backdrop-blur-md p-space-sm rounded-xl">
+<div class="px-space-md py-space-xs text-left">
+<span class="block font-headline-md text-headline-md font-extrabold text-[#D4AB3F]">02</span>
+<span class="font-label-sm text-label-sm text-[#F6F0DF]/80 uppercase tracking-wider">Direct Centers</span>
+</div>
+<div class="w-px h-8 bg-[#B89E58]/40"></div>
+<div class="px-space-md py-space-xs text-left">
+<span class="block font-headline-md text-headline-md font-extrabold text-[#D4AB3F]">24/7</span>
+<span class="font-label-sm text-label-sm text-[#F6F0DF]/80 uppercase tracking-wider">Reading Hall</span>
+</div>
+<div class="w-px h-8 bg-[#B89E58]/40"></div>
+<div class="px-space-md py-space-xs text-left">
+<span class="block font-headline-md text-headline-md font-extrabold text-[#D4AB3F]">45 Min</span>
+<span class="font-label-sm text-label-sm text-[#F6F0DF]/80 uppercase tracking-wider">Avg. Response</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Centers Bento Presentation Section -->
+<section class="max-w-7xl mx-auto px-margin py-space-xl w-full">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between pb-space-lg gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-[#D4AB3F]">Physical Campuses</span>
+<h2 class="font-headline-xl text-headline-xl text-[#2B3A55] font-extrabold tracking-tight">Dedicated Technical Learning Wings</h2>
+</div>
+<p class="font-body-sm text-body-sm text-[#566277] max-w-md">
+        Strategically located near Gujarat's core governance corridor in Gandhinagar and the premier academic cluster of Ahmedabad.
+      </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Gandhinagar Center Card (Span 7) -->
+<div class="lg:col-span-7 bg-white rounded-xl p-space-lg shadow-sm border border-[#B89E58]/25 flex flex-col justify-between relative overflow-hidden group">
+<div class="space-y-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-[#FAF7F0] border border-[#B89E58]/30 text-[#2B3A55]">
+<span class="material-symbols-outlined text-title-md">domain</span>
+</span>
+<div>
+<span class="inline-block bg-[#2B3A55] text-white font-label-sm text-label-sm px-2.5 py-0.5 rounded font-semibold uppercase">State HQ &amp; Main Campus</span>
+<h3 class="font-headline-md text-headline-md text-[#2B3A55] font-bold mt-0.5">Gandhinagar Main Campus</h3>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 text-label-sm font-label-sm px-3 py-1 rounded-full bg-[#FAF7F0] border border-[#D4AB3F]/50 text-[#1E1C12] font-semibold">
+<span class="w-2 h-2 rounded-full bg-[#D4AB3F]"></span> Open Today: 07:00 AM – 10:00 PM
+            </span>
+</div>
+<!-- Location & Timing Specs -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-[#566277] font-bold uppercase tracking-wide">Campus Address</span>
+<p class="font-body-sm text-body-sm text-[#1E1C12] leading-relaxed">
+                3rd &amp; 4th Floor, Sardar Patel Bhavan, Near Gh-5 Circle, Sector 11, Gandhinagar, Gujarat 382011.
+              </p>
+</div>
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-[#566277] font-bold uppercase tracking-wide">Direct Contact Desk</span>
+<p class="font-body-sm text-body-sm text-[#1E1C12]">
+<a class="hover:text-[#D4AB3F] text-[#2B3A55] font-bold block" href="tel:+917923248899">+91 79 2324 8899</a>
+<a class="hover:text-[#D4AB3F] text-[#566277] block font-medium" href="tel:+919825012345">+91 98250 12345 (Counselor Desk)</a>
+</p>
+</div>
+</div>
+<!-- Campus Highlights Tags -->
+<div class="pt-space-xs">
+<span class="font-label-sm text-label-sm text-[#566277] font-bold uppercase tracking-wide block mb-space-xs">Infrastructure &amp; Amenities</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="bg-[#FAF7F0] border border-[#B89E58]/20 p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[#D4AB3F] text-label-lg">theater_comedy</span>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-[#2B3A55]">Amphitheater Hall</h4>
+<p class="font-body-sm text-body-sm text-[#566277]">200+ tiered seats with acoustics</p>
+</div>
+</div>
+<div class="bg-[#FAF7F0] border border-[#B89E58]/20 p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[#D4AB3F] text-label-lg">local_library</span>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-[#2B3A55]">24/7 Tech Library</h4>
+<p class="font-body-sm text-body-sm text-[#566277]">IS-Codes, GATE &amp; GPSC archives</p>
+</div>
+</div>
+<div class="bg-[#FAF7F0] border border-[#B89E58]/20 p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[#D4AB3F] text-label-lg">computer</span>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-[#2B3A55]">CBRT Testing Lab</h4>
+<p class="font-body-sm text-body-sm text-[#566277]">60 Workstations for GSSSB simulations</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Campus Interactive Map & Image Bento -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="w-full h-44 bg-cover bg-center rounded-lg shadow-inner relative overflow-hidden group/map border border-[#B89E58]/30" data-location="Sector 11, Gandhinagar, Gujarat" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA4Kj5eiFmdIbYdDwwOgljgHLCzpJKr7nb_QU5BEY-D2Q6dqHhuJT9vyDagnMzalmJby-ooI6GgXYIiysNKPYkpSpIX_8BNAOJcuD-Y6g1aW4INi-n-ojpHDBcb7zAAtDxxWT06SALeE4zX9qb_N5GLZLBfuXKFKpxeqq17Zc4eWHFN-jb7nt-BRzgZdebLRuR25acECxh8jNxT7jWSqDrS8wsZ31CHCFQ5n3wmFRrMxBGb66-ukq3gGg')">
+<div class="absolute bottom-2 left-2 bg-[#FAF7F0]/95 border border-[#B89E58]/40 px-2 py-1 rounded text-label-sm font-label-sm text-[#2B3A55] font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-label-md text-[#D4AB3F]">pin_drop</span> Near Gh-5 Circle
+              </div>
+</div>
+<div class="relative w-full h-44 rounded-lg overflow-hidden border border-[#B89E58]/30">
+<img class="w-full h-full object-cover" data-alt="Modern Indian technical university lecture amphitheater in Gandhinagar with civil engineering diagrams projected on screen, tidy wooden desks, deep navy architectural interior, bright ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6ymmBDRjC27wXjSmJynJtfBH7U9rN1UevWBhuUM-94abjLQiEwsFNAcYCGdoZzlR7vrsFHUTqq_R5zhaSLam1CiFxUrqwDv-KHmsrE9v1qO06gBmktQ-gJcqSf43Xx4Ke0PQCKplsYLzhqGTtNglPAy1JCT6nL6OHtjZUuelgkKib-zO64wb0NWRMn_BAfdm8NjS5VNj9Rcq520rabCYGPLejYRuQfpGxc-T-S0AMCbLJALSAPou0gQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#2B3A55]/85 via-transparent to-transparent flex items-end p-space-sm">
+<span class="font-label-sm text-label-sm text-white font-medium">Amphitheater A-1: Executive Lecture Hall</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex flex-wrap items-center justify-between gap-space-sm border-t border-[#B89E58]/20 mt-space-sm">
+<span class="font-body-sm text-body-sm text-[#566277]">Nearest Landmark: 300m from Gandhinagar Central Bus Station</span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-[#2B3A55] font-bold hover:text-[#D4AB3F] transition-colors" href="https://maps.google.com/?q=Sector+11+Gandhinagar" target="_blank">
+            Get Turn-by-Turn Directions <span class="material-symbols-outlined text-label-md text-[#D4AB3F]">arrow_outward</span>
+</a>
+</div>
+</div>
+<!-- Ahmedabad Center Card (Span 5) -->
+<div class="lg:col-span-5 bg-white rounded-xl p-space-lg shadow-sm border border-[#B89E58]/25 flex flex-col justify-between relative overflow-hidden">
+<div class="space-y-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-[#FAF7F0] border border-[#B89E58]/30 text-[#2B3A55]">
+<span class="material-symbols-outlined text-title-md">apartment</span>
+</span>
+<div>
+<span class="inline-block bg-[#D4AB3F] text-[#1E1C12] font-label-sm text-label-sm px-2.5 py-0.5 rounded uppercase font-bold">Academic Hub</span>
+<h3 class="font-headline-md text-headline-md text-[#2B3A55] font-bold mt-0.5">Ahmedabad Navrangpura Branch</h3>
+</div>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 text-label-sm font-label-sm px-3 py-1 rounded-full bg-[#FAF7F0] border border-[#D4AB3F]/50 text-[#1E1C12] font-semibold">
+<span class="w-2 h-2 rounded-full bg-[#D4AB3F]"></span> Open Today: 08:00 AM – 08:30 PM
+          </span>
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-[#566277] font-bold uppercase tracking-wide">Campus Address</span>
+<p class="font-body-sm text-body-sm text-[#1E1C12] leading-relaxed">
+              2nd Floor, Engineering Arcade, Opposite Gujarat University Library, Navrangpura, Ahmedabad 380009.
+            </p>
+</div>
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-[#566277] font-bold uppercase tracking-wide">Direct Contact Desk</span>
+<p class="font-body-sm text-body-sm text-[#1E1C12]">
+<a class="hover:text-[#D4AB3F] text-[#2B3A55] font-bold block" href="tel:+917926304455">+91 79 2630 4455</a>
+<a class="hover:text-[#D4AB3F] text-[#566277] block font-medium" href="tel:+919825067890">+91 98250 67890 (Ahmedabad Admission)</a>
+</p>
+</div>
+<!-- Ahmedabad Image & Map -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<div class="w-full h-36 bg-cover bg-center rounded-lg shadow-inner relative overflow-hidden border border-[#B89E58]/30" data-location="Navrangpura, Ahmedabad, Gujarat" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAYlz2woMZxC0l-9BqfP4PAzzzUN45dfz7txjqOUDKwtru1fblk5LI5Dkvv0FOo763G_UgtvlZWkSzdVCcl2XruW_28IIkUA6VjQgri4lztfrp1I-AUV1eFmEqOczCohNokaCxqVu2mjmcwcRCVtcnNTHMTU_4DCDhefsPJWmp_RZ1thqhIzt-hbH3riFlDW63r_O4rZgxsbCPS7Jtucn9Qtdkvml7X-Z0f7znGmxr01XyEg062JSYR3w')">
+<div class="absolute bottom-2 left-2 bg-[#FAF7F0]/95 border border-[#B89E58]/40 px-2 py-0.5 rounded text-label-sm font-label-sm text-[#2B3A55] font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-label-md text-[#D4AB3F]">location_on</span> Opp. GU Library
+              </div>
+</div>
+<div class="relative w-full h-36 rounded-lg overflow-hidden border border-[#B89E58]/30">
+<img class="w-full h-full object-cover" data-alt="Quiet technical study hall in Ahmedabad branch with civil engineering students reviewing state exam test series books, high natural lighting, ergonomic study bays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUVn0ph-A0LWW3bwL8r34jGzKVQaZ4vTag9PN7zqcDyff2vNkFcymMMdu238bFsVdVRLv_ecbgZNTSFxTYOO8qIQt-87gn9b2Ofx9J0iwuMuSvfxlRF7VXSS6NuJ2om6MMOI4Jg4abUGYbJm9oJrOtElw1Cbxy03Rl1wThgcAsExugNpA-2Nhyl3tWW3IpJUWWVKE7z38TmHZTsCpVc08-hsxsko1KjOMmHnqs2Hxa2BMkQmuwmcUvxA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#2B3A55]/85 via-transparent to-transparent flex items-end p-space-xs">
+<span class="font-label-sm text-label-sm text-white font-medium">Ahmedabad Reading Bay</span>
+</div>
+</div>
+</div>
+<!-- Feature Highlights -->
+<div class="space-y-1.5 pt-space-xs font-body-sm text-body-sm text-[#566277]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#D4AB3F] text-body-md">check_circle</span>
+<span>Weekend Special Batches for In-Service Degree Engineers</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#D4AB3F] text-body-md">check_circle</span>
+<span>1-on-1 GPSC Class 1 Interview Preparation Rooms</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#D4AB3F] text-body-md">check_circle</span>
+<span>Direct access to Gujarat University Metro Station</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between border-t border-[#B89E58]/20 mt-space-sm">
+<span class="font-body-sm text-body-sm text-[#566277]">5 min from Commerce Six Roads</span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-[#2B3A55] font-bold hover:text-[#D4AB3F] transition-colors" href="https://maps.google.com/?q=Navrangpura+Ahmedabad" target="_blank">
+            View on Map <span class="material-symbols-outlined text-label-md text-[#D4AB3F]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Form & 1-on-1 Mentorship Split Section -->
+<section class="w-full bg-[#FAF7F0] border-y border-[#B89E58]/30 py-space-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: Direct Inquiry Interactive Form (Span 7) -->
+<div class="lg:col-span-7 bg-white p-space-lg rounded-xl shadow-md border border-[#B89E58]/25">
+<div class="mb-space-md">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-[#D4AB3F]">Candidate Help Desk</span>
+<h3 class="font-headline-lg text-headline-lg text-[#2B3A55] font-extrabold tracking-tight">Direct Technical Inquiry</h3>
+<p class="font-body-sm text-body-sm text-[#566277] mt-1">
+              Submit your academic query or batch preference. Our subject counselors will verify eligibility and schedule an orientation slot within 45 minutes.
+            </p>
+</div>
+<form class="space-y-space-md" id="cadreInquiryForm" onsubmit="event.preventDefault(); handleFormSubmit();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Full Name -->
+<div>
+<label class="block font-label-md text-label-md text-[#2B3A55] font-semibold mb-1" for="fullName">Full Legal Name *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[#566277] text-label-lg">person</span>
+<input class="w-full pl-9 pr-3 py-2 bg-[#FAF7F0] border border-[#B89E58]/40 rounded text-body-md text-[#1E1C12] placeholder:text-[#566277]/60 focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#D4AB3F] focus:border-[#B89E58]" id="fullName" placeholder="e.g. Patel Hardikkumar V." required="" type="text"/>
+</div>
+</div>
+<!-- WhatsApp Number -->
+<div>
+<label class="block font-label-md text-label-md text-[#2B3A55] font-semibold mb-1" for="whatsapp">WhatsApp Mobile *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[#566277] text-label-lg">chat</span>
+<input class="w-full pl-9 pr-3 py-2 bg-[#FAF7F0] border border-[#B89E58]/40 rounded text-body-md text-[#1E1C12] placeholder:text-[#566277]/60 focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#D4AB3F] focus:border-[#B89E58]" id="whatsapp" pattern="[0-9]{10}" placeholder="10-digit mobile number" required="" type="tel"/>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Email Address -->
+<div>
+<label class="block font-label-md text-label-md text-[#2B3A55] font-semibold mb-1" for="email">Email ID</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[#566277] text-label-lg">mail</span>
+<input class="w-full pl-9 pr-3 py-2 bg-[#FAF7F0] border border-[#B89E58]/40 rounded text-body-md text-[#1E1C12] placeholder:text-[#566277]/60 focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#D4AB3F] focus:border-[#B89E58]" id="email" placeholder="civil.engineer@example.com" type="email"/>
+</div>
+</div>
+<!-- Native District in Gujarat -->
+<div>
+<label class="block font-label-md text-label-md text-[#2B3A55] font-semibold mb-1" for="district">Home District in Gujarat *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[#566277] text-label-lg">location_city</span>
+<select class="w-full pl-9 pr-8 py-2 bg-[#FAF7F0] border border-[#B89E58]/40 rounded text-body-md text-[#1E1C12] focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#D4AB3F] focus:border-[#B89E58] appearance-none" id="district" required="">
+<option disabled="" selected="" value="">Select District</option>
+<option value="Ahmedabad">Ahmedabad</option>
+<option value="Gandhinagar">Gandhinagar</option>
+<option value="Rajkot">Rajkot</option>
+<option value="Surat">Surat</option>
+<option value="Vadodara">Vadodara</option>
+<option value="Mehsana">Mehsana</option>
+<option value="Bhavnagar">Bhavnagar</option>
+<option value="Banaskantha">Banaskantha</option>
+<option value="Sabarkantha">Sabarkantha</option>
+<option value="Kutch">Kutch</option>
+<option value="Junagadh">Junagadh</option>
+<option value="Jamnagar">Jamnagar</option>
+<option value="Anand">Anand</option>
+<option value="Kheda">Kheda</option>
+<option value="Patan">Patan</option>
+<option value="Valsad">Valsad</option>
+<option value="Navsari">Navsari</option>
+<option value="Other Gujarat">Other District (Gujarat)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-[#566277] pointer-events-none text-label-lg">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Target Exam Selection (Custom Selector) -->
+<div>
+<label class="block font-label-md text-label-md text-[#2B3A55] font-semibold mb-1">Target Engineering Cadre Exam *</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm" id="examSelectionGroup">
+<label class="cursor-pointer bg-[#FAF7F0] border border-[#B89E58]/30 p-2.5 rounded flex items-center gap-2 hover:bg-[#F4EEDD] transition-all">
+<input checked="" class="accent-[#2B3A55]" name="target_exam" type="radio" value="GPSC AE/EE"/>
+<span class="font-body-sm text-body-sm font-semibold text-[#2B3A55]">GPSC AE/EE (Class 1-2)</span>
+</label>
+<label class="cursor-pointer bg-[#FAF7F0] border border-[#B89E58]/30 p-2.5 rounded flex items-center gap-2 hover:bg-[#F4EEDD] transition-all">
+<input class="accent-[#2B3A55]" name="target_exam" type="radio" value="GSSSB AAE"/>
+<span class="font-body-sm text-body-sm font-semibold text-[#2B3A55]">GSSSB AAE (Civil)</span>
+</label>
+<label class="cursor-pointer bg-[#FAF7F0] border border-[#B89E58]/30 p-2.5 rounded flex items-center gap-2 hover:bg-[#F4EEDD] transition-all">
+<input class="accent-[#2B3A55]" name="target_exam" type="radio" value="GPSSB JE"/>
+<span class="font-body-sm text-body-sm font-semibold text-[#2B3A55]">GPSSB JE (Panchayat)</span>
+</label>
+</div>
+</div>
+<!-- Preferred Preparation Mode -->
+<div>
+<label class="block font-label-md text-label-md text-[#2B3A55] font-semibold mb-1">Preferred Mode of Learning *</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<label class="cursor-pointer bg-[#FAF7F0] border border-[#B89E58]/30 p-2.5 rounded flex items-center gap-2 hover:bg-[#F4EEDD] transition-all">
+<input checked="" class="accent-[#2B3A55]" name="learning_mode" type="radio" value="Gandhinagar Offline"/>
+<span class="font-body-sm text-body-sm text-[#1E1C12]">Gandhinagar HQ</span>
+</label>
+<label class="cursor-pointer bg-[#FAF7F0] border border-[#B89E58]/30 p-2.5 rounded flex items-center gap-2 hover:bg-[#F4EEDD] transition-all">
+<input class="accent-[#2B3A55]" name="learning_mode" type="radio" value="Ahmedabad Offline"/>
+<span class="font-body-sm text-body-sm text-[#1E1C12]">Ahmedabad Branch</span>
+</label>
+<label class="cursor-pointer bg-[#FAF7F0] border border-[#B89E58]/30 p-2.5 rounded flex items-center gap-2 hover:bg-[#F4EEDD] transition-all">
+<input class="accent-[#2B3A55]" name="learning_mode" type="radio" value="Online Live App"/>
+<span class="font-body-sm text-body-sm text-[#1E1C12]">Live Online Stream</span>
+</label>
+</div>
+</div>
+<!-- Message or Technical Inquiry -->
+<div>
+<label class="block font-label-md text-label-md text-[#2B3A55] font-semibold mb-1" for="message">Technical Doubts, Syllabus Inquiry, or Educational Background</label>
+<textarea class="w-full p-3 bg-[#FAF7F0] border border-[#B89E58]/40 rounded text-body-md text-[#1E1C12] placeholder:text-[#566277]/60 focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#D4AB3F] focus:border-[#B89E58]" id="message" placeholder="Mention your degree/diploma completion year or specific queries about syllabus coverage (Fluid Mechanics, RCC, SOM, Surveying)..." rows="3"></textarea>
+</div>
+<!-- Submit Button with Status Trigger -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<p class="font-body-sm text-body-sm text-[#566277] flex items-center gap-1">
+<span class="material-symbols-outlined text-body-md text-[#D4AB3F]">verified_user</span>
+                Information kept confidential under Shubh Academy Data Policy.
+              </p>
+<button class="w-full sm:w-auto bg-[#2B3A55] text-white hover:bg-[#1E2B42] px-space-lg py-2.5 rounded font-label-lg text-label-lg font-bold transition-all flex items-center justify-center gap-2 shadow-sm border border-[#B89E58]/30" id="submitBtn" type="submit">
+<span>Submit Inquiry</span>
+<span class="material-symbols-outlined text-title-md text-[#D4AB3F]">send</span>
+</button>
+</div>
+<!-- Inline Success Alert (Initially Hidden) -->
+<div class="hidden bg-[#FAF7F0] border border-[#D4AB3F] p-space-md rounded-lg text-[#2B3A55] flex items-start gap-space-sm" id="formSuccessAlert">
+<span class="material-symbols-outlined text-[#D4AB3F]">check_circle</span>
+<div>
+<p class="font-label-lg text-label-lg font-bold">Inquiry Registered Successfully!</p>
+<p class="font-body-sm text-body-sm text-[#566277]">Your reference ticket #SEA-2025 has been generated. Our Gandhinagar counseling cell will call you shortly on WhatsApp.</p>
+</div>
+</div>
+</form>
+</div>
+<!-- Right Column: Mentorship Booking & Instant Community Links (Span 5) -->
+<div class="lg:col-span-5 space-y-space-lg">
+<!-- Book Free 1-on-1 Mentorship & Demo Class -->
+<div class="bg-white rounded-xl p-space-lg shadow-md border border-[#B89E58]/25 relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="bg-[#D4AB3F] text-[#1E1C12] px-2.5 py-0.5 rounded font-label-sm text-label-sm uppercase font-extrabold">Free Mentorship</span>
+<span class="font-label-sm text-label-sm text-[#566277] font-semibold">Limited 6 Slots / Day</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-[#2B3A55] font-bold">Schedule 1-on-1 Strategy Session</h3>
+<p class="font-body-sm text-body-sm text-[#566277] mt-1 leading-relaxed">
+              Sit with a Gujarat Engineering Services ranker to evaluate your syllabus progress, formula retention, and numerical speed.
+            </p>
+<div class="space-y-space-sm pt-space-md">
+<div>
+<span class="block font-label-sm text-label-sm text-[#2B3A55] font-bold uppercase mb-1">1. Choose Date &amp; Faculty</span>
+<div class="grid grid-cols-3 gap-2 text-center">
+<button class="slot-date-btn bg-[#2B3A55] text-white p-2 rounded text-label-sm font-label-sm font-bold border border-[#B89E58]/30 transition-colors" type="button">
+                    Today<br/><span class="font-normal text-body-sm text-[#D4AB3F]">Slot 4 PM</span>
+</button>
+<button class="slot-date-btn bg-[#FAF7F0] text-[#2B3A55] p-2 rounded text-label-sm font-label-sm font-bold border border-[#B89E58]/30 transition-colors" type="button">
+                    Tomorrow<br/><span class="font-normal text-body-sm text-[#566277]">Slot 11 AM</span>
+</button>
+<button class="slot-date-btn bg-[#FAF7F0] text-[#2B3A55] p-2 rounded text-label-sm font-label-sm font-bold border border-[#B89E58]/30 transition-colors" type="button">
+                    Saturday<br/><span class="font-normal text-body-sm text-[#566277]">Slot 2 PM</span>
+</button>
+</div>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-[#2B3A55] font-bold uppercase mb-1">2. Faculty Focus Discipline</span>
+<select class="w-full p-2 bg-[#FAF7F0] border border-[#B89E58]/40 rounded text-body-sm text-[#1E1C12] focus:outline-none focus:ring-2 focus:ring-[#D4AB3F]">
+<option>Structural Engineering &amp; SOM (Er. Bhatt, Ex-R&amp;B Dept)</option>
+<option>Hydraulics &amp; Water Resources (Er. Trivedi, GWSSB Retd)</option>
+<option>Soil Mechanics &amp; Foundation Engineering</option>
+<option>General GS &amp; Gujarat State Affairs Strategy</option>
+</select>
+</div>
+<button class="w-full bg-[#D4AB3F] text-[#1E1C12] hover:bg-[#B89E58] hover:text-white py-2.5 rounded font-label-lg text-label-lg font-bold transition-all shadow-sm flex items-center justify-center gap-2" onclick="alert('Session Request Initiated! Slot confirmation sent to your registered contact.');" type="button">
+<span class="material-symbols-outlined text-title-md">event_available</span>
+<span>Confirm Demo &amp; Mentorship Slot</span>
+</button>
+</div>
+</div>
+<!-- Quick Help Desk & Community Connectors -->
+<div class="bg-white rounded-xl p-space-lg shadow-sm border border-[#B89E58]/25 space-y-space-md">
+<h4 class="font-title-md text-title-md text-[#2B3A55] font-bold">Aspirant Community &amp; Daily MCQs</h4>
+<p class="font-body-sm text-body-sm text-[#566277]">
+              Join Gujarat's most active civil technical channels. Daily GPSC 10-question polls, official recruitment gazettes, and model answer keys.
+            </p>
+<div class="space-y-space-sm">
+<!-- Telegram Channel -->
+<a class="flex items-center justify-between p-space-sm rounded-lg bg-[#FAF7F0] border border-[#B89E58]/20 hover:bg-[#F4EEDD] transition-all group" href="https://t.me" target="_blank">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded bg-[#2B3A55] text-white">
+<span class="material-symbols-outlined text-title-md text-[#D4AB3F]">send</span>
+</span>
+<div>
+<h5 class="font-label-lg text-label-lg text-[#2B3A55] font-bold">Daily Civil MCQ Telegram</h5>
+<span class="font-body-sm text-body-sm text-[#566277]">42,800+ Active Civil Aspirants</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[#566277] group-hover:text-[#2B3A55] transition-colors">arrow_forward</span>
+</a>
+<!-- WhatsApp Community Alert -->
+<a class="flex items-center justify-between p-space-sm rounded-lg bg-[#FAF7F0] border border-[#B89E58]/20 hover:bg-[#F4EEDD] transition-all group" href="https://whatsapp.com" target="_blank">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded bg-[#2B3A55] text-[#D4AB3F]">
+<span class="material-symbols-outlined text-title-md">notifications_active</span>
+</span>
+<div>
+<h5 class="font-label-lg text-label-lg text-[#2B3A55] font-bold">Instant Notification Alerts</h5>
+<span class="font-body-sm text-body-sm text-[#566277]">Official Gujarat GSSSB/GPSC Gazettes</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[#566277] group-hover:text-[#2B3A55] transition-colors">arrow_forward</span>
+</a>
+<!-- Direct WhatsApp Hotline -->
+<a class="flex items-center justify-between p-space-sm rounded-lg bg-[#FAF7F0] border border-[#B89E58]/20 hover:bg-[#F4EEDD] transition-all group" href="https://wa.me/919825012345" target="_blank">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded bg-[#D4AB3F] text-[#1E1C12] font-bold">
+<span class="material-symbols-outlined text-title-md">support_agent</span>
+</span>
+<div>
+<h5 class="font-label-lg text-label-lg text-[#2B3A55] font-bold">Admission Helpdesk WhatsApp</h5>
+<span class="font-body-sm text-body-sm text-[#566277]">Instant syllabus brochure &amp; fee structure</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[#566277] group-hover:text-[#2B3A55] transition-colors">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive State Outreach & District Support Network -->
+<section class="max-w-7xl mx-auto px-margin py-space-xl w-full">
+<div class="bg-[#2B3A55] text-white rounded-xl p-space-xl relative overflow-hidden border border-[#B89E58]/35 shadow-lg">
+<!-- Blueprint Grid Ambient Graphic -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-[#D4AB3F]/15 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-8 space-y-space-sm">
+<span class="inline-block bg-[#D4AB3F] text-[#1E1C12] px-space-xs px-2.5 py-0.5 rounded text-label-sm font-label-sm uppercase font-extrabold">Outstation Candidate Assistance</span>
+<h3 class="font-headline-xl text-headline-xl font-extrabold tracking-tight">Traveling from Saurashtra, North, or South Gujarat?</h3>
+<p class="font-body-lg text-body-lg text-[#FAF7F0]/90 leading-relaxed max-w-2xl">
+            Shubh Engineering Academy offers pre-verified hostel &amp; PG facilitation services adjacent to our Gandhinagar campus (Sector 11 &amp; Sector 22) with direct reading hall access for long-term residential classroom batches.
+          </p>
+<div class="flex flex-wrap gap-space-md pt-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#D4AB3F] text-title-md">home_work</span>
+<span class="font-body-sm text-body-sm text-[#FAF7F0]/90">PG Partnerships (Walking Distance)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#D4AB3F] text-title-md">restaurant</span>
+<span class="font-body-sm text-body-sm text-[#FAF7F0]/90">Hygienic Mess Availability</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#D4AB3F] text-title-md">lock_clock</span>
+<span class="font-body-sm text-body-sm text-[#FAF7F0]/90">24/7 Security &amp; AC Study Desks</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm">
+<a class="bg-[#FAF7F0] text-[#2B3A55] hover:bg-white px-space-md py-3 rounded text-center font-label-lg text-label-lg font-bold transition-all shadow-sm flex items-center justify-center gap-2 border border-[#B89E58]/40" href="tel:+917923248899">
+<span class="material-symbols-outlined text-title-md text-[#D4AB3F]">call</span>
+<span>Call Hostel Desk (+91 79 2324 8899)</span>
+</a>
+<button class="bg-[#FAF7F0]/10 hover:bg-[#FAF7F0]/20 text-white border border-[#B89E58]/50 px-space-md py-3 rounded text-center font-label-lg text-label-lg font-bold transition-all flex items-center justify-center gap-2" onclick="alert('Hostel guide brochure download sent to your WhatsApp.');" type="button">
+<span class="material-symbols-outlined text-title-md text-[#D4AB3F]">download</span>
+<span>Download Outstation Guide</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section for Prospective Applicants -->
+<section class="max-w-7xl mx-auto px-margin pb-space-xl w-full">
+<div class="mb-space-lg text-center max-w-2xl mx-auto">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-[#D4AB3F]">Frequently Asked Inquiries</span>
+<h3 class="font-headline-lg text-headline-lg text-[#2B3A55] font-extrabold tracking-tight">Visiting &amp; Admissions FAQ</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-white border border-[#B89E58]/25 p-space-md rounded-lg shadow-sm space-y-1">
+<h4 class="font-title-md text-title-md text-[#2B3A55] font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[#D4AB3F] text-title-md">help</span>
+          Can I attend a free offline demo lecture before enrolling?
+        </h4>
+<p class="font-body-sm text-body-sm text-[#566277] pl-7 leading-relaxed">
+          Yes. Candidates may attend up to two consecutive technical subject lectures (SOM, Surveying, or RCC) at either the Gandhinagar or Ahmedabad center with prior desk token registration.
+        </p>
+</div>
+<div class="bg-white border border-[#B89E58]/25 p-space-md rounded-lg shadow-sm space-y-1">
+<h4 class="font-title-md text-title-md text-[#2B3A55] font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[#D4AB3F] text-title-md">help</span>
+          Is parking available for aspirants at Gandhinagar HQ?
+        </h4>
+<p class="font-body-sm text-body-sm text-[#566277] pl-7 leading-relaxed">
+          Ample two-wheeler and four-wheeler designated parking is available within the Sardar Patel Bhavan complex perimeter with CCTV security surveillance.
+        </p>
+</div>
+<div class="bg-white border border-[#B89E58]/25 p-space-md rounded-lg shadow-sm space-y-1">
+<h4 class="font-title-md text-title-md text-[#2B3A55] font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[#D4AB3F] text-title-md">help</span>
+          What are the library timings for registered cadre students?
+        </h4>
+<p class="font-body-sm text-body-sm text-[#566277] pl-7 leading-relaxed">
+          The Gandhinagar Technical Library operates 24/7 with biometric access. Non-enrolled students may also access reading facilities through daily pass permits upon vacancy.
+        </p>
+</div>
+<div class="bg-white border border-[#B89E58]/25 p-space-md rounded-lg shadow-sm space-y-1">
+<h4 class="font-title-md text-title-md text-[#2B3A55] font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[#D4AB3F] text-title-md">help</span>
+          Can I transfer between Ahmedabad and Gandhinagar batches?
+        </h4>
+<p class="font-body-sm text-body-sm text-[#566277] pl-7 leading-relaxed">
+          Yes, syllabus schedules across both centers run in synchronization. Aspirants can seamlessly request campus rotation through their student portal credentials.
+        </p>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function handleFormSubmit() {
+    const submitBtn = document.getElementById('submitBtn');
+    const successAlert = document.getElementById('formSuccessAlert');
+    
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.classList.add('opacity-75');
+      submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-title-md text-[#D4AB3F]">sync</span> Registering...';
+    }
+
+    setTimeout(() => {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('opacity-75');
+        submitBtn.innerHTML = '<span>Submitted</span><span class="material-symbols-outlined text-title-md text-[#D4AB3F]">check</span>';
+      }
+      if (successAlert) {
+        successAlert.classList.remove('hidden');
+      }
+      document.getElementById('cadreInquiryForm').reset();
+    }, 900);
+  }
+
+  // Handle Mentorship Slot Selection Highlight
+  document.querySelectorAll('.slot-date-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      document.querySelectorAll('.slot-date-btn').forEach(btn => {
+        btn.classList.remove('bg-[#2B3A55]', 'text-white');
+        btn.classList.add('bg-[#FAF7F0]', 'text-[#2B3A55]');
+      });
+      this.classList.remove('bg-[#FAF7F0]', 'text-[#2B3A55]');
+      this.classList.add('bg-[#2B3A55]', 'text-white');
+    });
+  });
+</script></main><footer class="w-full bg-[#2B3A55] text-white pt-space-xl pb-space-lg border-t-2 border-[#D4AB3F]"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg pb-space-xl"><div class="lg:col-span-2 space-y-space-sm"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="Shubh Engineering Academy Logo" class="h-10 w-auto object-contain bg-white/10 p-1 rounded" src="https://lh3.googleusercontent.com/aida/AEtjO1Wau4Qotv1UKkd7aDu8wuRyAkM-8JJqfZiW_fQlFrPLuRnYwVmHIjM3nvcljdEdjBkpkXY4pwx1ol4Y2muDmc2PPUTw1JY0xU4Cg4KGA-WBZp2Ioxkfk07KH-wlAqrBZ8XZWM8uu9_WdPyVcTJNQCVOa36hHn6IkHx3xzA9oeP9kTBbu0Ef-3pRUMiickzghxzjtSezQ19DqKufyKm2UJcHGr7dpRzJewhafpDI_Blu8wv734IoaKj6u1Oj"/><span class="font-title-md text-title-md text-[#FAF7F0] font-bold">Shubh Engineering Academy</span></div><p class="font-body-sm text-body-sm text-[#FAF7F0]/80 max-w-sm">Premier technical civil engineering academy specializing in GPSC Class 1 &amp; 2 Executive Engineer, GSSSB Additional Assistant Engineer (AAE), and GPSSB cadre recruitments across Gujarat state governance.</p><div class="pt-space-xs"><p class="font-label-sm text-label-sm text-[#D4AB3F] font-bold uppercase mb-1">Accreditation &amp; Affiliation</p><p class="font-body-sm text-body-sm text-[#FAF7F0]/70">ISO 9001:2015 Technical Pedagogical Certified Coaching Establishment for State Engineering Competitive Services.</p></div></div><div class="space-y-space-sm"><h3 class="font-label-lg text-label-lg text-[#D4AB3F] font-bold uppercase tracking-wider">State Syllabus</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-[#FAF7F0]/80"><li><a class="hover:text-[#D4AB3F] transition-colors" data-path="targeted-exams" href="#">GPSC Class 1-2 Executive Engg</a></li><li><a class="hover:text-[#D4AB3F] transition-colors" data-path="targeted-exams" href="#">GSSSB AAE Civil Syllabus</a></li><li><a class="hover:text-[#D4AB3F] transition-colors" data-path="targeted-exams" href="#">GPSSB Additional Asst Engineer</a></li><li><a class="hover:text-[#D4AB3F] transition-colors" data-path="targeted-exams" href="#">Gujarat Water Resources (GWSSB)</a></li><li><a class="hover:text-[#D4AB3F] transition-colors" data-path="targeted-exams" href="#">Road &amp; Building Dept (R&amp;B) Module</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-label-lg text-label-lg text-[#D4AB3F] font-bold uppercase tracking-wider">Aspirant Resources</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-[#FAF7F0]/80"><li><a class="hover:text-[#D4AB3F] transition-colors" data-path="resources" href="#">Civil Engineering Formula Handbooks</a></li><li><a class="hover:text-[#D4AB3F] transition-colors" data-path="resources" href="#">GSSSB Notification Alerts 2025</a></li><li><a class="hover:text-[#D4AB3F] transition-colors" data-path="test-series-portal" href="#">OMR Pattern Test Series Portal</a></li><li><a class="hover:text-[#D4AB3F] transition-colors" data-path="resources" href="#">GPSC Previous 10-Year Solved Papers</a></li><li><a class="hover:text-[#D4AB3F] transition-colors" data-path="resources" href="#">Verified Model Answer Keys</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-label-lg text-label-lg text-[#D4AB3F] font-bold uppercase tracking-wider">Head Office</h3><p class="font-body-sm text-body-sm text-[#FAF7F0]/80 leading-relaxed">Cadre Bhavan, 4th Floor, Sector 11, Near GH-Road Circle, Gandhinagar - 382011, Gujarat</p><p class="font-body-sm text-body-sm text-[#FAF7F0]/80"><span class="font-bold text-[#D4AB3F]">Phone:</span> +91 79 2320 0000</p><p class="font-body-sm text-body-sm text-[#FAF7F0]/80"><span class="font-bold text-[#D4AB3F]">Email:</span> admissions@shubhengineering.in</p><div class="pt-space-xs"><span class="inline-block bg-[#1E2B42] text-[#D4AB3F] border border-[#B89E58]/40 font-label-sm text-label-sm px-space-sm py-1 rounded">Branch: Navrangpura, Ahmedabad</span></div></div></div><div class="pt-space-lg border-t border-[#FAF7F0]/15 flex flex-col md:flex-row items-center justify-between text-body-sm font-body-sm text-[#FAF7F0]/70"><p>© 2025 Shubh Engineering Academy. All Rights Reserved. Dedicated to Gujarat Engineering Services.</p><div class="flex items-center gap-space-md mt-space-sm md:mt-0"><a class="hover:text-[#D4AB3F] transition-colors" href="#">Right to Information (RTI)</a><a class="hover:text-[#D4AB3F] transition-colors" href="#">Privacy Policy</a><a class="hover:text-[#D4AB3F] transition-colors" href="#">Terms of Enrollment</a></div></div></div></footer></body></html>

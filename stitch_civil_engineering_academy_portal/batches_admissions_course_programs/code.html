@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          primary: "#2B3A55",
+          "primary-container": "#1d293d",
+          "on-primary": "#ffffff",
+          "on-primary-container": "#d7e3ff",
+          secondary: "#566277",
+          "secondary-container": "#d8e1f0",
+          "on-secondary": "#ffffff",
+          "on-secondary-container": "#1a2538",
+          accent: "#D4AB3F",
+          "accent-container": "#fceed0",
+          "on-accent": "#261c00",
+          "on-accent-container": "#523c00",
+          bronze: "#B89E58",
+          surface: "#FAF7F0",
+          "surface-container": "#F6F0DF",
+          "surface-container-low": "#FAF7F0",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-high": "#ede5d2",
+          "surface-container-highest": "#e4dbca",
+          background: "#F6F0DF",
+          "on-background": "#1e2229",
+          "on-surface": "#1e2229",
+          "on-surface-variant": "#566277",
+          outline: "#757c8a",
+          "outline-variant": "#d5cebe",
+          error: "#ba1a1a",
+          "error-container": "#ffdad6",
+          "on-error": "#ffffff",
+          "on-error-container": "#93000a"
+        },
+        borderRadius: {
+          DEFAULT: "0.25rem",
+          lg: "0.375rem",
+          xl: "0.75rem",
+          "2xl": "1rem",
+          full: "9999px"
+        },
+        spacing: {
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          margin: "2rem",
+          "margin-mobile": "1rem",
+          gutter: "1.5rem",
+          "gutter-mobile": "1rem"
+        },
+        fontFamily: {
+          sans: ["Plus Jakarta Sans", "sans-serif"],
+          "display-lg": ["Plus Jakarta Sans"],
+          "headline-xl": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "title-lg": ["Plus Jakarta Sans"],
+          "title-md": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "body-md": ["Plus Jakarta Sans"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "label-lg": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"]
+        },
+        fontSize: {
+          "display-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "800" }],
+          "headline-xl": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }],
+          "headline-lg": ["26px", { lineHeight: "34px", letterSpacing: "-0.01em", fontWeight: "700" }],
+          "headline-md": ["22px", { lineHeight: "30px", letterSpacing: "-0.005em", fontWeight: "600" }],
+          "headline-sm": ["18px", { lineHeight: "26px", fontWeight: "600" }],
+          "title-md": ["16px", { lineHeight: "24px", fontWeight: "600" }],
+          "body-lg": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+          "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }],
+          "body-sm": ["13px", { lineHeight: "18px", fontWeight: "400" }],
+          "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }],
+          "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }],
+          "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "700" }]
+        }
+      }
+    }
+  };
+</script></head><body class="bg-background font-sans text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-[#FAF7F0]/95 backdrop-blur-xl border-b border-outline-variant shadow-[0_1px_8px_rgba(43,58,85,0.06)]"><div class="bg-primary text-on-primary py-space-xs px-margin border-b border-[#3b4c6d]"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between text-label-sm font-label-sm"><div class="flex items-center gap-space-sm"><span class="bg-accent text-on-accent px-space-xs py-0.5 rounded font-label-sm uppercase font-bold tracking-wide">Official Helpline</span><span class="text-[#d8e1f0] font-label-sm">Call: +91 79 2320 0000 | Gandhinagar &amp; Ahmedabad Centers</span></div><div class="hidden md:flex items-center gap-space-md font-label-sm text-[#d8e1f0]"><span>GPSC Class 1 &amp; 2 Special Batches Announced</span><span class="text-bronze">|</span><span class="text-accent font-semibold">Direct AAE Recruitment 2025</span></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Shubh Engineering Academy Logo" class="h-11 w-auto object-contain rounded" src="https://lh3.googleusercontent.com/aida/AEtjO1Wau4Qotv1UKkd7aDu8wuRyAkM-8JJqfZiW_fQlFrPLuRnYwVmHIjM3nvcljdEdjBkpkXY4pwx1ol4Y2muDmc2PPUTw1JY0xU4Cg4KGA-WBZp2Ioxkfk07KH-wlAqrBZ8XZWM8uu9_WdPyVcTJNQCVOa36hHn6IkHx3xzA9oeP9kTBbu0Ef-3pRUMiickzghxzjtSezQ19DqKufyKm2UJcHGr7dpRzJewhafpDI_Blu8wv734IoaKj6u1Oj"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary font-bold tracking-tight uppercase leading-none">Shubh Engineering Academy</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider mt-0.5 font-semibold">GPSC • GSSSB • GPSSB Civil Cadres</span></div></div><nav class="hidden xl:flex items-center gap-space-md"><a class="font-title-md text-title-md text-secondary hover:text-primary transition-colors px-space-sm py-1.5" data-path="targeted-exams" href="#">Targeted Exams</a><a class="font-title-md text-title-md text-primary font-bold bg-surface-container rounded-lg px-space-sm py-1.5" data-path="batches-and-admissions" href="#">Batches &amp; Admissions</a><a class="font-title-md text-title-md text-secondary hover:text-primary transition-colors px-space-sm py-1.5" data-path="excellence-and-results" href="#">Excellence &amp; Results</a><a class="font-title-md text-title-md text-secondary hover:text-primary transition-colors px-space-sm py-1.5" data-path="alumni-network" href="#">Alumni Network</a><a class="font-title-md text-title-md text-secondary hover:text-primary transition-colors px-space-sm py-1.5" data-path="contact-and-centers" href="#">Contact &amp; Centers</a></nav><div class="flex items-center gap-space-md"><a class="bg-accent text-on-accent font-bold px-space-md py-2 rounded-lg font-label-lg text-label-lg hover:bg-bronze hover:text-white transition-all shadow-sm" data-path="student-portal" href="#">Student Portal</a><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Director GPSC Mentorship" class="w-8 h-8 rounded-full object-cover ring-2 ring-bronze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrq1sbV9oXsvteuhuxtj0zsHAcElTf6l70H_Bv12DV82aFnVS1wldB2nDqXAaUsw3cXSx415XlXs1TCW572jZxfU7paLKsSEXRaGLBb3Yike2NFP7L-LPp6yYKgHW6ttBpItE8feysGe4_BMzz2AGeRgKxzwF7eUaMMVkbDk65_mIV01EV1UMK0iu-y6DWrLEznUWil_M8V-_mk0r31NFTb5lPLp07jSxPHhVlBZMwZZDdw3YV_IuVqg"/><div class="hidden lg:flex flex-col"><span class="font-label-sm text-label-sm font-bold text-primary leading-tight">Director Desk</span><span class="font-label-sm text-label-sm text-secondary leading-tight">GPSC Mentorship</span></div></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Immersive Editorial Top Banner / Hero -->
+<section class="relative w-full bg-primary text-on-primary py-space-xl overflow-hidden border-b border-[#3b4c6d]">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AB3F_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-96 h-96 bg-accent/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-margin relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-8 space-y-space-md">
+<div class="inline-flex items-center gap-space-xs bg-white/10 text-accent border border-accent/30 px-space-sm py-1 rounded-full text-label-sm font-label-sm uppercase tracking-widest backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+            Academic Session 2025–26 Enrolment Now Active
+          </div>
+<h1 class="font-display-lg text-display-lg tracking-tight text-white max-w-3xl leading-none">
+            Target-Oriented Classroom &amp; Hybrid Batches <span class="text-accent">2025–26</span>
+</h1>
+<p class="font-body-lg text-body-lg text-[#d8e1f0] max-w-2xl leading-relaxed">
+            Engineered exclusively for Gujarat Civil Cadres by <strong class="text-white">Shubh Engineering Academy</strong>. Rigorous pedagogical discipline across our Gandhinagar Sector 11 &amp; Ahmedabad Navrangpura learning centers, supported by full-duplex interactive live broadcasts.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-xs bg-accent text-on-accent font-bold px-space-lg py-3 rounded-lg font-label-lg text-label-lg hover:bg-bronze hover:text-white transition-all shadow-md" href="#batches-catalog">
+<span>Explore Active Batches</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs bg-white/10 text-white border border-white/20 hover:bg-white/20 px-space-lg py-3 rounded-lg font-label-lg text-label-lg transition-all backdrop-blur-sm" href="#scholarship-section">
+<span class="material-symbols-outlined text-sm text-accent">workspace_premium</span>
+<span>Register for GCTSE Scholarship</span>
+</a>
+</div>
+<div class="flex flex-wrap items-center gap-space-lg pt-space-sm text-[#d8e1f0]">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent">location_on</span>
+<span class="font-label-md text-label-md">Gandhinagar (Sec 11)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent">apartment</span>
+<span class="font-label-md text-label-md">Ahmedabad (Navrangpura)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent">podcasts</span>
+<span class="font-label-md text-label-md">Live App HD Dual-Stream</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-sm">
+<div class="bg-white/10 border border-white/15 p-space-md rounded-xl backdrop-blur-md text-white shadow-sm space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-[#d8e1f0]">Classroom Capacity</span>
+<span class="font-label-sm text-label-sm text-accent font-bold">Batch Size Capped: 65 Seats</span>
+</div>
+<div class="w-full bg-white/20 h-2 rounded-full overflow-hidden">
+<div class="bg-accent h-full rounded-full w-4/5"></div>
+</div>
+<p class="font-body-sm text-body-sm text-[#d8e1f0] pt-1">
+              82% of Gandhinagar morning batch intake confirmed. Seat allocation strictly on verified diploma/degree merit &amp; GCTSE ranks.
+            </p>
+</div>
+<div class="bg-white/5 border border-white/10 p-space-md rounded-xl backdrop-blur-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-accent text-headline-md">verified_user</span>
+<div>
+<p class="font-label-lg text-label-lg text-white font-bold leading-tight">ISO 9001:2015 Approved</p>
+<p class="font-body-sm text-body-sm text-[#d8e1f0] leading-tight">Gujarat Public Service Commission Cadre Specialists</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Live Batch Status Ribbon -->
+<div class="bg-surface-container border-b border-outline-variant py-space-sm">
+<div class="max-w-7xl mx-auto px-margin flex flex-wrap items-center justify-between gap-space-sm text-primary font-label-md text-label-md">
+<div class="flex items-center gap-space-sm">
+<span class="bg-primary text-accent px-space-xs py-0.5 rounded text-label-sm uppercase font-bold tracking-wide border border-bronze/40">Notice</span>
+<span class="text-primary font-medium">Admissions open for Upcoming R&amp;B Cadre &amp; GSSSB Surveyor Accelerated Module (Limited Walk-in Slots).</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="text-primary font-bold flex items-center gap-1"><span class="material-symbols-outlined text-accent text-sm">phone</span> Helpline: +91 79 2320 0000</span>
+<span class="hidden md:inline text-secondary">Counseling Hours: 8:00 AM – 8:30 PM</span>
+</div>
+</div>
+</div>
+<!-- Active & Upcoming Batches Grid -->
+<section class="w-full py-space-xl bg-background" id="batches-catalog">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-space-lg gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-accent font-bold">Structured Academic Tracks</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">Active &amp; Upcoming Cohorts</h2>
+<p class="font-body-md text-body-md text-secondary mt-1">Select an intensive programme tailored to your qualification tier and examination target date.</p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container p-1 rounded-lg border border-outline-variant">
+<button class="px-space-md py-1.5 rounded-lg text-label-sm font-label-sm font-bold bg-primary text-white transition-all shadow-xs" id="filter-all">All Cadres</button>
+<button class="px-space-md py-1.5 rounded-lg text-label-sm font-label-sm font-bold text-secondary hover:text-primary hover:bg-surface-container-high transition-all" id="filter-gpsc">GPSC Class 1 &amp; 2</button>
+<button class="px-space-md py-1.5 rounded-lg text-label-sm font-label-sm font-bold text-secondary hover:text-primary hover:bg-surface-container-high transition-all" id="filter-gsssb">GSSSB / GPSSB</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Batch A: GPSC Foundation -->
+<div class="batch-card gpsc bg-white rounded-xl p-space-lg border border-bronze/40 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 w-2.5 h-full bg-primary"></div>
+<div class="space-y-space-md pl-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<span class="bg-surface-container text-primary font-bold border border-outline-variant px-space-xs py-1 rounded text-label-sm font-label-sm uppercase tracking-wider">10 Months Intensive Cohort</span>
+<span class="text-error font-label-sm text-label-sm font-bold bg-error-container/60 text-on-error-container px-space-xs py-1 rounded">Starts 15th Next Month</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold leading-snug">GPSC Foundation Batch (Class 1 &amp; 2 AE/EE)</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Complete coverage of Civil Technical Core + Gujarat &amp; National GS + Gujarati &amp; English Mains Analytical Answer Writing.</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm py-space-xs bg-surface-container p-space-sm rounded-lg border border-outline-variant/60">
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Lectures</p>
+<p class="font-title-md text-title-md text-primary font-bold">Daily 4 Hours</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Mock Tests</p>
+<p class="font-title-md text-title-md text-primary font-bold">150+ Full Length</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Study Pedagogy</p>
+<p class="font-title-md text-title-md text-primary font-bold">Gujarati &amp; English</p>
+</div>
+</div>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent text-sm">check_circle</span>
+<span>Includes 14 volume physical Cadre Civil Formula &amp; Standard Code books</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent text-sm">check_circle</span>
+<span>Daily subjective answer evaluation with live rubric correction by serving officers</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent text-sm">check_circle</span>
+<span>Includes access to 24/7 Gandhinagar Technical Library &amp; discussion bay</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md pl-space-xs mt-space-md bg-surface-container -mx-space-lg -mb-space-lg px-space-lg py-space-md flex flex-wrap items-center justify-between gap-space-sm rounded-b-xl border-t border-outline-variant">
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Course Investment</p>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary font-bold leading-none">₹36,000</span>
+<span class="font-body-sm text-body-sm text-secondary">Installments Available (3 parts)</span>
+</div>
+</div>
+<a class="bg-primary text-white hover:bg-primary-container px-space-lg py-2.5 rounded-lg font-label-lg text-label-lg font-bold transition-all shadow-sm" href="#admission-form">
+              Enroll in Batch A
+            </a>
+</div>
+</div>
+<!-- Batch B: GSSSB AAE Fastrack -->
+<div class="batch-card gsssb bg-white rounded-xl p-space-lg border border-bronze/40 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 w-2.5 h-full bg-accent"></div>
+<div class="space-y-space-md pl-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<span class="bg-accent-container text-on-accent-container border border-accent/40 px-space-xs py-1 rounded text-label-sm font-label-sm uppercase tracking-wider font-bold">4 Months Accelerated Track</span>
+<span class="text-primary font-label-sm text-label-sm font-bold bg-surface-container px-space-xs py-1 rounded border border-outline-variant">Morning &amp; Evening Batches</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold leading-snug">GSSSB AAE / Surveyor Fastrack Batch</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1">High-density MCQ drill, rapid numerical shortcuts, and continuous Computer Based Recruitment Test (CBRT) simulation.</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm py-space-xs bg-surface-container p-space-sm rounded-lg border border-outline-variant/60">
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Question Vault</p>
+<p class="font-title-md text-title-md text-primary font-bold">5000+ PYQ Solved</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Exam Mode</p>
+<p class="font-title-md text-title-md text-primary font-bold">CBRT Lab Mock</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Batch Slots</p>
+<p class="font-title-md text-title-md text-primary font-bold">AM &amp; PM Shifts</p>
+</div>
+</div>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent text-sm">check_circle</span>
+<span>Focused on GSSSB &amp; GWSSB syllabus weightage (SOM, Surveying, Concrete Tech)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent text-sm">check_circle</span>
+<span>Negative marking mitigation training (-0.25 / -0.33 tactical drills)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent text-sm">check_circle</span>
+<span>Weekly state-wide live percentile ranking against 3,000+ active aspirants</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md pl-space-xs mt-space-md bg-surface-container -mx-space-lg -mb-space-lg px-space-lg py-space-md flex flex-wrap items-center justify-between gap-space-sm rounded-b-xl border-t border-outline-variant">
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Course Investment</p>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary font-bold leading-none">₹18,500</span>
+<span class="font-body-sm text-body-sm text-secondary">Single-pay concessions</span>
+</div>
+</div>
+<a class="bg-accent text-on-accent font-bold hover:bg-bronze hover:text-white px-space-lg py-2.5 rounded-lg font-label-lg text-label-lg transition-all shadow-sm" href="#admission-form">
+              Enroll in Batch B
+            </a>
+</div>
+</div>
+<!-- Batch C: GPSSB Panchayat JE Ranker -->
+<div class="batch-card gsssb bg-white rounded-xl p-space-lg border border-bronze/40 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 w-2.5 h-full bg-secondary"></div>
+<div class="space-y-space-md pl-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<span class="bg-surface-container text-secondary px-space-xs py-1 rounded text-label-sm font-label-sm uppercase tracking-wider font-bold border border-outline-variant">Weekend Special (Sat &amp; Sun)</span>
+<span class="text-primary font-label-sm text-label-sm font-bold bg-accent-container text-on-accent-container px-space-xs py-1 rounded border border-accent/40">Ideal for In-Service Engineers</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold leading-snug">GPSSB Panchayat JE Ranker Batch</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Structured specifically for working diploma civil engineers, site project engineers, and private consultancy practitioners.</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm py-space-xs bg-surface-container p-space-sm rounded-lg border border-outline-variant/60">
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Weekly Hours</p>
+<p class="font-title-md text-title-md text-primary font-bold">14 hrs Intensive</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Recorded Support</p>
+<p class="font-title-md text-title-md text-primary font-bold">Unlimited 1080p</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Schedule</p>
+<p class="font-title-md text-title-md text-primary font-bold">Sat &amp; Sun Only</p>
+</div>
+</div>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent text-sm">check_circle</span>
+<span>Saturday 3 PM - 9 PM &amp; Sunday 8 AM - 4 PM with catered lunch breaks</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent text-sm">check_circle</span>
+<span>Zero attendance clash with on-site duty rosters</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent text-sm">check_circle</span>
+<span>Condensed memory map charts &amp; formula cheat-sheets for revision on mobile</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md pl-space-xs mt-space-md bg-surface-container -mx-space-lg -mb-space-lg px-space-lg py-space-md flex flex-wrap items-center justify-between gap-space-sm rounded-b-xl border-t border-outline-variant">
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Course Investment</p>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary font-bold leading-none">₹14,000</span>
+<span class="font-body-sm text-body-sm text-secondary">Study material kit included</span>
+</div>
+</div>
+<a class="bg-primary text-white hover:bg-primary-container px-space-lg py-2.5 rounded-lg font-label-lg text-label-lg font-bold transition-all shadow-sm" href="#admission-form">
+              Enroll in Batch C
+            </a>
+</div>
+</div>
+<!-- Batch D: GPSC Mains Answer Writing -->
+<div class="batch-card gpsc bg-white rounded-xl p-space-lg border border-bronze/40 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 w-2.5 h-full bg-bronze"></div>
+<div class="space-y-space-md pl-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<span class="bg-surface-container text-primary font-bold px-space-xs py-1 rounded text-label-sm font-label-sm uppercase tracking-wider border border-outline-variant">Mains Evaluation Module</span>
+<span class="text-accent font-label-sm text-label-sm font-bold bg-primary text-white px-space-xs py-1 rounded border border-bronze/40">1-on-1 Officer Reviews</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold leading-snug">GPSC Mains Answer Writing &amp; Test Series</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Rigorous descriptive paper practice. Physical offline copy checking and structural mentoring by serving Class 1 Executive Engineers.</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm py-space-xs bg-surface-container p-space-sm rounded-lg border border-outline-variant/60">
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Test Papers</p>
+<p class="font-title-md text-title-md text-primary font-bold">12 Simulated</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Feedback SLA</p>
+<p class="font-title-md text-title-md text-primary font-bold">Within 72 Hours</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-secondary">Mentor Panel</p>
+<p class="font-title-md text-title-md text-primary font-bold">Serving EE/DEEs</p>
+</div>
+</div>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent text-sm">check_circle</span>
+<span>Engineering diagram presentation, IS code standard annotations &amp; neat layout training</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent text-sm">check_circle</span>
+<span>Individualized scorecards tracking speed, conceptual depth, and presentation weight</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent text-sm">check_circle</span>
+<span>Classroom model answer script booklets distributed post-submission</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md pl-space-xs mt-space-md bg-surface-container -mx-space-lg -mb-space-lg px-space-lg py-space-md flex flex-wrap items-center justify-between gap-space-sm rounded-b-xl border-t border-outline-variant">
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Course Investment</p>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary font-bold leading-none">₹9,500</span>
+<span class="font-body-sm text-body-sm text-secondary">Complete 12 test cycles</span>
+</div>
+</div>
+<a class="bg-primary text-white hover:bg-primary-container px-space-lg py-2.5 rounded-lg font-label-lg text-label-lg font-bold transition-all shadow-sm" href="#admission-form">
+              Enroll in Batch D
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- What's Included / Cadre Infrastructure Bento Grid -->
+<section class="w-full py-space-xl bg-[#FAF7F0] border-y border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin space-y-space-lg">
+<div class="max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-accent font-bold">Standard Cadre Entitlements</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">Everything Included in Your Enrollment</h2>
+<p class="font-body-md text-body-md text-secondary mt-1">Every aspirant at Shubh Engineering Academy receives continuous institutional support until final service appointment.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Feature 1 -->
+<div class="bg-white p-space-lg rounded-xl border border-outline-variant shadow-sm flex flex-col justify-between space-y-space-md hover:-translate-y-1 transition-transform">
+<div class="space-y-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary border border-outline-variant">
+<span class="material-symbols-outlined text-headline-md text-accent">menu_book</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Bilingual Formula Compendiums</h3>
+<p class="font-body-sm text-body-sm text-secondary">Handcrafted Civil Engineering formula handbooks covering 18 subjects with parallel Gujarati &amp; English technical terminologies.</p>
+</div>
+<div class="pt-space-xs">
+<span class="font-label-sm text-label-sm text-bronze font-bold inline-flex items-center gap-1">
+<span>Hardcopies Dispatched</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="bg-white p-space-lg rounded-xl border border-outline-variant shadow-sm flex flex-col justify-between space-y-space-md hover:-translate-y-1 transition-transform">
+<div class="space-y-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary border border-outline-variant">
+<span class="material-symbols-outlined text-headline-md text-accent">local_library</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">24/7 Technical Reading Bay</h3>
+<p class="font-body-sm text-body-sm text-secondary">Air-conditioned study suites in Gandhinagar Sector 11 equipped with high-speed internet, ergonomic desks, and CAD workstations.</p>
+</div>
+<div class="pt-space-xs">
+<span class="font-label-sm text-label-sm text-bronze font-bold inline-flex items-center gap-1">
+<span>Biometric Access</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="bg-white p-space-lg rounded-xl border border-outline-variant shadow-sm flex flex-col justify-between space-y-space-md hover:-translate-y-1 transition-transform">
+<div class="space-y-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary border border-outline-variant">
+<span class="material-symbols-outlined text-headline-md text-accent">fact_check</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">OMR &amp; CBT Testing Rig</h3>
+<p class="font-body-sm text-body-sm text-secondary">Weekly physical OMR mock tests replicating actual GPSC/GSSSB test conditions, coupled with online analytics and ranking.</p>
+</div>
+<div class="pt-space-xs">
+<span class="font-label-sm text-label-sm text-bronze font-bold inline-flex items-center gap-1">
+<span>Statewide Percentile</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="bg-white p-space-lg rounded-xl border border-outline-variant shadow-sm flex flex-col justify-between space-y-space-md hover:-translate-y-1 transition-transform">
+<div class="space-y-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary border border-outline-variant">
+<span class="material-symbols-outlined text-headline-md text-accent">group_work</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Serving Ranker Mentorship</h3>
+<p class="font-body-sm text-body-sm text-secondary">Weekly live doubt resolution and strategy clinics conducted by top 10 rankers and Executive Engineers currently in Gujarat service.</p>
+</div>
+<div class="pt-space-xs">
+<span class="font-label-sm text-label-sm text-bronze font-bold inline-flex items-center gap-1">
+<span>Personalized Remediation</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Campus Image Mosaic -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<div class="relative h-56 rounded-xl overflow-hidden shadow-sm group border border-outline-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High quality photograph of a modern civil engineering classroom in Gandhinagar with aspirants studying structural engineering diagrams on large presentation screens, ambient natural daylight with blue architectural accents, authoritative institutional atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSJMJ8F-PsDVmmR-6nZYIw2jJrgzPfmYO2bf8htaR5l9rNZDuZGM0pcMV8JlyEqTNetq-4RGyrc3UVfCfte4jKKNzVLLwVjlfpdZ60jfD3SF1L2CWS64bK0QZuewMY4QqBJyO3hOyMEt-TGhbgnFHWVJoydjwQER36VU1be5eMlKKxelms7i1gxHHQG8crWpRDVMSUrC0R2jOJ-IKtOAj5Bsp7lRKSc7IVXCg1Gl_h9_kMHoLr0HrBkQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent flex items-end p-space-md">
+<p class="font-label-md text-label-md text-white font-bold">Sector 11 Gandhinagar Lecture Amphitheatre</p>
+</div>
+</div>
+<div class="relative h-56 rounded-xl overflow-hidden shadow-sm group border border-outline-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Civil engineering aspirants utilizing a bright technical library study room in Gujarat, books stacked neatly, blueprints on tables, focused and disciplined study environment, soft warm interior lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyHKniIciybDfB6F8L1FnZiSPEao0nuWNFJuU4iyWnj0DVVrShEg2Nj384RuWGZR3p9fjtSYVuF79FG4jgX-QIYLtxFz689yBn5iJFVjZPs9vBGgDC9_i8JzkEajZAkeR8OBnnaI_0agAVwYTz6WS5udC0fWVlgL7pUQhwmjg3Y2K_z3OjsHzyV7rXHC8Jsh_kjEXGjikSDYg5S8vcfDOSYR91zMX5uB3cBRu78M4QmtJ22NceQCWIWg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent flex items-end p-space-md">
+<p class="font-label-md text-label-md text-white font-bold">24-Hour Silent Reading Bays</p>
+</div>
+</div>
+<div class="relative h-56 rounded-xl overflow-hidden shadow-sm group border border-outline-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Technical OMR examination hall filled with engineering students taking competitive test, serious academic testing center in Ahmedabad, clean modern test tables with answer sheets and rulers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhru3lFgBUZTHyfr_BQg1DsY7NvipJ8eJ9JI6mh8-OKhiisoWNbZrGV4MxJhEnwq8fsv7rZsIVQTrekL6HMizfC2baXDekMN7iODU0xW15tzogCJqYnFEsI15jF2n8hQMSMcJ4n4UUhjissUTrLwbHrc7-sFDGXRJJEWoMBmO_9aMUSNELDv79ZIw5LCOZEG3nnS0cJCuk8DN_7KLrUh9Z9fSJIQmnUxVhPhkTwOXOJW1eWuBBAHjOhQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent flex items-end p-space-md">
+<p class="font-label-md text-label-md text-white font-bold">Ahmedabad Center CBT &amp; OMR Simulators</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Structured Batch Timetable Schedule breakdown -->
+<section class="w-full py-space-xl bg-background">
+<div class="max-w-7xl mx-auto px-margin space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-accent font-bold">Daily Routine &amp; Class Blocks</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">Standard Daily Schedule Breakdown</h2>
+<p class="font-body-md text-body-md text-secondary mt-1">Engineered to balance core subject lectures, daily MCQ drills, and personal self-study revisions.</p>
+</div>
+<div class="bg-white border border-outline-variant px-space-md py-2 rounded-lg text-label-md font-label-md text-primary font-bold flex items-center gap-space-xs shadow-xs">
+<span class="material-symbols-outlined text-accent">schedule</span>
+<span>4-Hour Modular Pedagogical Architecture</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Morning Slot -->
+<div class="bg-white rounded-xl p-space-lg border border-outline-variant shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container p-space-md rounded-lg border border-outline-variant/60">
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-accent">Slot A • Full-Time Focus</span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Morning Batch Schedule</h3>
+</div>
+<span class="font-title-md text-title-md font-bold text-primary bg-white px-space-sm py-1 rounded shadow-xs border border-outline-variant/60">07:30 AM – 11:30 AM</span>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-start gap-space-md p-space-sm bg-[#FAF7F0] rounded-lg border border-outline-variant/40">
+<span class="font-label-md text-label-md font-bold text-bronze w-28 shrink-0">07:30 – 08:30 AM</span>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-primary">Technical Concept Foundation</p>
+<p class="font-body-sm text-body-sm text-secondary">Core Civil subject deep dive (Theory, standard IS specifications, formula derivation).</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-sm bg-[#FAF7F0] rounded-lg border border-outline-variant/40">
+<span class="font-label-md text-label-md font-bold text-bronze w-28 shrink-0">08:35 – 09:35 AM</span>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-primary">Numerical &amp; Analytical Problem Workshop</p>
+<p class="font-body-sm text-body-sm text-secondary">Real exam numerical solving and gate/engineering service PYQ pattern breakdowns.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-sm bg-[#FAF7F0] rounded-lg border border-outline-variant/40">
+<span class="font-label-md text-label-md font-bold text-secondary w-28 shrink-0">09:35 – 09:50 AM</span>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-secondary">Academic Recess &amp; Tea Break</p>
+<p class="font-body-sm text-body-sm text-secondary">Library clearing, faculty interaction, and study partner peer sync.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-sm bg-[#FAF7F0] rounded-lg border border-outline-variant/40">
+<span class="font-label-md text-label-md font-bold text-bronze w-28 shrink-0">09:50 – 10:45 AM</span>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-primary">General Studies &amp; Gujarat State Affairs</p>
+<p class="font-body-sm text-body-sm text-secondary">Gujarat geography, culture, constitution, and current policy developments relevant for Class 1-2.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-sm bg-[#FAF7F0] rounded-lg border border-outline-variant/40">
+<span class="font-label-md text-label-md font-bold text-bronze w-28 shrink-0">10:45 – 11:30 AM</span>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-primary">Daily Speed Test &amp; OMR Evaluation</p>
+<p class="font-body-sm text-body-sm text-secondary">Timed 30-question diagnostic drill on that morning's delivered modules with immediate negative score checks.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Evening Slot -->
+<div class="bg-white rounded-xl p-space-lg border border-outline-variant shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container p-space-md rounded-lg border border-outline-variant/60">
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary">Slot B • Evening Working Professional</span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Evening Batch Schedule</h3>
+</div>
+<span class="font-title-md text-title-md font-bold text-primary bg-white px-space-sm py-1 rounded shadow-xs border border-outline-variant/60">05:30 PM – 09:30 PM</span>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-start gap-space-md p-space-sm bg-[#FAF7F0] rounded-lg border border-outline-variant/40">
+<span class="font-label-md text-label-md font-bold text-primary w-28 shrink-0">05:30 – 06:30 PM</span>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-primary">Core Technical Module Lecture</p>
+<p class="font-body-sm text-body-sm text-secondary">Direct exam-oriented structural, geotechnical, and highway engineering lecture series.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-sm bg-[#FAF7F0] rounded-lg border border-outline-variant/40">
+<span class="font-label-md text-label-md font-bold text-primary w-28 shrink-0">06:35 – 07:35 PM</span>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-primary">High-Yield Technical Numericals &amp; Code Checks</p>
+<p class="font-body-sm text-body-sm text-secondary">Fast calculation methods, elimination tactics, and GSSSB/GPSC past test papers.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-sm bg-[#FAF7F0] rounded-lg border border-outline-variant/40">
+<span class="font-label-md text-label-md font-bold text-secondary w-28 shrink-0">07:35 – 07:50 PM</span>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-secondary">Evening Break</p>
+<p class="font-body-sm text-body-sm text-secondary">Informal discussion with on-duty ranker mentors and study desk refreshment.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-sm bg-[#FAF7F0] rounded-lg border border-outline-variant/40">
+<span class="font-label-md text-label-md font-bold text-primary w-28 shrink-0">07:50 – 08:45 PM</span>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-primary">Language &amp; General Knowledge Syllabus</p>
+<p class="font-body-sm text-body-sm text-secondary">Gujarati Grammar, English comprehension, and general administration topics.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-sm bg-[#FAF7F0] rounded-lg border border-outline-variant/40">
+<span class="font-label-md text-label-md font-bold text-bronze w-28 shrink-0">08:45 – 09:30 PM</span>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-primary">Rapid-Fire MCQ Test &amp; Doubts</p>
+<p class="font-body-sm text-body-sm text-secondary">End-of-day verification test. Library remains open post-class till 02:00 AM for night shifts.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Admission Form & Scholarship Test (GCTSE) Section -->
+<section class="w-full py-space-xl bg-[#FAF7F0] border-t border-outline-variant relative" id="scholarship-section">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Scholarship Details -->
+<div class="lg:col-span-5 space-y-space-md">
+<div class="inline-flex items-center gap-space-xs bg-accent-container text-on-accent-container border border-accent/40 px-space-sm py-1 rounded text-label-sm font-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">military_tech</span>
+            Annual Merit Evaluation 2025
+          </div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">
+            Gujarat Civil Talent Search Exam (GCTSE)
+          </h2>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+            We believe financial constraints should never derail exceptional civil engineering talent. Compete in our state-level screening exam and earn up to <span class="font-bold text-accent">100% tuition waiver</span> on all 2025–26 regular classroom and hybrid batches at Shubh Engineering Academy.
+          </p>
+<!-- Metric highlights -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-white border border-bronze/40 p-space-md rounded-xl shadow-xs">
+<p class="font-display-lg text-display-lg text-accent font-bold leading-none">100%</p>
+<p class="font-title-md text-title-md text-primary font-bold mt-1">Tuition Waiver</p>
+<p class="font-body-sm text-body-sm text-secondary">Top 15 Rankers in State GCTSE</p>
+</div>
+<div class="bg-white border border-outline-variant p-space-md rounded-xl shadow-xs">
+<p class="font-display-lg text-display-lg text-primary font-bold leading-none">50%</p>
+<p class="font-title-md text-title-md text-primary font-bold mt-1">Fee Scholarship</p>
+<p class="font-body-sm text-body-sm text-secondary">Next 50 Qualifying Aspirants</p>
+</div>
+</div>
+<!-- Syllabus breakdown for scholarship -->
+<div class="bg-white border border-outline-variant p-space-md rounded-xl shadow-xs space-y-space-xs">
+<p class="font-label-lg text-label-lg text-primary font-bold">GCTSE Exam Pattern &amp; Structure</p>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary pt-1">
+<span>Basic Civil Technical Core</span>
+<span class="font-bold text-primary">50 MCQs (50 Marks)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span>Engineering Mathematics &amp; Aptitude</span>
+<span class="font-bold text-primary">25 MCQs (25 Marks)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span>Gujarat General Knowledge &amp; Current Affairs</span>
+<span class="font-bold text-primary">25 MCQs (25 Marks)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-bronze font-bold pt-space-xs border-t border-outline-variant/60">
+<span>Duration: 90 Minutes (Negative marking: -0.25)</span>
+<span>Mode: Online / Offline</span>
+</div>
+</div>
+</div>
+<!-- Form Component -->
+<div class="lg:col-span-7 bg-white p-space-lg md:p-space-xl rounded-2xl border border-bronze/40 shadow-xl space-y-space-md" id="admission-form">
+<div>
+<span class="font-label-sm text-label-sm text-accent font-bold uppercase tracking-wider">Fast-Track Enrolment &amp; GCTSE Slot</span>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold mt-1">Reserve Your Seat &amp; Scholarship Token</h3>
+<p class="font-body-sm text-body-sm text-secondary">Our admissions committee will verify credentials and dispatch hall-ticket details via WhatsApp within 4 business hours.</p>
+</div>
+<form class="space-y-space-md" id="cadre-enrollment-form" onsubmit="event.preventDefault(); document.getElementById('enroll-feedback').classList.remove('hidden'); this.reset();">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-primary font-bold">Full Name (As per Degree/Diploma)*</label>
+<input class="w-full bg-[#FAF7F0] border border-outline-variant text-on-surface px-space-md py-2.5 rounded-lg text-body-md font-body-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary transition-all" placeholder="e.g., Hardik K. Patel" required="" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-primary font-bold">WhatsApp Contact Number*</label>
+<input class="w-full bg-[#FAF7F0] border border-outline-variant text-on-surface px-space-md py-2.5 rounded-lg text-body-md font-body-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary transition-all" pattern="[0-9]{10}" placeholder="10-digit mobile number" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-primary font-bold">Engineering Degree / Diploma College*</label>
+<input class="w-full bg-[#FAF7F0] border border-outline-variant text-on-surface px-space-md py-2.5 rounded-lg text-body-md font-body-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary transition-all" placeholder="e.g., LDCE Ahmedabad / BVM / VGEC" required="" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-primary font-bold">Passing Year / Current Semester*</label>
+<select class="w-full bg-[#FAF7F0] border border-outline-variant text-on-surface px-space-md py-2.5 rounded-lg text-body-md font-body-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary transition-all" required="">
+<option value="">Select Completion Status</option>
+<option value="2025-grad">Graduated (2025)</option>
+<option value="2024-grad">Graduated (2024)</option>
+<option value="2023-earlier">Graduated (2023 or earlier)</option>
+<option value="final-year">Final Year B.E. / B.Tech (Civil)</option>
+<option value="diploma-completed">Diploma Civil Engineer Completed</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-primary font-bold">Primary Target Examination*</label>
+<select class="w-full bg-[#FAF7F0] border border-outline-variant text-on-surface px-space-md py-2.5 rounded-lg text-body-md font-body-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary transition-all" required="">
+<option value="">Select Targeted Cadre</option>
+<option value="gpsc-1-2">Batch A: GPSC Class 1 &amp; 2 (AE/EE 10 Months)</option>
+<option value="gsssb-aae">Batch B: GSSSB AAE / Surveyor Fastrack</option>
+<option value="gpssb-panchayat">Batch C: GPSSB Panchayat JE (Weekend Track)</option>
+<option value="gpsc-mains">Batch D: GPSC Mains Evaluation Series</option>
+<option value="scholarship-only">Only GCTSE Scholarship Screening Test</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-primary font-bold">Preferred Center &amp; Mode*</label>
+<select class="w-full bg-[#FAF7F0] border border-outline-variant text-on-surface px-space-md py-2.5 rounded-lg text-body-md font-body-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary transition-all" required="">
+<option value="">Select Mode &amp; Campus</option>
+<option value="gandhinagar">Gandhinagar (Sector 11 Offline Classroom)</option>
+<option value="ahmedabad">Ahmedabad (Navrangpura Offline Classroom)</option>
+<option value="live-online">Live Interactive Online App Dual-Stream</option>
+</select>
+</div>
+</div>
+<div class="flex items-start gap-space-xs pt-1">
+<input class="mt-1 h-4 w-4 rounded accent-primary text-primary focus:ring-primary" id="terms-agree" required="" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-secondary" for="terms-agree">
+                I hereby declare all engineering graduation/diploma particulars are authentic and agree to sit for the GCTSE merit round conducted by Shubh Engineering Academy.
+              </label>
+</div>
+<button class="w-full bg-primary hover:bg-primary-container text-white py-3.5 rounded-lg font-label-lg text-label-lg font-bold transition-all shadow-md flex items-center justify-center gap-space-sm border border-bronze/40" type="submit">
+<span class="material-symbols-outlined text-lg text-accent">how_to_reg</span>
+<span>Submit Registration &amp; Generate Seat Number</span>
+</button>
+<!-- Feedback Notice -->
+<div class="hidden p-space-md bg-accent-container text-on-accent-container border border-accent/40 rounded-lg text-center space-y-1" id="enroll-feedback">
+<div class="flex items-center justify-center gap-space-xs font-bold font-title-md text-title-md">
+<span class="material-symbols-outlined text-accent">check_circle</span>
+<span>Provisional Registration Recorded!</span>
+</div>
+<p class="font-body-sm text-body-sm">
+                Your admission token has been generated. The Shubh Engineering Academy Gandhinagar office will WhatsApp your GCTSE syllabus kit within 4 hours.
+              </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Comparison Table -->
+<section class="w-full py-space-xl bg-background">
+<div class="max-w-7xl mx-auto px-margin space-y-space-lg">
+<div class="max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-accent font-bold">Side-by-Side Comparison</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">Programme Specification Matrix</h2>
+<p class="font-body-md text-body-md text-secondary mt-1">Review test counts, study materials, and access parameters across all current programs at Shubh Engineering Academy.</p>
+</div>
+<div class="overflow-x-auto shadow-sm rounded-xl border border-outline-variant">
+<table class="w-full text-left bg-white text-on-surface text-body-sm font-body-sm">
+<thead class="bg-primary text-white font-label-md text-label-md uppercase tracking-wider border-b border-bronze/40">
+<tr>
+<th class="py-space-md px-space-lg">Features &amp; Deliverables</th>
+<th class="py-space-md px-space-md">GPSC Foundation</th>
+<th class="py-space-md px-space-md">GSSSB AAE Fastrack</th>
+<th class="py-space-md px-space-md">GPSSB JE Weekend</th>
+<th class="py-space-md px-space-md">GPSC Mains Series</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/60">
+<tr class="hover:bg-[#FAF7F0] transition-colors">
+<td class="py-space-md px-space-lg font-bold text-primary">Target Exam Cadres</td>
+<td class="py-space-md px-space-md">Class 1 &amp; 2 (AE/EE)</td>
+<td class="py-space-md px-space-md">AAE / Surveyor (R&amp;B, GWSSB)</td>
+<td class="py-space-md px-space-md">Panchayat JE / Municipal</td>
+<td class="py-space-md px-space-md">GPSC Class 1 &amp; 2 Mains</td>
+</tr>
+<tr class="bg-[#FAF7F0] hover:bg-surface-container transition-colors">
+<td class="py-space-md px-space-lg font-bold text-primary">Classroom Duration</td>
+<td class="py-space-md px-space-md">10 Months (Daily 4 hrs)</td>
+<td class="py-space-md px-space-md">4 Months (Daily 4 hrs)</td>
+<td class="py-space-md px-space-md">6 Months (Sat-Sun)</td>
+<td class="py-space-md px-space-md">3 Months (Test Driven)</td>
+</tr>
+<tr class="hover:bg-[#FAF7F0] transition-colors">
+<td class="py-space-md px-space-lg font-bold text-primary">Total Mock Assessments</td>
+<td class="py-space-md px-space-md">150+ Full Tests</td>
+<td class="py-space-md px-space-md">80+ CBT &amp; OMR Tests</td>
+<td class="py-space-md px-space-md">45+ Weekend Tests</td>
+<td class="py-space-md px-space-md">12 Full Descriptive Mocks</td>
+</tr>
+<tr class="bg-[#FAF7F0] hover:bg-surface-container transition-colors">
+<td class="py-space-md px-space-lg font-bold text-primary">Study Material Kit</td>
+<td class="py-space-md px-space-md">14 Printed Handbooks</td>
+<td class="py-space-md px-space-md">6 Subject MCQ Digests</td>
+<td class="py-space-md px-space-md">Compact Memory Maps</td>
+<td class="py-space-md px-space-md">Mains Model Booklets</td>
+</tr>
+<tr class="hover:bg-[#FAF7F0] transition-colors">
+<td class="py-space-md px-space-lg font-bold text-primary">Gandhinagar 24/7 Library Pass</td>
+<td class="py-space-md px-space-md"><span class="text-accent font-bold">Included Free</span></td>
+<td class="py-space-md px-space-md">Add-on Option</td>
+<td class="py-space-md px-space-md">Weekend Hours Included</td>
+<td class="py-space-md px-space-md">Test Days Only</td>
+</tr>
+<tr class="bg-[#FAF7F0] hover:bg-surface-container transition-colors">
+<td class="py-space-md px-space-lg font-bold text-primary">Tuition Fee</td>
+<td class="py-space-md px-space-md font-bold text-primary">₹36,000</td>
+<td class="py-space-md px-space-md font-bold text-primary">₹18,500</td>
+<td class="py-space-md px-space-md font-bold text-primary">₹14,000</td>
+<td class="py-space-md px-space-md font-bold text-primary">₹9,500</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Location & Centers Contact Bar -->
+<section class="w-full py-space-xl bg-surface-container text-primary border-t border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<div class="bg-white p-space-lg rounded-xl border border-outline-variant shadow-sm space-y-space-sm">
+<div class="flex items-center gap-space-xs text-bronze font-bold">
+<span class="material-symbols-outlined text-accent">apartment</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Gandhinagar Head Center</span>
+</div>
+<p class="font-title-md text-title-md font-bold text-primary">Cadre Bhavan, Sector 11</p>
+<p class="font-body-sm text-body-sm text-secondary">Near GH-Road Circle, Gandhinagar - 382011. Direct walk-in academic counseling and library enrollment.</p>
+<p class="font-label-sm text-label-sm font-bold text-primary">Daily 07:00 AM – 10:00 PM</p>
+</div>
+<div class="bg-white p-space-lg rounded-xl border border-outline-variant shadow-sm space-y-space-sm">
+<div class="flex items-center gap-space-xs text-bronze font-bold">
+<span class="material-symbols-outlined text-accent">domain</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Ahmedabad Technical Wing</span>
+</div>
+<p class="font-title-md text-title-md font-bold text-primary">Navrangpura Complex</p>
+<p class="font-body-sm text-body-sm text-secondary">3rd Floor, Prerna Chambers, Opposite Municipal Market, CG Road, Ahmedabad - 380009.</p>
+<p class="font-label-sm text-label-sm font-bold text-primary">Daily 08:00 AM – 08:30 PM</p>
+</div>
+<div class="bg-primary text-white p-space-lg rounded-xl border border-bronze/40 shadow-md flex flex-col justify-between space-y-space-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs text-accent font-bold">
+<span class="material-symbols-outlined">support_agent</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Technical Cadre Desk</span>
+</div>
+<p class="font-headline-sm text-headline-sm font-bold">Need Guidance on Eligibility?</p>
+<p class="font-body-sm text-body-sm text-[#d8e1f0]">Speak directly to an Executive Engineer who cracked GPSC Class 1 to verify your syllabus and target plan.</p>
+</div>
+<a class="inline-flex items-center justify-center gap-space-xs bg-accent text-on-accent font-bold px-space-md py-2.5 rounded-lg font-label-lg text-label-lg hover:bg-bronze hover:text-white transition-all shadow-sm" href="tel:+917923200000">
+<span class="material-symbols-outlined text-sm">call</span>
+<span>+91 79 2320 0000</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Filter Logic -->
+<script>
+    (function() {
+      const filterAll = document.getElementById('filter-all');
+      const filterGpsc = document.getElementById('filter-gpsc');
+      const filterGsssb = document.getElementById('filter-gsssb');
+      const cards = document.querySelectorAll('.batch-card');
+
+      function setActiveButton(activeBtn) {
+        [filterAll, filterGpsc, filterGsssb].forEach(btn => {
+          if (btn === activeBtn) {
+            btn.className = 'px-space-md py-1.5 rounded-lg text-label-sm font-label-sm font-bold bg-primary text-white transition-all shadow-xs';
+          } else {
+            btn.className = 'px-space-md py-1.5 rounded-lg text-label-sm font-label-sm font-bold text-secondary hover:text-primary hover:bg-surface-container-high transition-all';
+          }
+        });
+      }
+
+      if (filterAll && filterGpsc && filterGsssb) {
+        filterAll.addEventListener('click', () => {
+          setActiveButton(filterAll);
+          cards.forEach(card => card.style.display = 'flex');
+        });
+
+        filterGpsc.addEventListener('click', () => {
+          setActiveButton(filterGpsc);
+          cards.forEach(card => {
+            if (card.classList.contains('gpsc')) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+
+        filterGsssb.addEventListener('click', () => {
+          setActiveButton(filterGsssb);
+          cards.forEach(card => {
+            if (card.classList.contains('gsssb')) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-primary text-white pt-space-xl pb-space-lg border-t border-[#3b4c6d]"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg pb-space-xl"><div class="lg:col-span-2 space-y-space-sm"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="Shubh Engineering Academy Logo" class="h-10 w-auto object-contain rounded bg-white p-1" src="https://lh3.googleusercontent.com/aida/AEtjO1Wau4Qotv1UKkd7aDu8wuRyAkM-8JJqfZiW_fQlFrPLuRnYwVmHIjM3nvcljdEdjBkpkXY4pwx1ol4Y2muDmc2PPUTw1JY0xU4Cg4KGA-WBZp2Ioxkfk07KH-wlAqrBZ8XZWM8uu9_WdPyVcTJNQCVOa36hHn6IkHx3xzA9oeP9kTBbu0Ef-3pRUMiickzghxzjtSezQ19DqKufyKm2UJcHGr7dpRzJewhafpDI_Blu8wv734IoaKj6u1Oj"/><span class="font-title-md text-title-md text-white font-bold tracking-tight">Shubh Engineering Academy</span></div><p class="font-body-sm text-body-sm text-[#d8e1f0] max-w-sm">Premier technical civil engineering academy specializing in GPSC Class 1 &amp; 2 Executive Engineer, GSSSB Additional Assistant Engineer (AAE), and GPSSB cadre recruitments across Gujarat state governance.</p><div class="pt-space-xs"><p class="font-label-sm text-label-sm text-accent font-bold uppercase mb-1">Accreditation &amp; Affiliation</p><p class="font-body-sm text-body-sm text-[#d8e1f0]">ISO 9001:2015 Technical Pedagogical Certified Coaching Establishment for State Engineering Competitive Services.</p></div></div><div class="space-y-space-sm"><h3 class="font-label-lg text-label-lg text-accent font-bold uppercase tracking-wider">State Syllabus</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-[#d8e1f0]"><li><a class="hover:text-accent transition-colors" data-path="targeted-exams" href="#">GPSC Class 1-2 Executive Engg</a></li><li><a class="hover:text-accent transition-colors" data-path="targeted-exams" href="#">GSSSB AAE Civil Syllabus</a></li><li><a class="hover:text-accent transition-colors" data-path="targeted-exams" href="#">GPSSB Additional Asst Engineer</a></li><li><a class="hover:text-accent transition-colors" data-path="targeted-exams" href="#">Gujarat Water Resources (GWSSB)</a></li><li><a class="hover:text-accent transition-colors" data-path="targeted-exams" href="#">Road &amp; Building Dept (R&amp;B) Module</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-label-lg text-label-lg text-accent font-bold uppercase tracking-wider">Aspirant Resources</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-[#d8e1f0]"><li><a class="hover:text-accent transition-colors" data-path="resources" href="#">Civil Engineering Formula Handbooks</a></li><li><a class="hover:text-accent transition-colors" data-path="resources" href="#">GSSSB Notification Alerts 2025</a></li><li><a class="hover:text-accent transition-colors" data-path="test-series-portal" href="#">OMR Pattern Test Series Portal</a></li><li><a class="hover:text-accent transition-colors" data-path="resources" href="#">GPSC Previous 10-Year Solved Papers</a></li><li><a class="hover:text-accent transition-colors" data-path="resources" href="#">Verified Model Answer Keys</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-label-lg text-label-lg text-accent font-bold uppercase tracking-wider">Head Office</h3><p class="font-body-sm text-body-sm text-[#d8e1f0] leading-relaxed">Cadre Bhavan, 4th Floor, Sector 11, Near GH-Road Circle, Gandhinagar - 382011, Gujarat</p><p class="font-body-sm text-body-sm text-[#d8e1f0]"><span class="font-bold text-white">Phone:</span> +91 79 2320 0000</p><p class="font-body-sm text-body-sm text-[#d8e1f0]"><span class="font-bold text-white">Email:</span> admissions@shubhengineering.in</p><div class="pt-space-xs"><span class="inline-block bg-white/10 text-accent font-label-sm text-label-sm px-space-sm py-1 rounded-lg border border-accent/30">Branch: Usmanpura, Ahmedabad</span></div></div></div><div class="pt-space-lg border-t border-[#3b4c6d] flex flex-col md:flex-row items-center justify-between text-body-sm font-body-sm text-[#d8e1f0]"><p>© 2025 Shubh Engineering Academy. All Rights Reserved. Dedicated to Gujarat Engineering Services.</p><div class="flex items-center gap-space-md mt-space-sm md:mt-0"><a class="hover:text-accent transition-colors" href="#">Right to Information (RTI)</a><a class="hover:text-accent transition-colors" href="#">Privacy Policy</a><a class="hover:text-accent transition-colors" href="#">Terms of Enrollment</a></div></div></div></footer></body></html>

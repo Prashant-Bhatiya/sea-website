@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary": "#2B3A55",
+          "primary-container": "#1E2A40",
+          "on-primary": "#FFFFFF",
+          "secondary": "#D4AB3F",
+          "secondary-container": "#F5E9C8",
+          "on-secondary": "#1E1C12",
+          "accent-bronze": "#B89E58",
+          "blue-slate": "#566277",
+          "background": "#F6F0DF",
+          "surface": "#FAF7F0",
+          "surface-container-lowest": "#FFFFFF",
+          "surface-container-low": "#FBF8F1",
+          "surface-container": "#F6F0DF",
+          "surface-container-high": "#EEE7D2",
+          "surface-container-highest": "#E4DCC4",
+          "on-surface": "#1E1C12",
+          "on-surface-variant": "#566277",
+          "outline": "#B89E58",
+          "outline-variant": "#D9CEB4",
+          "error": "#BA1A1A"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-xs": "0.25rem",
+          "margin": "2.5rem",
+          "gutter-mobile": "1rem",
+          "margin-mobile": "1.25rem",
+          "space-xl": "2.5rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "body": ["Plus Jakarta Sans", "sans-serif"],
+          "headline": ["Plus Jakarta Sans", "sans-serif"]
+        }
+      }
+    }
+  }
+</script></head><body class="bg-background font-body text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-[#FAF7F0]/95 backdrop-blur-xl border-b border-outline-variant shadow-sm"><div class="bg-primary text-on-primary py-space-xs px-margin"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between text-xs font-semibold"><div class="flex items-center gap-space-sm"><span class="bg-secondary text-[#1E1C12] font-bold px-2 py-0.5 rounded uppercase tracking-wide">Official Helpline</span><span class="text-surface-container-high">Call: +91 79 2320 0000 | Gandhinagar &amp; Ahmedabad Centers</span></div><div class="hidden md:flex items-center gap-space-md text-[#FAF7F0]"><span>GPSC Class 1 &amp; 2 Special Batches Announced</span><span class="text-accent-bronze">|</span><span class="text-secondary font-bold">Direct AAE Recruitment 2025</span></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-3"><img alt="Shubh Engineering Academy Logo" class="h-10 w-auto object-contain rounded" src="https://lh3.googleusercontent.com/aida/AEtjO1Wau4Qotv1UKkd7aDu8wuRyAkM-8JJqfZiW_fQlFrPLuRnYwVmHIjM3nvcljdEdjBkpkXY4pwx1ol4Y2muDmc2PPUTw1JY0xU4Cg4KGA-WBZp2Ioxkfk07KH-wlAqrBZ8XZWM8uu9_WdPyVcTJNQCVOa36hHn6IkHx3xzA9oeP9kTBbu0Ef-3pRUMiickzghxzjtSezQ19DqKufyKm2UJcHGr7dpRzJewhafpDI_Blu8wv734IoaKj6u1Oj"/><div class="flex flex-col"><span class="text-lg text-primary font-extrabold tracking-tight uppercase leading-none">Shubh Engineering Academy</span><span class="text-[11px] text-blue-slate font-semibold uppercase tracking-wider mt-0.5">GPSC • GSSSB • GPSSB Civil Technical Wing</span></div></div><nav class="hidden xl:flex items-center gap-space-sm"><a aria-current="page" class="transition-colors bg-secondary text-on-secondary font-bold text-sm rounded-lg px-3 py-1.5 shadow-sm" data-path="targeted-exams" href="#">Targeted Exams</a><a class="text-sm font-semibold text-blue-slate hover:text-primary transition-colors px-3 py-1.5" data-path="batches-and-admissions" href="#">Batches &amp; Admissions</a><a class="text-sm font-semibold text-blue-slate hover:text-primary transition-colors px-3 py-1.5" data-path="excellence-and-results" href="#">Excellence &amp; Results</a><a class="text-sm font-semibold text-blue-slate hover:text-primary transition-colors px-3 py-1.5" data-path="alumni-network" href="#">Alumni Network</a><a class="text-sm font-semibold text-blue-slate hover:text-primary transition-colors px-3 py-1.5" data-path="contact-and-centers" href="#">Contact &amp; Centers</a></nav><div class="flex items-center gap-space-md"><a class="bg-primary text-on-primary px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary-container transition-all shadow-sm border border-accent-bronze/30" data-path="student-portal" href="#">Student Portal</a><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrq1sbV9oXsvteuhuxtj0zsHAcElTf6l70H_Bv12DV82aFnVS1wldB2nDqXAaUsw3cXSx415XlXs1TCW572jZxfU7paLKsSEXRaGLBb3Yike2NFP7L-LPp6yYKgHW6ttBpItE8feysGe4_BMzz2AGeRgKxzwF7eUaMMVkbDk65_mIV01EV1UMK0iu-y6DWrLEznUWil_M8V-_mk0r31NFTb5lPLp07jSxPHhVlBZMwZZDdw3YV_IuVqg"/><div class="hidden lg:flex flex-col"><span class="text-xs font-bold text-primary leading-tight">Director Desk</span><span class="text-[11px] text-blue-slate leading-tight">GPSC Mentorship</span></div></div></div></div></header><main class="w-full pt-28 bg-background"><div class="flex flex-col w-full">
+<!-- Top Live Notification Blueprint Ticker -->
+<section class="w-full bg-primary-container text-on-primary py-space-xs px-margin border-b border-accent-bronze/20">
+<div class="max-w-7xl mx-auto flex items-center justify-between text-xs font-semibold">
+<div class="flex items-center gap-space-sm overflow-hidden whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 bg-secondary text-on-secondary px-2 py-0.5 rounded uppercase tracking-wider font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+          Live Cadre Dispatch
+        </span>
+<div class="flex items-center gap-space-md text-[#FAF7F0] font-mono text-xs">
+<span><strong>GPSC Class 1 &amp; 2:</strong> Advt No. 45/2025-26 (210 Vacancies - R&amp;B, Narmada &amp; GWSSB) Prelims on August 10, 2025</span>
+<span class="text-secondary font-bold">◆</span>
+<span><strong>GSSSB CBRT:</strong> AAE Civil (Advt 212) Final Key Published &amp; DV Schedule Issued</span>
+<span class="text-secondary font-bold">◆</span>
+<span><strong>GPSSB Panchayat Cadre:</strong> Junior Engineer 425 Posts Requisition Sanctioned by Dept.</span>
+</div>
+</div>
+<a class="hidden md:inline-flex items-center gap-1 text-secondary hover:underline font-bold shrink-0" href="#syllabus-downloads">
+<span class="material-symbols-outlined text-[16px]">sim_card_download</span>
+        Download 2025 Calendars
+      </a>
+</div>
+</section>
+<!-- Editorial Hero Section with Architectural Grid Aesthetics -->
+<section class="relative w-full bg-[#FAF7F0] pt-space-xl pb-space-xl overflow-hidden border-b border-outline-variant/60">
+<!-- Subtle Blueprint Vector Geometry in Background -->
+<div class="absolute inset-0 pointer-events-none opacity-15">
+<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="48" id="cad-grid" patternunits="userSpaceOnUse" width="48">
+<path class="text-accent-bronze" d="M 48 0 L 0 0 0 48" fill="none" stroke="currentColor" stroke-width="0.75"></path>
+<circle class="text-primary" cx="24" cy="24" fill="currentColor" r="1.5"></circle>
+</pattern>
+</defs>
+<rect fill="url(#cad-grid)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<div class="max-w-7xl mx-auto px-margin relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Hero Text Block -->
+<div class="lg:col-span-7 space-y-space-md">
+<div class="inline-flex items-center gap-space-xs bg-surface-container-high text-primary font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider border border-accent-bronze/40">
+<span class="material-symbols-outlined text-[15px] text-accent-bronze">architecture</span>
+            State Engineering Cadre Directives • Sachivalaya Approved
+          </div>
+<h1 class="text-4xl lg:text-5xl text-primary tracking-tight font-extrabold leading-tight">
+            Gateway to Gujarat Engineering Services &amp; Cadres
+          </h1>
+<p class="text-base lg:text-lg text-blue-slate max-w-2xl leading-relaxed">
+            Precision tactical coaching for Gujarat's most elite civil administrative appointments. We bridge structural analysis, fluid mechanics, soil dynamics, and state development codes directly with GPSC, GSSSB, and GPSSB marking schemes.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="bg-primary text-on-primary px-space-lg py-3 rounded-lg text-sm font-bold hover:bg-primary-container transition-all shadow-md inline-flex items-center gap-space-xs border border-accent-bronze/40" href="#exam-cards">
+<span>Explore Targeted Cadres</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">south</span>
+</a>
+<a class="bg-surface-container-lowest text-primary px-space-lg py-3 rounded-lg text-sm font-bold hover:bg-surface-container transition-all inline-flex items-center gap-space-xs border border-outline-variant shadow-sm" href="#matrix-roadmap">
+<span class="material-symbols-outlined text-[18px] text-accent-bronze">table_chart</span>
+<span>Weightage Matrix</span>
+</a>
+<div class="flex items-center gap-space-xs text-xs font-semibold text-blue-slate pl-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>2024-25 Syllabus Re-mapped</span>
+</div>
+</div>
+</div>
+<!-- Technical Blueprint Metric Showcase Visual -->
+<div class="lg:col-span-5">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-lg border border-outline-variant space-y-space-md relative">
+<div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/50">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="text-xs uppercase font-bold text-primary">State Merit Ratio 2024</span>
+</div>
+<span class="font-mono text-xs text-blue-slate">CADRE-ACC/REF-09</span>
+</div>
+<!-- Graphic Metric: Donut Ring & Cadre stats -->
+<div class="grid grid-cols-2 gap-space-md items-center bg-background p-space-md rounded-lg border border-outline-variant/60">
+<div class="relative flex items-center justify-center">
+<svg class="w-28 h-28 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.8"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="68, 100" stroke-linecap="round" stroke-width="3.8"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="24, 100" stroke-dashoffset="-68" stroke-linecap="round" stroke-width="3.8"></path>
+</svg>
+<div class="absolute text-center">
+<span class="text-2xl font-extrabold text-primary block leading-none">68%</span>
+<span class="text-[10px] text-blue-slate font-bold uppercase">Cadre Merit</span>
+</div>
+</div>
+<div class="space-y-space-xs text-xs">
+<div class="flex items-center justify-between">
+<span class="text-blue-slate flex items-center gap-1 font-medium"><span class="w-2 h-2 rounded bg-primary"></span> GPSC EE/AE</span>
+<span class="font-bold text-primary font-mono">148 Ranks</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-blue-slate flex items-center gap-1 font-medium"><span class="w-2 h-2 rounded bg-secondary"></span> GSSSB AAE</span>
+<span class="font-bold text-primary font-mono">312 Seats</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-blue-slate flex items-center gap-1 font-medium"><span class="w-2 h-2 rounded bg-accent-bronze"></span> GPSSB JE</span>
+<span class="font-bold text-primary font-mono">194 Seats</span>
+</div>
+</div>
+</div>
+<!-- Authority Cadre Banner -->
+<div class="bg-primary text-on-primary p-space-sm rounded-lg flex items-center justify-between border border-accent-bronze/30">
+<div>
+<p class="text-xs text-secondary uppercase font-bold">State Public Works Authority</p>
+<p class="text-xs text-[#FAF7F0] mt-0.5">Road &amp; Building (R&amp;B) • Narmada WR • GWSSB</p>
+</div>
+<span class="material-symbols-outlined text-[28px] text-secondary">account_balance</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Examination Overview Cards Section -->
+<section class="w-full py-space-xl bg-background" id="exam-cards">
+<div class="max-w-7xl mx-auto px-margin space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm pb-space-sm">
+<div>
+<span class="text-xs text-secondary uppercase font-bold tracking-widest block">Cadre Specialization</span>
+<h2 class="text-3xl font-extrabold text-primary tracking-tight mt-1">Gujarat Technical Wings Directory</h2>
+</div>
+<p class="text-sm text-blue-slate max-w-md">
+          Structured pedagogical paths aligned with Gujarat Civil Service Examination Rules and Gujarat Subordinate Services Selection Board mandates.
+        </p>
+</div>
+<!-- 3 Primary Cadre Cards Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- CARD 1: GPSC Class 1 & 2 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative overflow-hidden group border border-outline-variant">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-primary"></div>
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="bg-surface-container text-primary text-xs font-bold px-space-sm py-1 rounded uppercase tracking-wider border border-outline-variant/60">
+                Class 1 &amp; Class 2 Gazetted
+              </span>
+<span class="font-mono text-xs text-secondary font-bold">GES Cadre</span>
+</div>
+<div class="relative h-44 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-angle architectural elevation rendering of Gujarat Narmada canal aqueduct engineering marvel, blueprint overlays, technical civil drafting details, daylight blue and terracotta ambient tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGdnBvOYhg8t3wWf0aaqigUP15gikmNgLmW5Yu2-1h_tkYldtNsh-8i7R2ToX11uhmMmryKLp0A7jqNG1T-kErNMJXPv8q5y6KTPBVM3R1WX7hapX7hkC9O31BtIwbaHmJUb3_ug6ENjbLJ4gWsj1xTEGN4CIOqrFN0q9y9MACrvnqebH69aeEQXzQW7k9QPiBfYNDfxr-mxFvkEQcPaSAkKIdPsjd6rYY8RVUEVo9lGS0zPXPApY1GA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-transparent to-transparent flex items-end p-space-sm">
+<span class="text-on-primary text-base font-bold">R&amp;B, Narmada, GWSSB Departments</span>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary">GPSC Executive &amp; Assistant Engineer</h3>
+<p class="text-xs text-blue-slate mt-1 leading-relaxed">
+                Apex technical bureaucracy commanding state highway infrastructure, multi-reservoir canals, dam monitoring, and mega-urban water networks.
+              </p>
+</div>
+<!-- Exam Structure Specs -->
+<div class="bg-surface-container-low p-space-md rounded-lg space-y-space-xs text-xs border border-outline-variant/40">
+<div class="flex items-center justify-between">
+<span class="text-blue-slate font-medium">Prelims Exam</span>
+<span class="font-bold text-primary">300 Marks (GS + Core Civil)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-blue-slate font-medium">Mains Written</span>
+<span class="font-bold text-primary">5 Descriptive Technical Papers</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-blue-slate font-medium">Personality Interview</span>
+<span class="font-bold text-primary">100 Marks (Board Viva)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-blue-slate font-medium">Eligibility Criteria</span>
+<span class="font-bold text-accent-bronze">B.E. / B.Tech Civil</span>
+</div>
+</div>
+<!-- Cutoff & Calendar Metrics -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs text-center">
+<div class="bg-surface-container p-space-sm rounded-lg border border-outline-variant/50">
+<span class="text-[11px] text-blue-slate block uppercase font-bold">Recent Cutoff (Gen)</span>
+<span class="text-lg font-bold text-primary font-mono">182.50</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg border border-outline-variant/50">
+<span class="text-[11px] text-blue-slate block uppercase font-bold">Target Calendar</span>
+<span class="text-lg font-bold text-secondary font-mono">Advt 45/2025</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/40 flex items-center justify-between gap-space-sm">
+<a class="w-full bg-primary text-on-primary py-2.5 rounded-lg text-sm text-center hover:bg-primary-container transition-colors font-bold shadow-sm" href="#syllabus-downloads">
+              GPSC Detailed Syllabus
+            </a>
+</div>
+</div>
+<!-- CARD 2: GSSSB AAE -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative overflow-hidden group border border-outline-variant">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-secondary"></div>
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="bg-secondary/20 text-[#1E1C12] text-xs font-bold px-space-sm py-1 rounded uppercase tracking-wider border border-secondary/40">
+                Subordinate Executive
+              </span>
+<span class="font-mono text-xs text-secondary font-bold">CBRT Mode</span>
+</div>
+<div class="relative h-44 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Civil engineering surveyor using electronic total station on concrete highway bridge construction site in Gandhinagar, precision measuring instruments, clean daylight navy and amber tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHdoHJYiFyZqMh0DKKY2OksNC0z3GIN4aFzeBdIdwKzjOil1CKUmvUWUSaUHtKaCebEEQYYn6M3Fo6f3dzhoDwAw4wesuzyqIPkSNADBYvJ_LhfPYjpVrCLZDavWl8i-wwSVF_F8Ewl3XkOHUn6A1EOkQ_cqOd4T3RVWfOJXbVXsyOhPoKjoQtpoxSCQ7NcWZ_2YKrr9jmzkHpOTA4WZ0KsX-J3sO0cOWPXhShVxiT0No-PpiiFfHoKw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-transparent to-transparent flex items-end p-space-sm">
+<span class="text-on-primary text-base font-bold">AAE Civil &amp; Town Planning Assistant</span>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary">GSSSB Additional Assistant Engineer</h3>
+<p class="text-xs text-blue-slate mt-1 leading-relaxed">
+                Subordinate technical executioners responsible for site inspections, bill verification, quality laboratory testing, and field tender supervision.
+              </p>
+</div>
+<!-- Exam Structure Specs -->
+<div class="bg-surface-container-low p-space-md rounded-lg space-y-space-xs text-xs border border-outline-variant/40">
+<div class="flex items-center justify-between">
+<span class="text-blue-slate font-medium">Examination Format</span>
+<span class="font-bold text-primary">CBRT (Computer Based Test)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-blue-slate font-medium">Technical Weightage</span>
+<span class="font-bold text-primary">150 Marks (SOM, RCC, Survey)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-blue-slate font-medium">Gujarati &amp; GS</span>
+<span class="font-bold text-primary">60 Marks (Lang + Current)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-blue-slate font-medium">Eligibility Criteria</span>
+<span class="font-bold text-accent-bronze">Diploma &amp; Degree Civil</span>
+</div>
+</div>
+<!-- Cutoff & Calendar Metrics -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs text-center">
+<div class="bg-surface-container p-space-sm rounded-lg border border-outline-variant/50">
+<span class="text-[11px] text-blue-slate block uppercase font-bold">Recent Cutoff (Gen)</span>
+<span class="text-lg font-bold text-primary font-mono">134.25</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg border border-outline-variant/50">
+<span class="text-[11px] text-blue-slate block uppercase font-bold">Total Expected</span>
+<span class="text-lg font-bold text-secondary font-mono">580+ Seats</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/40 flex items-center justify-between gap-space-sm">
+<a class="w-full bg-secondary text-on-secondary py-2.5 rounded-lg text-sm text-center hover:bg-secondary/90 transition-colors font-bold shadow-sm" href="#syllabus-downloads">
+              GSSSB AAE Exam Pattern
+            </a>
+</div>
+</div>
+<!-- CARD 3: GPSSB Junior Engineer -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative overflow-hidden group border border-outline-variant">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-accent-bronze"></div>
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="bg-surface-container text-primary text-xs font-bold px-space-sm py-1 rounded uppercase tracking-wider border border-outline-variant/60">
+                Panchayat Cadre
+              </span>
+<span class="font-mono text-xs text-secondary font-bold">OMR Based</span>
+</div>
+<div class="relative h-44 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Technical drawing blueprint of rural village water supply network and checkdam in Saurashtra Gujarat, technical schematics, precise lines, slate blue and orange highlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmdM0LCI96rYUUE7mna-7OBio3yvDGq1KD3knCpH4dYdEYsUPEBXIcD2Viiqea-6wuH8mIFSVgiNaya0vyhRmKsO8tsQ_KU6CyDk2s4Z98ZuQvTCOyuMGgfk3eC6jeGTJw6mCVu3pLHbMLwM974lfdDFLd7Xj_V_4angNv715BAkLTXgQlXovRHoBjtckpo_pX-l7eYG8n63NWUxJ8Y09ykPvSk5rh9w92B9l6ff5B12K4JHHKV8X2FA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-transparent to-transparent flex items-end p-space-sm">
+<span class="text-on-primary text-base font-bold">District Panchayat Engineering Wing</span>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary">GPSSB Junior Engineer (Civil)</h3>
+<p class="text-xs text-blue-slate mt-1 leading-relaxed">
+                Spearheading block and taluka-level infrastructure, rural road connectivity (MMGSY), minor checkdams, and panchayat bhavan construction.
+              </p>
+</div>
+<!-- Exam Structure Specs -->
+<div class="bg-surface-container-low p-space-md rounded-lg space-y-space-xs text-xs border border-outline-variant/40">
+<div class="flex items-center justify-between">
+<span class="text-blue-slate font-medium">Technical Section</span>
+<span class="font-bold text-primary">100 Marks (Civil Diploma Core)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-blue-slate font-medium">Gujarati Grammar</span>
+<span class="font-bold text-primary">35 Marks (Vyakaran &amp; Sahitya)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-blue-slate font-medium">General Aptitude</span>
+<span class="font-bold text-primary">15 Marks (Reasoning &amp; Maths)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-blue-slate font-medium">Post Allocation</span>
+<span class="font-bold text-accent-bronze">33 District Panchayats</span>
+</div>
+</div>
+<!-- Cutoff & Calendar Metrics -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs text-center">
+<div class="bg-surface-container p-space-sm rounded-lg border border-outline-variant/50">
+<span class="text-[11px] text-blue-slate block uppercase font-bold">Recent Cutoff (Gen)</span>
+<span class="text-lg font-bold text-primary font-mono">109.80</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg border border-outline-variant/50">
+<span class="text-[11px] text-blue-slate block uppercase font-bold">Negative Marking</span>
+<span class="text-lg font-bold text-error font-mono">-0.33 Mark</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/40 flex items-center justify-between gap-space-sm">
+<a class="w-full bg-primary text-on-primary py-2.5 rounded-lg text-sm text-center hover:bg-primary-container transition-colors font-bold shadow-sm" href="#syllabus-downloads">
+              GPSSB JE Syllabus Packet
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Syllabus Comparison & Weightage Roadmap Matrix -->
+<section class="w-full py-space-xl bg-[#FAF7F0] border-y border-outline-variant/60" id="matrix-roadmap">
+<div class="max-w-7xl mx-auto px-margin space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="text-xs text-secondary uppercase font-bold tracking-widest block">Structural Breakdown</span>
+<h2 class="text-3xl font-extrabold text-primary tracking-tight mt-1">Syllabus Comparative Weightage Matrix</h2>
+</div>
+<div class="inline-flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded-lg text-on-surface text-xs font-bold border border-outline-variant/60">
+<span class="material-symbols-outlined text-[16px] text-accent-bronze">tune</span>
+<span>Based on 2018–2024 Exam Frequency Analysis (12 Question Papers)</span>
+</div>
+</div>
+<!-- Comparative Engineering Table -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md overflow-hidden border border-outline-variant">
+<div class="overflow-x-auto">
+<table class="w-full text-left text-xs">
+<thead class="bg-primary text-on-primary text-xs uppercase tracking-wider font-bold">
+<tr>
+<th class="py-space-md px-space-lg">Technical Civil Discipline</th>
+<th class="py-space-md px-space-md text-center">GPSC Class 1 &amp; 2 (Prelims/Mains)</th>
+<th class="py-space-md px-space-md text-center">GSSSB AAE Civil (150M)</th>
+<th class="py-space-md px-space-md text-center">GPSSB JE (100M)</th>
+<th class="py-space-md px-space-md text-center">Priority Cadre Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/30">
+<tr class="hover:bg-surface-container/60 transition-colors bg-surface-container-lowest">
+<td class="py-space-md px-space-lg font-bold text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent-bronze text-[18px]">straighten</span>
+<span>Strength of Materials &amp; Structural Analysis</span>
+</div>
+<span class="text-[11px] text-blue-slate block pl-6 font-normal">SFD/BMD, Deflections, Trusses, Matrix Methods</span>
+</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">18% - 22% (40-50M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">14% (20-22M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">10% (10M)</td>
+<td class="py-space-md px-space-md text-center">
+<span class="bg-secondary text-on-secondary px-2 py-0.5 rounded text-[11px] uppercase font-bold">Ultra Critical</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-[#FAF7F0]">
+<td class="py-space-md px-space-lg font-bold text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent-bronze text-[18px]">foundation</span>
+<span>Soil Mechanics &amp; Geotechnical Engineering</span>
+</div>
+<span class="text-[11px] text-blue-slate block pl-6 font-normal">Bearing Capacity, Consolidation, Shear Strength, Deep Foundations</span>
+</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">16% - 18% (35-40M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">12% (18-20M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">12% (12M)</td>
+<td class="py-space-md px-space-md text-center">
+<span class="bg-secondary text-on-secondary px-2 py-0.5 rounded text-[11px] uppercase font-bold">Ultra Critical</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-surface-container-lowest">
+<td class="py-space-md px-space-lg font-bold text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent-bronze text-[18px]">water</span>
+<span>Fluid Mechanics &amp; Water Resource Engineering</span>
+</div>
+<span class="text-[11px] text-blue-slate block pl-6 font-normal">Canal Design, Narmada Hydrology, Open Channel Flow, Ogee Spillways</span>
+</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">15% - 17% (35M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">16% (24M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">15% (15M)</td>
+<td class="py-space-md px-space-md text-center">
+<span class="bg-primary text-on-primary px-2 py-0.5 rounded text-[11px] uppercase font-bold">Gujarat Core</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-[#FAF7F0]">
+<td class="py-space-md px-space-lg font-bold text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent-bronze text-[18px]">domain</span>
+<span>RCC, Prestressed Concrete &amp; Steel Structures</span>
+</div>
+<span class="text-[11px] text-blue-slate block pl-6 font-normal">IS 456-2000, IS 800-2007, Limit State, Plate Girders, Columns</span>
+</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">16% - 18% (38M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">15% (22-25M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">14% (14M)</td>
+<td class="py-space-md px-space-md text-center">
+<span class="bg-secondary text-on-secondary px-2 py-0.5 rounded text-[11px] uppercase font-bold">Ultra Critical</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-surface-container-lowest">
+<td class="py-space-md px-space-lg font-bold text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent-bronze text-[18px]">share_location</span>
+<span>Surveying, GPS, GIS &amp; Levelling</span>
+</div>
+<span class="text-[11px] text-blue-slate block pl-6 font-normal">Compass, Theodolite, Tacheometry, Contouring, Total Station</span>
+</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">6% - 8% (15M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">15% (22M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">18% (18M)</td>
+<td class="py-space-md px-space-md text-center">
+<span class="bg-surface-container-highest text-primary px-2 py-0.5 rounded text-[11px] uppercase font-bold border border-outline-variant">High GSSSB/GPSSB</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-[#FAF7F0]">
+<td class="py-space-md px-space-lg font-bold text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent-bronze text-[18px]">calculate</span>
+<span>Estimation, Costing, Valuation &amp; Specifications</span>
+</div>
+<span class="text-[11px] text-blue-slate block pl-6 font-normal">Gujarat SOR rates, Earthwork calculations, Tender formats, Rate analysis</span>
+</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">5% - 7% (12M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">14% (20M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">16% (16M)</td>
+<td class="py-space-md px-space-md text-center">
+<span class="bg-surface-container-highest text-primary px-2 py-0.5 rounded text-[11px] uppercase font-bold border border-outline-variant">High Field Utility</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-surface-container-lowest">
+<td class="py-space-md px-space-lg font-bold text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent-bronze text-[18px]">alt_route</span>
+<span>Highway, Railway &amp; Airport Engineering</span>
+</div>
+<span class="text-[11px] text-blue-slate block pl-6 font-normal">IRC Standards, Geometric Design, Pavement Analysis, California Bearing</span>
+</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">10% - 12% (25M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">8% (12M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">8% (8M)</td>
+<td class="py-space-md px-space-md text-center">
+<span class="bg-surface-container text-primary px-2 py-0.5 rounded text-[11px] uppercase font-bold border border-outline-variant/60">Medium</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-[#FAF7F0]">
+<td class="py-space-md px-space-lg font-bold text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent-bronze text-[18px]">inventory_2</span>
+<span>Building Materials &amp; Construction Technology</span>
+</div>
+<span class="text-[11px] text-blue-slate block pl-6 font-normal">Cement tests, Fly ash concrete, Bricks, Timber, Gujarat Geo-polymers</span>
+</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">6% - 8% (15M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">10% (15M)</td>
+<td class="py-space-md px-space-md text-center font-mono font-bold text-primary">12% (12M)</td>
+<td class="py-space-md px-space-md text-center">
+<span class="bg-surface-container text-primary px-2 py-0.5 rounded text-[11px] uppercase font-bold border border-outline-variant/60">Standard</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<!-- Downloadable Free Syllabus PDFs & Previous Year Papers (PYQ 2017-2024) -->
+<section class="w-full py-space-xl bg-background" id="syllabus-downloads">
+<div class="max-w-7xl mx-auto px-margin space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="text-xs text-secondary uppercase font-bold tracking-widest block">Aspirant Repository</span>
+<h2 class="text-3xl font-extrabold text-primary tracking-tight mt-1">Official Syllabi &amp; 10-Year Solved PYQs</h2>
+</div>
+<p class="text-sm text-blue-slate max-w-md">
+          Direct verified PDF archives including provisional and final answer keys released by Gujarat Public Service Commission &amp; Selection Boards.
+        </p>
+</div>
+<!-- Filterable / Category Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- ITEM 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex items-start gap-space-sm justify-between border border-outline-variant/60">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[24px]">picture_as_pdf</span>
+</div>
+<div>
+<span class="text-[11px] bg-surface-container text-primary px-1.5 py-0.5 rounded font-bold uppercase border border-outline-variant/50">GPSC Official</span>
+<h4 class="text-sm font-bold text-primary mt-1">Class 1 &amp; 2 Full Syllabus PDF</h4>
+<p class="text-xs text-blue-slate">Includes Prelims 300M + Mains 5 Papers technical curriculum breakdown.</p>
+<span class="text-[11px] font-mono text-blue-slate mt-1 block">PDF • 4.2 MB • Updated 2025</span>
+</div>
+</div>
+<button class="shrink-0 w-9 h-9 bg-surface-container hover:bg-primary hover:text-on-primary text-primary rounded-lg flex items-center justify-center transition-colors shadow-sm" onclick="triggerDownload('GPSC-Class-1-2-Official-Syllabus.pdf')" title="Download Syllabus">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+<!-- ITEM 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex items-start gap-space-sm justify-between border border-outline-variant/60">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[24px]">picture_as_pdf</span>
+</div>
+<div>
+<span class="text-[11px] bg-secondary/20 text-[#1E1C12] px-1.5 py-0.5 rounded font-bold uppercase border border-secondary/40">GSSSB Official</span>
+<h4 class="text-sm font-bold text-primary mt-1">GSSSB AAE Civil Syllabus</h4>
+<p class="text-xs text-blue-slate">Revised CBRT exam schema, Gujarati language syllabus and civil topics.</p>
+<span class="text-[11px] font-mono text-blue-slate mt-1 block">PDF • 2.8 MB • Gazette 2024</span>
+</div>
+</div>
+<button class="shrink-0 w-9 h-9 bg-surface-container hover:bg-secondary hover:text-on-secondary text-primary rounded-lg flex items-center justify-center transition-colors shadow-sm" onclick="triggerDownload('GSSSB-AAE-Civil-Syllabus.pdf')" title="Download Syllabus">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+<!-- ITEM 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex items-start gap-space-sm justify-between border border-outline-variant/60">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[24px]">picture_as_pdf</span>
+</div>
+<div>
+<span class="text-[11px] bg-surface-container text-primary px-1.5 py-0.5 rounded font-bold uppercase border border-outline-variant/50">GPSSB Panchayat</span>
+<h4 class="text-sm font-bold text-primary mt-1">GPSSB JE Civil Pattern &amp; Code</h4>
+<p class="text-xs text-blue-slate">100M Technical + 50M General section rubric with negative mark rules.</p>
+<span class="text-[11px] font-mono text-blue-slate mt-1 block">PDF • 1.9 MB • Revised</span>
+</div>
+</div>
+<button class="shrink-0 w-9 h-9 bg-surface-container hover:bg-primary hover:text-on-primary text-primary rounded-lg flex items-center justify-center transition-colors shadow-sm" onclick="triggerDownload('GPSSB-JE-Syllabus-Scheme.pdf')" title="Download Syllabus">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+<!-- ITEM 4: PYQ Bundle GPSC -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex items-start gap-space-sm justify-between border border-outline-variant/60">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 text-accent-bronze">
+<span class="material-symbols-outlined text-[24px]">folder_zip</span>
+</div>
+<div>
+<span class="text-[11px] bg-surface-container text-primary px-1.5 py-0.5 rounded font-bold uppercase border border-outline-variant/50">Solved PYQ Paper</span>
+<h4 class="text-sm font-bold text-primary mt-1">GPSC AE/EE Papers (2018-2023)</h4>
+<p class="text-xs text-blue-slate">Previous 6 sessions solved with detailed state engineering calculations.</p>
+<span class="text-[11px] font-mono text-blue-slate mt-1 block">ZIP / PDF • 48 MB • 1,200 MCQs</span>
+</div>
+</div>
+<button class="shrink-0 w-9 h-9 bg-surface-container hover:bg-primary hover:text-on-primary text-primary rounded-lg flex items-center justify-center transition-colors shadow-sm" onclick="triggerDownload('GPSC-AE-EE-Solved-PYQ-2018-2023.zip')" title="Download PYQs">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+<!-- ITEM 5: GSSSB PYQ -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex items-start gap-space-sm justify-between border border-outline-variant/60">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 text-accent-bronze">
+<span class="material-symbols-outlined text-[24px]">folder_zip</span>
+</div>
+<div>
+<span class="text-[11px] bg-secondary/20 text-[#1E1C12] px-1.5 py-0.5 rounded font-bold uppercase border border-secondary/40">Solved PYQ Paper</span>
+<h4 class="text-sm font-bold text-primary mt-1">GSSSB AAE Civil 2017-2024 Papers</h4>
+<p class="text-xs text-blue-slate">Includes all shift CBRT question papers with official provisional vs final keys.</p>
+<span class="text-[11px] font-mono text-blue-slate mt-1 block">PDF • 32 MB • 8 Sets</span>
+</div>
+</div>
+<button class="shrink-0 w-9 h-9 bg-surface-container hover:bg-secondary hover:text-on-secondary text-primary rounded-lg flex items-center justify-center transition-colors shadow-sm" onclick="triggerDownload('GSSSB-AAE-Civil-PYQ-Complete.zip')" title="Download PYQs">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+<!-- ITEM 6: Formula Handbook -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex items-start gap-space-sm justify-between border border-outline-variant/60">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+</div>
+<div>
+<span class="text-[11px] bg-secondary/20 text-[#1E1C12] px-1.5 py-0.5 rounded font-bold uppercase border border-secondary/40">Academy Special</span>
+<h4 class="text-sm font-bold text-primary mt-1">Gujarat Civil Formula Pocketbook</h4>
+<p class="text-xs text-blue-slate">Over 650+ condensed IS code formulas, soil coefficients, and hydraulic tables.</p>
+<span class="text-[11px] font-mono text-blue-slate mt-1 block">PDF • 14 MB • High Yield</span>
+</div>
+</div>
+<button class="shrink-0 w-9 h-9 bg-surface-container hover:bg-primary hover:text-on-primary text-primary rounded-lg flex items-center justify-center transition-colors shadow-sm" onclick="triggerDownload('Gujarat-Civil-Engineering-Formula-Handbook.pdf')" title="Download Pocketbook">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+<!-- Live Download Confirmation Toast (Interactive) -->
+<div class="hidden bg-primary text-on-primary p-space-md rounded-lg shadow-xl flex items-center justify-between transition-all border border-accent-bronze/40" id="download-toast">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">task_alt</span>
+<div>
+<span class="text-sm font-bold block" id="download-title">Download Initiated</span>
+<span class="text-xs text-[#FAF7F0]">File generated from Shubh Engineering Academy Repository. Check your download folder.</span>
+</div>
+</div>
+<button class="text-[#FAF7F0] hover:text-secondary" onclick="closeToast()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Technical Mentorship CTA Blueprint Banner -->
+<section class="w-full bg-primary text-on-primary py-space-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="bg-primary-container rounded-2xl p-space-lg md:p-space-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-space-lg border border-accent-bronze/30 shadow-xl">
+<div class="space-y-space-xs max-w-xl z-10">
+<span class="bg-secondary text-on-secondary px-2.5 py-1 rounded text-xs font-bold uppercase tracking-wider">
+            Gandhinagar &amp; Ahmedabad Classrooms + Digital Stream
+          </span>
+<h3 class="text-2xl md:text-3xl font-bold text-on-primary tracking-tight mt-2">
+            Targeting GPSC AE or GSSSB 2025 Cadre?
+          </h3>
+<p class="text-sm md:text-base text-[#FAF7F0] opacity-90 leading-relaxed">
+            Join the foundation batch mentored by retired Superintending Engineers (SE) and top GPSC Class 1 rankers. Complete civil syllabus coverage with weekly OMR testing.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md z-10 shrink-0 w-full md:w-auto">
+<a class="w-full sm:w-auto bg-secondary text-on-secondary px-space-lg py-3 rounded-lg text-sm text-center hover:bg-secondary/90 transition-all shadow-md font-bold" href="#">
+            Apply for Screening Test
+          </a>
+<a class="w-full sm:w-auto bg-surface-container-lowest text-primary px-space-lg py-3 rounded-lg text-sm text-center hover:bg-surface-container transition-all font-bold border border-accent-bronze/40" href="#">
+            Call Academic Desk
+          </a>
+</div>
+<!-- Ambient decorative vector -->
+<div class="absolute -right-10 -bottom-10 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[260px] text-secondary">engineering</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function triggerDownload(filename) {
+    const toast = document.getElementById('download-toast');
+    const title = document.getElementById('download-title');
+    if (toast && title) {
+      title.innerText = "Downloading: " + filename;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 5000);
+    }
+  }
+
+  function closeToast() {
+    const toast = document.getElementById('download-toast');
+    if (toast) {
+      toast.classList.add('hidden');
+    }
+  }
+</script></main><footer class="w-full bg-primary text-on-primary pt-space-xl pb-space-lg border-t border-accent-bronze/30"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg pb-space-xl"><div class="lg:col-span-2 space-y-space-sm"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="Shubh Engineering Academy Logo" class="h-9 w-auto object-contain rounded" src="https://lh3.googleusercontent.com/aida/AEtjO1Wau4Qotv1UKkd7aDu8wuRyAkM-8JJqfZiW_fQlFrPLuRnYwVmHIjM3nvcljdEdjBkpkXY4pwx1ol4Y2muDmc2PPUTw1JY0xU4Cg4KGA-WBZp2Ioxkfk07KH-wlAqrBZ8XZWM8uu9_WdPyVcTJNQCVOa36hHn6IkHx3xzA9oeP9kTBbu0Ef-3pRUMiickzghxzjtSezQ19DqKufyKm2UJcHGr7dpRzJewhafpDI_Blu8wv734IoaKj6u1Oj"/><span class="text-base text-on-primary font-bold uppercase tracking-tight">Shubh Engineering Academy</span></div><p class="text-xs text-[#FAF7F0]/80 max-w-sm leading-relaxed">Premier technical civil engineering academy specializing in GPSC Class 1 &amp; 2 Executive Engineer, GSSSB Additional Assistant Engineer (AAE), and GPSSB cadre recruitments across Gujarat state governance.</p><div class="pt-space-xs"><p class="text-xs text-secondary font-bold uppercase mb-1">Accreditation &amp; Affiliation</p><p class="text-xs text-[#FAF7F0]/80">ISO 9001:2015 Technical Pedagogical Certified Coaching Establishment for State Engineering Competitive Services.</p></div></div><div class="space-y-space-sm"><h3 class="text-xs text-secondary font-bold uppercase tracking-wider">State Syllabus</h3><ul class="space-y-space-xs text-xs text-[#FAF7F0]/80"><li><a class="hover:text-secondary transition-colors" data-path="targeted-exams" href="#">GPSC Class 1-2 Executive Engg</a></li><li><a class="hover:text-secondary transition-colors" data-path="targeted-exams" href="#">GSSSB AAE Civil Syllabus</a></li><li><a class="hover:text-secondary transition-colors" data-path="targeted-exams" href="#">GPSSB Additional Asst Engineer</a></li><li><a class="hover:text-secondary transition-colors" data-path="targeted-exams" href="#">Gujarat Water Resources (GWSSB)</a></li><li><a class="hover:text-secondary transition-colors" data-path="targeted-exams" href="#">Road &amp; Building Dept (R&amp;B) Module</a></li></ul></div><div class="space-y-space-sm"><h3 class="text-xs text-secondary font-bold uppercase tracking-wider">Aspirant Resources</h3><ul class="space-y-space-xs text-xs text-[#FAF7F0]/80"><li><a class="hover:text-secondary transition-colors" data-path="resources" href="#">Civil Engineering Formula Handbooks</a></li><li><a class="hover:text-secondary transition-colors" data-path="resources" href="#">GSSSB Notification Alerts 2025</a></li><li><a class="hover:text-secondary transition-colors" data-path="test-series-portal" href="#">OMR Pattern Test Series Portal</a></li><li><a class="hover:text-secondary transition-colors" data-path="resources" href="#">GPSC Previous 10-Year Solved Papers</a></li><li><a class="hover:text-secondary transition-colors" data-path="resources" href="#">Verified Model Answer Keys</a></li></ul></div><div class="space-y-space-sm"><h3 class="text-xs text-secondary font-bold uppercase tracking-wider">Head Office</h3><p class="text-xs text-[#FAF7F0]/80 leading-relaxed">Cadre Bhavan, 4th Floor, Sector 11, Near GH-Road Circle, Gandhinagar - 382011, Gujarat</p><p class="text-xs text-[#FAF7F0]/80"><span class="font-bold text-[#FAF7F0]">Phone:</span> +91 79 2320 0000</p><p class="text-xs text-[#FAF7F0]/80"><span class="font-bold text-[#FAF7F0]">Email:</span> admissions@shubhengineering.in</p><div class="pt-space-xs"><span class="inline-block bg-primary-container text-secondary border border-accent-bronze/40 text-xs px-2.5 py-1 rounded">Branch: Usmanpura, Ahmedabad</span></div></div></div><div class="pt-space-lg border-t border-accent-bronze/20 flex flex-col md:flex-row items-center justify-between text-xs text-[#FAF7F0]/70"><p>© 2025 Shubh Engineering Academy. All Rights Reserved. Dedicated to Gujarat Engineering Services.</p><div class="flex items-center gap-space-md mt-space-sm md:mt-0"><a class="hover:text-secondary transition-colors" href="#">Right to Information (RTI)</a><a class="hover:text-secondary transition-colors" href="#">Privacy Policy</a><a class="hover:text-secondary transition-colors" href="#">Terms of Enrollment</a></div></div></div></footer></body></html>

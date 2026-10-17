@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary": "#2B3A55",
+          "primary-container": "#1E2B42",
+          "on-primary": "#ffffff",
+          "secondary": "#566277",
+          "secondary-container": "#D4AB3F",
+          "on-secondary": "#ffffff",
+          "accent-gold": "#D4AB3F",
+          "bronze": "#B89E58",
+          "surface": "#FAF7F0",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-low": "#F6F0DF",
+          "surface-container": "#EEE7D3",
+          "surface-container-high": "#E5DDC7",
+          "surface-container-highest": "#DDD3B9",
+          "on-surface": "#1E1C12",
+          "on-surface-variant": "#566277",
+          "outline": "#B89E58",
+          "outline-variant": "#D9CEBA",
+          "background": "#FAF7F0"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.375rem",
+          "xl": "0.625rem",
+          "2xl": "0.875rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xs": "0.25rem",
+          "margin": "2.5rem",
+          "gutter-mobile": "1rem",
+          "margin-mobile": "1rem",
+          "space-xl": "2.5rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "display-lg": ["Plus Jakarta Sans", "sans-serif"],
+          "headline-xl": ["Plus Jakarta Sans", "sans-serif"],
+          "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+          "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+          "headline-sm": ["Plus Jakarta Sans", "sans-serif"],
+          "title-lg": ["Plus Jakarta Sans", "sans-serif"],
+          "title-md": ["Plus Jakarta Sans", "sans-serif"],
+          "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+          "body-md": ["Plus Jakarta Sans", "sans-serif"],
+          "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+          "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+          "label-md": ["Plus Jakarta Sans", "sans-serif"],
+          "label-sm": ["Plus Jakarta Sans", "sans-serif"]
+        },
+        "fontSize": {
+          "display-lg": ["46px", { "lineHeight": "54px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+          "headline-xl": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+          "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+          "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "700" }],
+          "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+          "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+          "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+          "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+          "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+          "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+          "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+          "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+          "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }]
+        }
+      }
+    }
+  };
+</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-[#FAF7F0]/95 backdrop-blur-xl border-b border-[#B89E58]/20 shadow-sm"><div class="bg-primary text-on-primary py-space-xs px-margin border-b border-primary-container"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between text-label-sm font-label-sm"><div class="flex items-center gap-space-sm"><span class="bg-accent-gold text-primary font-bold px-2 py-0.5 rounded text-label-sm uppercase tracking-wider">Official Helpline</span><span class="text-surface-container-high font-label-sm">Call: +91 79 2320 0000 | Gandhinagar &amp; Ahmedabad Centers</span></div><div class="hidden md:flex items-center gap-space-md font-label-sm text-surface-container-high"><span>GPSC Class 1 &amp; 2 Special Batches Announced</span><span class="text-bronze">|</span><span class="text-accent-gold font-semibold">Direct AAE Recruitment 2025</span></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Shubh Engineering Academy Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wau4Qotv1UKkd7aDu8wuRyAkM-8JJqfZiW_fQlFrPLuRnYwVmHIjM3nvcljdEdjBkpkXY4pwx1ol4Y2muDmc2PPUTw1JY0xU4Cg4KGA-WBZp2Ioxkfk07KH-wlAqrBZ8XZWM8uu9_WdPyVcTJNQCVOa36hHn6IkHx3xzA9oeP9kTBbu0Ef-3pRUMiickzghxzjtSezQ19DqKufyKm2UJcHGr7dpRzJewhafpDI_Blu8wv734IoaKj6u1Oj"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary font-bold tracking-tight uppercase leading-none">Shubh Engineering Academy</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider mt-0.5">GPSC • GSSSB • GPSSB Civil Technical Wing</span></div></div><nav class="hidden xl:flex items-center gap-space-md"><a class="font-title-md text-title-md text-secondary hover:text-primary transition-colors px-space-sm py-1.5" data-path="targeted-exams" href="#">Targeted Exams</a><a class="font-title-md text-title-md text-secondary hover:text-primary transition-colors px-space-sm py-1.5" data-path="batches-and-admissions" href="#">Batches &amp; Admissions</a><a class="font-title-md text-title-md text-secondary hover:text-primary transition-colors px-space-sm py-1.5" data-path="excellence-and-results" href="#">Excellence &amp; Results</a><a aria-current="page" class="transition-colors bg-primary text-accent-gold font-title-md rounded-lg px-space-md py-1.5 border border-bronze/40 shadow-sm" data-path="alumni-network" href="#">Alumni Network</a><a class="font-title-md text-title-md text-secondary hover:text-primary transition-colors px-space-sm py-1.5" data-path="contact-and-centers" href="#">Contact &amp; Centers</a></nav><div class="flex items-center gap-space-md"><a class="bg-accent-gold text-primary font-bold px-space-md py-2 rounded-lg font-label-lg text-label-lg hover:bg-bronze hover:text-white transition-all shadow-sm" data-path="student-portal" href="#">Student Portal</a><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-accent-gold" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrq1sbV9oXsvteuhuxtj0zsHAcElTf6l70H_Bv12DV82aFnVS1wldB2nDqXAaUsw3cXSx415XlXs1TCW572jZxfU7paLKsSEXRaGLBb3Yike2NFP7L-LPp6yYKgHW6ttBpItE8feysGe4_BMzz2AGeRgKxzwF7eUaMMVkbDk65_mIV01EV1UMK0iu-y6DWrLEznUWil_M8V-_mk0r31NFTb5lPLp07jSxPHhVlBZMwZZDdw3YV_IuVqg"/><div class="hidden lg:flex flex-col"><span class="font-label-sm text-label-sm font-bold text-primary leading-tight">Director Desk</span><span class="font-label-sm text-label-sm text-secondary leading-tight">GPSC Mentorship</span></div></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Immersive Administrative Network Hero -->
+<section class="relative bg-primary text-on-primary overflow-hidden pt-space-xl pb-24 shadow-md border-b border-bronze/30">
+<div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#D4AB3F_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="max-w-7xl mx-auto px-margin relative z-10">
+<div class="flex flex-wrap items-center gap-space-xs text-label-sm font-label-sm uppercase tracking-wider text-accent-gold mb-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-primary-container text-accent-gold border border-bronze/40">
+<span class="w-2 h-2 rounded-full bg-accent-gold animate-pulse"></span>
+          State Cadre Network Registry
+        </span>
+<span class="text-bronze">/</span>
+<span class="text-surface-container-high font-label-sm">Established 2014 • Shubh Engineering Academy</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-end">
+<div class="lg:col-span-8 space-y-space-md">
+<h1 class="font-display-lg text-display-lg text-on-primary tracking-tight font-extrabold max-w-4xl">
+            Gujarat State Civil Engineering Officers Alumni Association
+          </h1>
+<p class="font-body-lg text-body-lg text-surface-container-high max-w-3xl leading-relaxed">
+            Uniting over 1,450+ gazetted and technical cadre engineers across all 33 districts of Gujarat trained by Shubh Engineering Academy. From the Gandhinagar Swarnim Sankul secretariat to critical field engineering divisions, our alumni build, manage, and safeguard the physical spine of the state.
+          </p>
+<div class="flex flex-wrap gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-2 bg-accent-gold text-primary font-bold px-6 py-3 rounded-lg font-label-lg text-label-lg shadow-md hover:bg-bronze hover:text-white transition-all" href="#directory">
+<span class="material-symbols-outlined text-lg">badge</span>
+              Explore Officer Directory
+            </a>
+<a class="inline-flex items-center gap-2 bg-primary-container/80 text-surface-container-high border border-bronze/40 px-6 py-3 rounded-lg font-label-lg text-label-lg hover:bg-primary-container hover:text-accent-gold transition-all backdrop-blur-sm" href="#conclave-rsvp">
+<span class="material-symbols-outlined text-lg text-accent-gold">event_available</span>
+              Annual Conclave RSVP
+            </a>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-3">
+<div class="bg-primary-container p-5 rounded-xl border border-bronze/30 shadow-sm backdrop-blur">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase text-accent-gold font-bold tracking-wider">State Representation</span>
+<span class="material-symbols-outlined text-accent-gold">public</span>
+</div>
+<div class="text-3xl font-extrabold text-on-primary">33 / 33</div>
+<div class="font-body-sm text-body-sm text-surface-container-high">Districts Active in Civil Governance</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-primary-container/90 p-4 rounded-xl border border-bronze/20">
+<div class="text-2xl font-bold text-accent-gold">820+</div>
+<div class="font-label-sm text-label-sm text-surface-container-high uppercase">R&amp;B &amp; Irrigation</div>
+</div>
+<div class="bg-primary-container/90 p-4 rounded-xl border border-bronze/20">
+<div class="text-2xl font-bold text-accent-gold">630+</div>
+<div class="font-label-sm text-label-sm text-surface-container-high uppercase">Urban &amp; Water Cadres</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Metric Ribbon Overlay -->
+<section class="max-w-7xl mx-auto px-margin -mt-10 relative z-20 w-full">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-surface-container-lowest p-6 rounded-xl border border-outline-variant shadow-lg">
+<div class="flex items-center gap-4 p-2">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low border border-bronze/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl text-accent-gold">account_balance</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary">1,450+</div>
+<div class="font-body-sm text-body-sm text-secondary">Class 1 &amp; 2 Officers</div>
+</div>
+</div>
+<div class="flex items-center gap-4 p-2">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low border border-bronze/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl text-accent-gold">engineering</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary">280+</div>
+<div class="font-body-sm text-body-sm text-secondary">Infrastructure Papers</div>
+</div>
+</div>
+<div class="flex items-center gap-4 p-2">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low border border-bronze/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl text-accent-gold">school</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary">100%</div>
+<div class="font-body-sm text-body-sm text-secondary">GPSC Merit Rankers</div>
+</div>
+</div>
+<div class="flex items-center gap-4 p-2">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low border border-bronze/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl text-accent-gold">groups</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary">48 Batches</div>
+<div class="font-body-sm text-body-sm text-secondary">Active Mentor Circles</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Filterable Departmental Directory -->
+<section class="py-space-xl max-w-7xl mx-auto px-margin w-full" id="directory">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<div class="flex items-center gap-2 text-label-sm font-label-sm uppercase tracking-wider text-bronze font-bold mb-1">
+<span class="material-symbols-outlined text-base text-accent-gold">verified_user</span>
+          Official Registry
+        </div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">Gazetted &amp; Technical Cadre Directory</h2>
+<p class="font-body-md text-body-md text-secondary mt-1">Verified records of Shubh Academy alumni officers steering government infrastructure projects across Gujarat.</p>
+</div>
+<div class="relative w-full md:w-72">
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-4 py-2.5 rounded-lg border border-outline-variant shadow-sm focus:outline-none focus:ring-2 focus:ring-accent-gold pl-10" id="officerSearch" placeholder="Search by name, post or district..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-secondary text-lg">search</span>
+</div>
+</div>
+<!-- Department Filters -->
+<div class="flex items-center gap-2 overflow-x-auto pb-4 mb-6 no-scrollbar" id="filterBar">
+<button class="dept-btn active px-4 py-2 rounded-lg font-label-md text-label-md bg-primary text-accent-gold border border-bronze font-bold whitespace-nowrap transition-colors shadow-sm" data-dept="all">All State Cadres (1,450)</button>
+<button class="dept-btn px-4 py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-secondary hover:text-primary border border-outline-variant whitespace-nowrap transition-colors shadow-sm" data-dept="rnb">Roads &amp; Buildings (R&amp;B)</button>
+<button class="dept-btn px-4 py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-secondary hover:text-primary border border-outline-variant whitespace-nowrap transition-colors shadow-sm" data-dept="gwssb">GWSSB Water Cadres</button>
+<button class="dept-btn px-4 py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-secondary hover:text-primary border border-outline-variant whitespace-nowrap transition-colors shadow-sm" data-dept="nwrws">NWRWS (Narmada &amp; Water Resources)</button>
+<button class="dept-btn px-4 py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-secondary hover:text-primary border border-outline-variant whitespace-nowrap transition-colors shadow-sm" data-dept="corporations">Municipal Corps (AMC/GMC/SMC)</button>
+<button class="dept-btn px-4 py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-secondary hover:text-primary border border-outline-variant whitespace-nowrap transition-colors shadow-sm" data-dept="panchayat">Panchayat Rural Works</button>
+</div>
+<!-- Officer Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="officersGrid">
+<!-- Officer 1 -->
+<div class="officer-card bg-surface-container-lowest rounded-xl p-6 border border-outline-variant hover:border-bronze shadow-sm hover:shadow-lg transition-all flex flex-col justify-between" data-dept="rnb" data-tags="patel rajkot executive bridge r&amp;b">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container-low border-2 border-bronze/40 shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Indian male civil engineer in his late 30s wearing a smart formal shirt standing proudly at an infrastructure construction site in Gujarat with blueprints." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj-gjsOo3SZiqF5pjZ160Ey9ctpKPTHFFx2NVimCMF6QpLi0d8bXSzaZ2T8mVmFz7nuaqFdbuG3VDgYBV-GCo175jwl2MymSVQmX0NlRNRUlTrTDMCYTdn6tWzCTYnHi4pXUWTnOoN6nGEeAcZKr_RsvrjxyVkINRIHq8naD1ebdCXIy_0SlT2VJifigJaQTvTxj93dr-2wU3OEU8qt9-X8l7xMLj7h5pwIfeYoj9FozlQ8tokdJ1O4g"/>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm uppercase bg-surface-container-low text-primary font-bold tracking-wide border border-outline-variant">Batch 2018</span>
+<span class="text-label-sm font-label-sm text-accent-gold font-bold mt-1">GPSC Rank 04</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Er. Harshad Patel, GPSC Cl-1</h3>
+<p class="font-label-md text-label-md text-secondary mt-0.5">Executive Engineer (Civil)</p>
+<div class="mt-3 py-2 px-3 rounded bg-surface-container-low border border-outline-variant/60 flex items-center gap-2 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-bronze text-base">domain</span>
+<span class="text-on-surface">R&amp;B Division, Rajkot District Circle</span>
+</div>
+<div class="mt-4">
+<div class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mb-1.5">Core Public Expertise</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-medium border border-outline-variant/60">Major Cable-Stayed Bridges</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-medium border border-outline-variant/60">IRC Code Compliances</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/40 flex items-center justify-between text-label-sm font-label-sm text-secondary">
+<span class="flex items-center gap-1.5 text-primary font-medium"><span class="w-2 h-2 rounded-full bg-accent-gold"></span>Active Field Guide</span>
+<button class="text-primary font-bold hover:text-accent-gold transition-colors inline-flex items-center gap-1" onclick="openMentorConnect('Er. Harshad Patel')">Request Advice <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+<!-- Officer 2 -->
+<div class="officer-card bg-surface-container-lowest rounded-xl p-6 border border-outline-variant hover:border-bronze shadow-sm hover:shadow-lg transition-all flex flex-col justify-between" data-dept="nwrws" data-tags="solanki narmada sardar dam irrigation nwrws">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container-low border-2 border-bronze/40 shrink-0">
+<img class="w-full h-full object-cover" data-alt="Professional headshot of a confident female Indian civil engineer in professional attire standing in front of hydraulic control gates and water reservoir structure in Gujarat." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz-gVQlvvUZWKRc-GIAGziVDTqcx2Ew7YLz-2xsBVGR7rDonrBVObJWbJ9gR7ILyGmUOwIfbC4DllJRcOdwuZ5Mo4tXlg2btpH6NG-cU-oGGT0bsNvG9NktefbHz4d6OytxHYcFe6GENrleHAVsg6itbDSczlfEzVTCRDq2z5bioUBL7B0Rx_tM7vW-geFVjUaQJUidYiStP0wEB3OMF9iLO47i-XXA_cFl14x546dQS4w08gxc5N8Sw"/>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm uppercase bg-surface-container-low text-primary font-bold tracking-wide border border-outline-variant">Batch 2020</span>
+<span class="text-label-sm font-label-sm text-accent-gold font-bold mt-1">GPSC Rank 11</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Er. Bhavisha Solanki, GPSC Cl-2</h3>
+<p class="font-label-md text-label-md text-secondary mt-0.5">Deputy Executive Engineer</p>
+<div class="mt-3 py-2 px-3 rounded bg-surface-container-low border border-outline-variant/60 flex items-center gap-2 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-bronze text-base">water_drop</span>
+<span class="text-on-surface">Sardar Sarovar Dam Project, Kevadia</span>
+</div>
+<div class="mt-4">
+<div class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mb-1.5">Core Public Expertise</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-medium border border-outline-variant/60">High-Discharge Spillways</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-medium border border-outline-variant/60">Dam Structural Health</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/40 flex items-center justify-between text-label-sm font-label-sm text-secondary">
+<span class="flex items-center gap-1.5 text-primary font-medium"><span class="w-2 h-2 rounded-full bg-accent-gold"></span>Mentor Panel 2025</span>
+<button class="text-primary font-bold hover:text-accent-gold transition-colors inline-flex items-center gap-1" onclick="openMentorConnect('Er. Bhavisha Solanki')">Request Advice <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+<!-- Officer 3 -->
+<div class="officer-card bg-surface-container-lowest rounded-xl p-6 border border-outline-variant hover:border-bronze shadow-sm hover:shadow-lg transition-all flex flex-col justify-between" data-dept="corporations" data-tags="shah ahmedabad amc riverfront municipal corporations">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container-low border-2 border-bronze/40 shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Indian male municipal civil engineer wearing glasses and a formal white shirt outdoors near modern urban civic architecture in Ahmedabad." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvR5r1nDkli38NB9wEe8xplfmWHYiKzXzR_s_Ijnl1hflh9vPPyfIue0Zvq2VAlYEnxQCxnyC8W9Xd1S_gb8Nw_8PRVJDRR647hrea4rBryCFckePOgkPu1gD8GPJk6ZEBE9Lohn8XA8oPm-EwFN5UvpzlgkOS3C3B6BaHCPBFCheDVxHwohlYgEsjccMVbA567AgJe4FXU-clDFc99QjKoKzIlap0FkQQjdKCNe2Xwdf783S4B0oxZQ"/>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm uppercase bg-surface-container-low text-primary font-bold tracking-wide border border-outline-variant">Batch 2016</span>
+<span class="text-label-sm font-label-sm text-accent-gold font-bold mt-1">GSSSB Top Merit</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Er. Kathan Shah</h3>
+<p class="font-label-md text-label-md text-secondary mt-0.5">Superintending Engineer (Urban Infra)</p>
+<div class="mt-3 py-2 px-3 rounded bg-surface-container-low border border-outline-variant/60 flex items-center gap-2 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-bronze text-base">apartment</span>
+<span class="text-on-surface">Ahmedabad Municipal Corporation (AMC)</span>
+</div>
+<div class="mt-4">
+<div class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mb-1.5">Core Public Expertise</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-medium border border-outline-variant/60">Riverfront Retaining Walls</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-medium border border-outline-variant/60">Micro-tunneling Sewer</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/40 flex items-center justify-between text-label-sm font-label-sm text-secondary">
+<span class="flex items-center gap-1.5 text-primary font-medium"><span class="w-2 h-2 rounded-full bg-accent-gold"></span>Guest Lecturer</span>
+<button class="text-primary font-bold hover:text-accent-gold transition-colors inline-flex items-center gap-1" onclick="openMentorConnect('Er. Kathan Shah')">Request Advice <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+<!-- Officer 4 -->
+<div class="officer-card bg-surface-container-lowest rounded-xl p-6 border border-outline-variant hover:border-bronze shadow-sm hover:shadow-lg transition-all flex flex-col justify-between" data-dept="gwssb" data-tags="mehta gwssb kutch water desalinization water supply">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container-low border-2 border-bronze/40 shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up portrait of a senior Indian technical engineer with short hair in a hard hat holding an architectural tablet standing in front of water filtration tanks in Gujarat." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARwL6-zgJ2j_llB2aRCbb8Rg90PT5sfXIIbUjk2WsakaR74Di3-8DNuEDHLJIrWGRhadQOufJp3RyE7xB9nrNPQ_N7G74VsvcCxURKTNdH6HmsKgHuvX71Z00IXQWJ00xvScT-rQeJ8i71ntWul8UCu47Bh55i7c99j0IKhbcvk4Jh_toBKBrGTscK8uM3A__0V0C9BBZTRTMB2-V8K6cwZS8lpKusRjeMKOdF9hImb0xemOtpat_s3w"/>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm uppercase bg-surface-container-low text-primary font-bold tracking-wide border border-outline-variant">Batch 2019</span>
+<span class="text-label-sm font-label-sm text-accent-gold font-bold mt-1">GPSC Rank 07</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Er. Chirag Mehta, GPSC Cl-1</h3>
+<p class="font-label-md text-label-md text-secondary mt-0.5">Executive Engineer (Water Supply)</p>
+<div class="mt-3 py-2 px-3 rounded bg-surface-container-low border border-outline-variant/60 flex items-center gap-2 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-bronze text-base">waves</span>
+<span class="text-on-surface">GWSSB Circle, Kutch-Bhuj Region</span>
+</div>
+<div class="mt-4">
+<div class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mb-1.5">Core Public Expertise</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-medium border border-outline-variant/60">Bulk Pipeline Hydraulics</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-medium border border-outline-variant/60">Desalination Grid Design</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/40 flex items-center justify-between text-label-sm font-label-sm text-secondary">
+<span class="flex items-center gap-1.5 text-primary font-medium"><span class="w-2 h-2 rounded-full bg-accent-gold"></span>Mock Panel Expert</span>
+<button class="text-primary font-bold hover:text-accent-gold transition-colors inline-flex items-center gap-1" onclick="openMentorConnect('Er. Chirag Mehta')">Request Advice <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+<!-- Officer 5 -->
+<div class="officer-card bg-surface-container-lowest rounded-xl p-6 border border-outline-variant hover:border-bronze shadow-sm hover:shadow-lg transition-all flex flex-col justify-between" data-dept="panchayat" data-tags="chaudhary banaskantha rural roads panchayat">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container-low border-2 border-bronze/40 shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young Indian male civil engineer in formal khaki jacket standing on a newly paved rural road flanked by green agricultural fields in North Gujarat." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvwC3ttA-xEz2IJCuJ89r5ACl84DOW5anaeObZuDDShy5xLXk3Yr7WMGM9ZmjOZ8Z_TB0PR7tgUxoVJivJTQ8YR6HwRQmMvDlXcuhInDMsP3l4hoKlwiNwm1flDkYZ18YUfVqpXQCKWHv_hPXcVsCmVDr2FkP41L30RTHAWz4KVZusMV-xJR2r5L7Dl3krlhEIafvdpOeptyyJXVnNRyx-4Ii48fWxRrxuJmnd2xbxk5LX3arU1ZKwDA"/>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm uppercase bg-surface-container-low text-primary font-bold tracking-wide border border-outline-variant">Batch 2022</span>
+<span class="text-label-sm font-label-sm text-accent-gold font-bold mt-1">GPSSB State 1st</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Er. Sanjay Chaudhary</h3>
+<p class="font-label-md text-label-md text-secondary mt-0.5">Additional Assistant Engineer (AAE)</p>
+<div class="mt-3 py-2 px-3 rounded bg-surface-container-low border border-outline-variant/60 flex items-center gap-2 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-bronze text-base">landscape</span>
+<span class="text-on-surface">Panchayat Engineering Wing, Palanpur</span>
+</div>
+<div class="mt-4">
+<div class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mb-1.5">Core Public Expertise</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-medium border border-outline-variant/60">PMGSY Rural Pavement</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-medium border border-outline-variant/60">Check Dam Hydrology</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/40 flex items-center justify-between text-label-sm font-label-sm text-secondary">
+<span class="flex items-center gap-1.5 text-primary font-medium"><span class="w-2 h-2 rounded-full bg-accent-gold"></span>AAE Group Mentor</span>
+<button class="text-primary font-bold hover:text-accent-gold transition-colors inline-flex items-center gap-1" onclick="openMentorConnect('Er. Sanjay Chaudhary')">Request Advice <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+<!-- Officer 6 -->
+<div class="officer-card bg-surface-container-lowest rounded-xl p-6 border border-outline-variant hover:border-bronze shadow-sm hover:shadow-lg transition-all flex flex-col justify-between" data-dept="corporations" data-tags="parmar surat smc brts metro corporations">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container-low border-2 border-bronze/40 shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of a South Asian woman civil engineer smiling with safety helmet and corporate identification badge against elevated modern metro transit line viaduct in Surat." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4Le4vGRi1KGs1AuciiDdEF_rU9gyzFr4v9OTsODWLnQ5s_OKobxWgUb8DgjIf-wmdKd2AiJLh9ErJD9srRu1WpSuw0-V_UXWO2ht9U5FqZUwko-JowemJpggw6tNiVelUA-BNkdC2Yfvy9MoBDrOKq1gpiai8jNeFV4IEJnqFUFVHPtSZMelctidgq3PSBUor_52Xw8G1T05ULSTUDgSQN2bJHIdA1ssnAYEbxIdkit__pFfJIrTeWA"/>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm uppercase bg-surface-container-low text-primary font-bold tracking-wide border border-outline-variant">Batch 2021</span>
+<span class="text-label-sm font-label-sm text-accent-gold font-bold mt-1">GPSC Rank 09</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Er. Drashti Parmar, GPSC Cl-2</h3>
+<p class="font-label-md text-label-md text-secondary mt-0.5">Assistant Engineer (Bridge &amp; Flyovers)</p>
+<div class="mt-3 py-2 px-3 rounded bg-surface-container-low border border-outline-variant/60 flex items-center gap-2 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-bronze text-base">location_city</span>
+<span class="text-on-surface">Surat Municipal Corporation (SMC)</span>
+</div>
+<div class="mt-4">
+<div class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mb-1.5">Core Public Expertise</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-medium border border-outline-variant/60">PSC Girder Erection</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-medium border border-outline-variant/60">Urban Drainage Modelling</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/40 flex items-center justify-between text-label-sm font-label-sm text-secondary">
+<span class="flex items-center gap-1.5 text-primary font-medium"><span class="w-2 h-2 rounded-full bg-accent-gold"></span>Interview Guidance</span>
+<button class="text-primary font-bold hover:text-accent-gold transition-colors inline-flex items-center gap-1" onclick="openMentorConnect('Er. Drashti Parmar')">Request Advice <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Officer-to-Aspirant Mentorship Program -->
+<section class="py-space-xl bg-surface-container-low border-y border-outline-variant/50">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5 space-y-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-accent-gold/20 text-primary border border-bronze/40 font-label-sm text-label-sm uppercase font-bold tracking-wider">
+<span class="material-symbols-outlined text-base text-bronze">supervisor_account</span>
+            Service Leadership Initiative
+          </div>
+<h2 class="font-headline-xl text-headline-xl font-bold text-primary">Officer-to-Aspirant Mentorship Initiative</h2>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+            Every weekend, serving Assistant Engineers and Executive Engineers step out of the secretariat and field offices to guide currently enrolled aspirants at Shubh Engineering Academy. We bridge pure syllabus theory with the pragmatic ground reality of Gujarat state tender norms, execution bottlenecks, and GPSC Board personality expectations.
+          </p>
+<div class="space-y-3 pt-2">
+<div class="flex items-start gap-3 bg-surface-container-lowest p-3.5 rounded-lg border border-outline-variant/60 shadow-sm">
+<span class="material-symbols-outlined text-accent-gold text-2xl shrink-0">psychology</span>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Real Field Case Questions</h4>
+<p class="font-body-sm text-body-sm text-secondary">Discussion on unexpected soil liquefaction in Saurashtra, RCC slump control during summer heat, and IS-456 situational boards.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-surface-container-lowest p-3.5 rounded-lg border border-outline-variant/60 shadow-sm">
+<span class="material-symbols-outlined text-accent-gold text-2xl shrink-0">record_voice_over</span>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Mock GPSC Interview Panels</h4>
+<p class="font-body-sm text-body-sm text-secondary">Face 3-member panels containing at least one retired Superintending Engineer and serving Class 1 Officer simulating the Gandhinagar interview chambers.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-surface-container-lowest p-3.5 rounded-lg border border-outline-variant/60 shadow-sm">
+<span class="material-symbols-outlined text-accent-gold text-2xl shrink-0">gavel</span>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Public Service Ethics &amp; Accounts</h4>
+<p class="font-body-sm text-body-sm text-secondary">Introduction to Gujarat Public Works Department (PWD) Manual, Schedule of Rates (SOR), and integrity protocols.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Mentorship Schedule & Live Slot booking -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-6 lg:p-8 border border-outline-variant shadow-md">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/50">
+<div>
+<span class="font-label-sm text-label-sm text-bronze uppercase font-bold tracking-wider">Upcoming Weekend Lineup</span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Interactive Officer Sessions</h3>
+</div>
+<span class="px-3 py-1 rounded bg-accent-gold/20 text-primary border border-bronze/40 font-label-sm text-label-sm font-bold uppercase">Open for Enrolled Cadets</span>
+</div>
+<div class="space-y-4 mt-4">
+<!-- Schedule Item 1 -->
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary text-accent-gold border border-bronze/40 flex flex-col items-center justify-center shrink-0">
+<span class="font-bold text-xs uppercase leading-none">SAT</span>
+<span class="font-bold text-lg leading-tight">15</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-primary font-bold">GPSC Personality Test: Technical Cross-Examination</div>
+<div class="font-body-sm text-body-sm text-secondary">Led by Er. Harshad Patel (EE, R&amp;B) • Gandhinagar Center &amp; Live Stream</div>
+</div>
+</div>
+<button class="px-4 py-2 bg-primary text-accent-gold font-bold rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors whitespace-nowrap border border-bronze/30" onclick="bookSession('Technical Cross-Examination')">Reserve Seat</button>
+</div>
+<!-- Schedule Item 2 -->
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-accent-gold text-primary border border-bronze flex flex-col items-center justify-center shrink-0 font-bold">
+<span class="text-xs uppercase leading-none">SUN</span>
+<span class="text-lg leading-tight">16</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-primary font-bold">Canal Cross-Drainage Works &amp; Hydraulic Jumps</div>
+<div class="font-body-sm text-body-sm text-secondary">Led by Er. Bhavisha Solanki (Dy. EE, NWRWS) • Sardar Sarovar Case Insights</div>
+</div>
+</div>
+<button class="px-4 py-2 bg-primary text-accent-gold font-bold rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors whitespace-nowrap border border-bronze/30" onclick="bookSession('Canal Cross-Drainage Works')">Reserve Seat</button>
+</div>
+<!-- Schedule Item 3 -->
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-surface-container-high border border-bronze/40 flex flex-col items-center justify-center shrink-0">
+<span class="font-bold text-xs uppercase leading-none text-accent-gold">SUN</span>
+<span class="font-bold text-lg leading-tight text-white">23</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-primary font-bold">Urban Stormwater Drainage &amp; High-Density Road Resurfacing</div>
+<div class="font-body-sm text-body-sm text-secondary">Led by Er. Kathan Shah (SE, AMC) • Focus on Surat/Ahmedabad Masterplans</div>
+</div>
+</div>
+<button class="px-4 py-2 bg-primary text-accent-gold font-bold rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors whitespace-nowrap border border-bronze/30" onclick="bookSession('Urban Stormwater Drainage')">Reserve Seat</button>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/40 flex items-center justify-between text-body-sm text-secondary">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-accent-gold text-base">info</span> Sessions include verified field photo dossiers and Q&amp;A</span>
+<a class="font-label-md text-label-md text-primary font-bold underline hover:text-accent-gold" href="#conclave-rsvp">Volunteer as Officer Mentor</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Technical Knowledge Exchange & Field Case Studies -->
+<section class="py-space-xl max-w-7xl mx-auto px-margin w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<div class="flex items-center gap-2 text-label-sm font-label-sm uppercase tracking-wider text-bronze font-bold mb-1">
+<span class="material-symbols-outlined text-base text-accent-gold">menu_book</span>
+          Peer-Reviewed Technical Repository
+        </div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">Gujarat Infrastructure Case Archives</h2>
+<p class="font-body-md text-body-md text-secondary mt-1">Research papers, rehabilitation whitepapers, and field inspection dossiers documented by Shubh Academy alumni in active service.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Document Format:</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-low border border-bronze/40 font-label-sm text-label-sm text-primary font-bold">Official State IRC/IS Compliant</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Case Study 1 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant hover:border-bronze shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Civil engineering rehabilitation view of a multi-span reinforced concrete arch bridge over a wide river in Gujarat with safety scaffolding, hydraulic test sensors, and inspection boats." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDI1p9icLaRcI101-dMhqjpJ8zopAgBea-9bsNL8YEvudF8aQd2PejnVpguSy0nhkxYwYKmsvXdlabdAbj1PDOZoQ06C2M7EAWxrxQW7Ch6hLcffMZAO9HDR7NGCYXRj1ohxPf1yPk6T6tecQnYD_W_jb2cAYzZA-vSOaTKzetuGfv-rwQYMTw0Tr2aWRKWtNW6VGLNAG_zcahpX-rCVZgAcBHJArzmfZ4OibARC-rZoQRgqHIOVRT_g"/>
+<div class="absolute top-3 left-3 bg-primary/95 text-accent-gold border border-bronze/50 text-label-sm font-label-sm font-bold px-2.5 py-1 rounded backdrop-blur">
+              Structural Retrofitting
+            </div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-bronze font-bold mb-2">
+<span class="material-symbols-outlined text-base">history_edu</span>
+              R&amp;B Technical Bulletin #42
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-2 leading-snug">Bridge Rehabilitation &amp; Carbon Fiber Wrapping: Saurashtra Coastal Corridor</h3>
+<p class="font-body-sm text-body-sm text-secondary line-clamp-3 mb-4">
+              Comprehensive analysis of chloride attack mitigation and carbon-fiber-reinforced polymer (CFRP) wrapping executed along 18 coastal bridges between Porbandar and Veraval divisions.
+            </p>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-base text-bronze">person</span>
+<span>Er. Harshad Patel &amp; Team (R&amp;B)</span>
+</div>
+</div>
+</div>
+<div class="px-6 pb-6 pt-2">
+<button class="w-full py-2.5 px-4 rounded-lg bg-surface-container-low text-primary border border-outline-variant font-label-md text-label-md font-bold hover:bg-primary hover:text-accent-gold transition-colors flex items-center justify-center gap-2" onclick="downloadPaper('Coastal Bridge CFRP Retrofit Study')">
+<span class="material-symbols-outlined text-base">download</span>
+            Download Dossier (PDF 4.2 MB)
+          </button>
+</div>
+</article>
+<!-- Case Study 2 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant hover:border-bronze shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="High angle architectural view of Sabarmati Riverfront concrete diaphragm walls, promenade walkways, and flood barrier retaining systems under clear sunlight in Ahmedabad." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5s2qK5UTpQh0ST_tzYWvJOPTh4aBtN_d3XVUkCCO6xXAYk1VoJcEDiSKPIoeNtFIrISelOHCcvMFU9UzE66vVJauwFStQB9TdgXojUEvsZcerG1vNUJLb2Lfh1WXzVjZsfI7ASCaLfpC8ay2pIpdttTCclahwO6WRCQZVxQVY-pmXXTXheXRLhfTVLt_chXsXT5pZfTwNY-4CG66rT7_iAS60daCe8va6Fo9Zq3JmKddw3EhyhmwTqw"/>
+<div class="absolute top-3 left-3 bg-primary/95 text-accent-gold border border-bronze/50 text-label-sm font-label-sm font-bold px-2.5 py-1 rounded backdrop-blur">
+              Hydraulic Retaining
+            </div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-bronze font-bold mb-2">
+<span class="material-symbols-outlined text-base">history_edu</span>
+              Urban Civic Infrastructure Review
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-2 leading-snug">Sabarmati Riverfront Phase 2: Diaphragm Wall Penetration Under High Silt Loading</h3>
+<p class="font-body-sm text-body-sm text-secondary line-clamp-3 mb-4">
+              Engineering documentation on stabilizing deep sheet piles and cast-in-situ concrete diaphragm walls in variable alluvial deposits, incorporating automated water-level sensors.
+            </p>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-base text-bronze">person</span>
+<span>Er. Kathan Shah (Superintending Engg, AMC)</span>
+</div>
+</div>
+</div>
+<div class="px-6 pb-6 pt-2">
+<button class="w-full py-2.5 px-4 rounded-lg bg-surface-container-low text-primary border border-outline-variant font-label-md text-label-md font-bold hover:bg-primary hover:text-accent-gold transition-colors flex items-center justify-center gap-2" onclick="downloadPaper('Sabarmati Diaphragm Wall Study')">
+<span class="material-symbols-outlined text-base">download</span>
+            Download Dossier (PDF 6.8 MB)
+          </button>
+</div>
+</article>
+<!-- Case Study 3 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant hover:border-bronze shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Construction site photograph of large-diameter bored pile drilling rigs and deep foundation excavation for high-rise steel and concrete towers at GIFT City Gandhinagar Gujarat." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDQXoQIQJiBUNJ1nUi36wKgoiuuGzxybazdQE2crqbipn7OWD1yjE9vuOP5w5BIAKCHishcm-OrCvOG-lk0xvxqlJ-CVZPpEji72f1uCPDyRkfPUA-eIzp4E8CxbwhJkJYgyyAlv9DKtRWXOl3zGAVIHyhxWkm8NsuhLK2nncdTBpgKXaYcBQAjlABtqHMrql3MXVrYSr483RbJ_s7JPQo5WwXGaTBBeNLRIgerLKFfECmxw6sD_zM-Q"/>
+<div class="absolute top-3 left-3 bg-primary/95 text-accent-gold border border-bronze/50 text-label-sm font-label-sm font-bold px-2.5 py-1 rounded backdrop-blur">
+              Geotechnical Engineering
+            </div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-bronze font-bold mb-2">
+<span class="material-symbols-outlined text-base">history_edu</span>
+              Special Economic Zone Monograph
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-2 leading-snug">GIFT City Deep Raft &amp; Bored Pile Foundations Under Sabarmati Sub-Surface Seepage</h3>
+<p class="font-body-sm text-body-sm text-secondary line-clamp-3 mb-4">
+              Geotechnical investigation into pile integrity testing, skin friction enhancement via bentonite drilling fluids, and dewatering matrices for 120-meter tower basements.
+            </p>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-base text-bronze">person</span>
+<span>Collaborative Cadre Alumni Workgroup</span>
+</div>
+</div>
+</div>
+<div class="px-6 pb-6 pt-2">
+<button class="w-full py-2.5 px-4 rounded-lg bg-surface-container-low text-primary border border-outline-variant font-label-md text-label-md font-bold hover:bg-primary hover:text-accent-gold transition-colors flex items-center justify-center gap-2" onclick="downloadPaper('GIFT City Deep Raft Foundations')">
+<span class="material-symbols-outlined text-base">download</span>
+            Download Dossier (PDF 5.1 MB)
+          </button>
+</div>
+</article>
+</div>
+</section>
+<!-- Section 5: Alumni Meet & Annual Conclave Announcements with Registration RSVP -->
+<section class="py-space-xl bg-surface-container-low border-y border-outline-variant/50" id="conclave-rsvp">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="bg-primary text-on-primary rounded-2xl overflow-hidden border border-bronze/40 shadow-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12">
+<!-- Conclave Details Column -->
+<div class="lg:col-span-7 p-8 lg:p-12 space-y-6">
+<div class="flex flex-wrap items-center gap-2">
+<span class="bg-accent-gold text-primary font-bold px-3 py-1 rounded font-label-sm text-label-sm uppercase tracking-wider">Annual State Assembly</span>
+<span class="bg-primary-container text-surface-container-high border border-bronze/40 px-3 py-1 rounded font-label-sm text-label-sm font-bold">11th Edition • Gandhinagar</span>
+</div>
+<h2 class="font-display-lg text-display-lg text-on-primary font-extrabold tracking-tight">
+              Gujarat Civil Engineers Conclave 2025
+            </h2>
+<p class="font-body-lg text-body-lg text-surface-container-high leading-relaxed">
+              Theme: <strong class="text-accent-gold">"Viksit Gujarat 2047: Civil Engineering Innovations in Coastal Defense, Urban Expressways, and Sustainable Irrigation."</strong>
+</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-2">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-gold text-2xl">calendar_month</span>
+<div>
+<div class="font-title-md text-title-md font-bold text-on-primary">December 20–21, 2025</div>
+<div class="font-body-sm text-body-sm text-surface-container-high">Saturday &amp; Sunday (Full-Day Sessions)</div>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-gold text-2xl">pin_drop</span>
+<div>
+<div class="font-title-md text-title-md font-bold text-on-primary">Mahatma Mandir Convention Center</div>
+<div class="font-body-sm text-body-sm text-surface-container-high">Sector 13, Gandhinagar, Gujarat</div>
+</div>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-primary-container border border-bronze/30 text-surface-container-high text-body-sm font-body-sm space-y-2">
+<div class="flex items-center gap-2 font-bold text-on-primary">
+<span class="material-symbols-outlined text-accent-gold">workspace_premium</span>
+                Chief Guests &amp; Keynote Dignitaries
+              </div>
+<p>Keynotes by Secretary, Roads &amp; Building Dept (Govt of Gujarat), Managing Director (GWSSB), and Shubh Academy Academic Advisory Board members.</p>
+</div>
+</div>
+<!-- RSVP Form Column -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-8 lg:p-12 text-on-surface flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-outline-variant">
+<h3 class="font-headline-md text-headline-md font-bold text-primary mb-1">Officer RSVP Registration</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-6">Exclusively for serving officers, alumni engineers, and registered Shubh Academy fellows.</p>
+<form class="space-y-4" id="rsvpForm" onsubmit="handleRsvp(event)">
+<div>
+<label class="block font-label-sm text-label-sm font-bold uppercase text-secondary mb-1">Full Name with Service Title</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-4 py-2.5 rounded-lg border border-outline-variant focus:outline-none focus:ring-2 focus:ring-accent-gold" placeholder="e.g. Er. Rajesh V. Vala, GPSC Cl-2" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block font-label-sm text-label-sm font-bold uppercase text-secondary mb-1">Department</label>
+<select class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3 py-2.5 rounded-lg border border-outline-variant focus:outline-none focus:ring-2 focus:ring-accent-gold" required="">
+<option value="R&amp;B">R&amp;B Dept</option>
+<option value="GWSSB">GWSSB</option>
+<option value="NWRWS">NWRWS (Irrigation)</option>
+<option value="Municipal">GMC / AMC / SMC</option>
+<option value="Panchayat">Panchayat Rural</option>
+<option value="Other">Other State PSU</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-bold uppercase text-secondary mb-1">Academy Batch</label>
+<select class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3 py-2.5 rounded-lg border border-outline-variant focus:outline-none focus:ring-2 focus:ring-accent-gold" required="">
+<option value="2024">2024 (Recent)</option>
+<option value="2022">2022</option>
+<option value="2020">2020</option>
+<option value="2018">2018</option>
+<option value="2016">2016</option>
+<option value="2014">2014 &amp; Prior</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-bold uppercase text-secondary mb-1">Current Posting District &amp; Division</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-4 py-2.5 rounded-lg border border-outline-variant focus:outline-none focus:ring-2 focus:ring-accent-gold" placeholder="e.g. Mehsana Division, Sub-Division Visnagar" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-bold uppercase text-secondary mb-1">Official Govt / Personal Email</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-4 py-2.5 rounded-lg border border-outline-variant focus:outline-none focus:ring-2 focus:ring-accent-gold" placeholder="officer.cadre@gujarat.gov.in" required="" type="email"/>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<input class="rounded text-primary focus:ring-accent-gold w-4 h-4" id="volunteerMentor" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-secondary cursor-pointer" for="volunteerMentor">I wish to be an active Mentor for the 2025 Aspirant Batch.</label>
+</div>
+<button class="w-full bg-accent-gold hover:bg-bronze text-primary hover:text-white font-bold font-label-lg text-label-lg py-3 rounded-lg shadow-md transition-colors mt-2 flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-lg">how_to_reg</span>
+                Confirm Conclave RSVP &amp; Badge
+              </button>
+</form>
+<div class="hidden mt-4 p-3 bg-primary text-accent-gold border border-bronze/40 rounded-lg text-body-sm text-center" id="rsvpSuccessMsg">
+              ✓ Registration successfully verified. Your Conclave Pass #GCC-2025 has been routed to your registered official email.
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Network Charter & State Service Ethics -->
+<section class="py-space-xl max-w-7xl mx-auto px-margin w-full">
+<div class="bg-surface-container-lowest p-8 lg:p-10 rounded-2xl border border-outline-variant shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low border border-bronze/30 flex items-center justify-center text-accent-gold mb-3">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Uncompromising Integrity</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1.5 leading-relaxed">
+            Every alumni officer adheres to strict Gujarat civil work procurement transparency, standard testing protocols, and ethical stewardship of public resources.
+          </p>
+</div>
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low border border-bronze/30 flex items-center justify-center text-accent-gold mb-3">
+<span class="material-symbols-outlined">architecture</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Technical Mentorship Duty</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1.5 leading-relaxed">
+            No junior civil engineer in Gujarat state service stands alone. Our network offers technical second-opinions on foundation design, tender dispute resolution, and seismic design.
+          </p>
+</div>
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low border border-bronze/30 flex items-center justify-center text-accent-gold mb-3">
+<span class="material-symbols-outlined">diversity_3</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Inter-Department Synergy</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1.5 leading-relaxed">
+            Eliminating bureaucratic silos between Irrigation, R&amp;B, and Urban Corporations through seamless peer-to-peer technical coordination across 33 collectorates.
+          </p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Interactive Client-side Script for Filtering and Modals -->
+<script>
+  // Dynamic Departmental Filtering & Search
+  const filterBtns = document.querySelectorAll('.dept-btn');
+  const officerCards = document.querySelectorAll('.officer-card');
+  const searchInput = document.getElementById('officerSearch');
+
+  let activeDept = 'all';
+
+  function applyFilters() {
+    const query = searchInput.value.toLowerCase().trim();
+
+    officerCards.forEach(card => {
+      const cardDept = card.getAttribute('data-dept');
+      const cardTags = card.getAttribute('data-tags') || '';
+      const cardContent = card.innerText.toLowerCase();
+
+      const matchesDept = (activeDept === 'all' || cardDept === activeDept);
+      const matchesSearch = query === '' || cardTags.includes(query) || cardContent.includes(query);
+
+      if (matchesDept && matchesSearch) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => {
+        b.classList.remove('bg-primary', 'text-accent-gold', 'border-bronze', 'font-bold');
+        b.classList.add('bg-surface-container-lowest', 'text-secondary');
+      });
+      btn.classList.add('bg-primary', 'text-accent-gold', 'border-bronze', 'font-bold');
+      btn.classList.remove('bg-surface-container-lowest', 'text-secondary');
+      activeDept = btn.getAttribute('data-dept');
+      applyFilters();
+    });
+  });
+
+  searchInput.addEventListener('input', applyFilters);
+
+  // RSVP Form Submission Handler
+  function handleRsvp(e) {
+    e.preventDefault();
+    const successMsg = document.getElementById('rsvpSuccessMsg');
+    successMsg.classList.remove('hidden');
+    e.target.reset();
+    setTimeout(() => {
+      successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 100);
+  }
+
+  // Interactive Micro-action Placeholders
+  function openMentorConnect(officerName) {
+    alert("Mentorship Inquiry Initiated: Connecting with " + officerName + " via the Shubh Engineering Academy Cadre Mentorship Portal. Aspirants enrolled in Phase-2 Mains will receive slot confirmation on their student portal.");
+  }
+
+  function bookSession(sessionTitle) {
+    alert("Session Seat Requested: '" + sessionTitle + "'. Slot reserved for upcoming live interactive broadcast.");
+  }
+
+  function downloadPaper(title) {
+    alert("Technical Archive Access: Fetching verified state case dossier for '" + title + "'. Verification stamp applied.");
+  }
+</script></main><footer class="w-full bg-primary text-surface-container-high border-t border-bronze/40 pt-space-xl pb-space-lg"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg pb-space-xl"><div class="lg:col-span-2 space-y-space-sm"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="Shubh Engineering Academy Logo" class="h-10 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1Wau4Qotv1UKkd7aDu8wuRyAkM-8JJqfZiW_fQlFrPLuRnYwVmHIjM3nvcljdEdjBkpkXY4pwx1ol4Y2muDmc2PPUTw1JY0xU4Cg4KGA-WBZp2Ioxkfk07KH-wlAqrBZ8XZWM8uu9_WdPyVcTJNQCVOa36hHn6IkHx3xzA9oeP9kTBbu0Ef-3pRUMiickzghxzjtSezQ19DqKufyKm2UJcHGr7dpRzJewhafpDI_Blu8wv734IoaKj6u1Oj"/><span class="font-title-md text-title-md text-white font-bold">Shubh Engineering Academy</span></div><p class="font-body-sm text-body-sm text-surface-container-high max-w-sm">Premier technical civil engineering academy specializing in GPSC Class 1 &amp; 2 Executive Engineer, GSSSB Additional Assistant Engineer (AAE), and GPSSB cadre recruitments across Gujarat state governance.</p><div class="pt-space-xs"><p class="font-label-sm text-label-sm text-accent-gold font-bold uppercase mb-1">Accreditation &amp; Affiliation</p><p class="font-body-sm text-body-sm text-surface-container-high/80">ISO 9001:2015 Technical Pedagogical Certified Coaching Establishment for State Engineering Competitive Services.</p></div></div><div class="space-y-space-sm"><h3 class="font-label-lg text-label-lg text-accent-gold font-bold uppercase tracking-wider">State Syllabus</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-surface-container-high/90"><li><a class="hover:text-accent-gold transition-colors" data-path="targeted-exams" href="#">GPSC Class 1-2 Executive Engg</a></li><li><a class="hover:text-accent-gold transition-colors" data-path="targeted-exams" href="#">GSSSB AAE Civil Syllabus</a></li><li><a class="hover:text-accent-gold transition-colors" data-path="targeted-exams" href="#">GPSSB Additional Asst Engineer</a></li><li><a class="hover:text-accent-gold transition-colors" data-path="targeted-exams" href="#">Gujarat Water Resources (GWSSB)</a></li><li><a class="hover:text-accent-gold transition-colors" data-path="targeted-exams" href="#">Road &amp; Building Dept (R&amp;B) Module</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-label-lg text-label-lg text-accent-gold font-bold uppercase tracking-wider">Aspirant Resources</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-surface-container-high/90"><li><a class="hover:text-accent-gold transition-colors" data-path="resources" href="#">Civil Engineering Formula Handbooks</a></li><li><a class="hover:text-accent-gold transition-colors" data-path="resources" href="#">GSSSB Notification Alerts 2025</a></li><li><a class="hover:text-accent-gold transition-colors" data-path="test-series-portal" href="#">OMR Pattern Test Series Portal</a></li><li><a class="hover:text-accent-gold transition-colors" data-path="resources" href="#">GPSC Previous 10-Year Solved Papers</a></li><li><a class="hover:text-accent-gold transition-colors" data-path="resources" href="#">Verified Model Answer Keys</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-label-lg text-label-lg text-accent-gold font-bold uppercase tracking-wider">Head Office</h3><p class="font-body-sm text-body-sm text-surface-container-high/90 leading-relaxed">Cadre Bhavan, 4th Floor, Sector 11, Near GH-Road Circle, Gandhinagar - 382011, Gujarat</p><p class="font-body-sm text-body-sm text-surface-container-high/90"><span class="font-bold text-white">Phone:</span> +91 79 2320 0000</p><p class="font-body-sm text-body-sm text-surface-container-high/90"><span class="font-bold text-white">Email:</span> admissions@shubhengineering.in</p><div class="pt-space-xs"><span class="inline-block bg-primary-container text-accent-gold border border-bronze/30 font-label-sm text-label-sm px-space-sm py-1 rounded-lg">Branch: Usmanpura, Ahmedabad</span></div></div></div><div class="pt-space-lg border-t border-bronze/30 flex flex-col md:flex-row items-center justify-between text-body-sm font-body-sm text-surface-container-high/80"><p>© 2025 Shubh Engineering Academy. All Rights Reserved. Dedicated to Gujarat Engineering Services.</p><div class="flex items-center gap-space-md mt-space-sm md:mt-0"><a class="hover:text-accent-gold transition-colors" href="#">Right to Information (RTI)</a><a class="hover:text-accent-gold transition-colors" href="#">Privacy Policy</a><a class="hover:text-accent-gold transition-colors" href="#">Terms of Enrollment</a></div></div></div></footer></body></html>

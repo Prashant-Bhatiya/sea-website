@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary": "#2B3A55",
+          "primary-container": "#1E2A40",
+          "on-primary": "#ffffff",
+          "secondary": "#D4AB3F",
+          "secondary-container": "#B89E58",
+          "on-secondary": "#1E1C12",
+          "on-surface-variant": "#566277",
+          "outline-variant": "#D9CFB8",
+          "outline": "#B89E58",
+          "background": "#F6F0DF",
+          "surface": "#FAF7F0",
+          "surface-container-low": "#FAF6ED",
+          "surface-container": "#F1EBD8",
+          "surface-container-high": "#E7DFCA",
+          "surface-container-highest": "#DED4BC",
+          "surface-container-lowest": "#FFFFFF",
+          "on-background": "#1E1C12",
+          "on-surface": "#1E1C12",
+          "tertiary": "#B89E58",
+          "on-primary-container": "#C9D4E8",
+          "secondary-fixed": "#ECC153"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-xs": "0.25rem",
+          "margin": "3rem",
+          "gutter-mobile": "1rem",
+          "margin-mobile": "1.25rem",
+          "space-xl": "2.5rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "body-md": ["Plus Jakarta Sans", "sans-serif"],
+          "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+          "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+          "title-md": ["Plus Jakarta Sans", "sans-serif"],
+          "title-lg": ["Plus Jakarta Sans", "sans-serif"],
+          "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+          "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+          "headline-xl": ["Plus Jakarta Sans", "sans-serif"],
+          "display-lg": ["Plus Jakarta Sans", "sans-serif"],
+          "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+          "label-md": ["Plus Jakarta Sans", "sans-serif"],
+          "label-lg": ["Plus Jakarta Sans", "sans-serif"]
+        },
+        "fontSize": {
+          "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+          "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+          "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+          "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+          "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+          "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+          "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+          "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+          "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }],
+          "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+          "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+          "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+          "display-lg": ["52px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "800" }]
+        }
+      }
+    }
+  }
+</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-[#FAF7F0]/95 backdrop-blur-xl border-b border-[#B89E58]/30 shadow-[0_2px_12px_rgba(43,58,85,0.06)]"><div class="bg-primary text-on-primary py-space-xs px-margin border-b border-primary-container"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between text-label-sm font-label-sm"><div class="flex items-center gap-space-sm"><span class="bg-secondary text-primary font-bold px-2 py-0.5 rounded-lg font-label-sm uppercase tracking-wider">Official Helpline</span><span class="text-on-primary-container font-label-sm">Call: +91 79 2320 0000 | Gandhinagar &amp; Ahmedabad Centers</span></div><div class="hidden md:flex items-center gap-space-md font-label-sm text-on-primary-container"><span>GPSC Class 1 &amp; 2 Special Batches Announced</span><span class="text-[#B89E58]">|</span><span class="text-secondary font-semibold">Direct AAE Recruitment 2025</span></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Shubh Engineering Academy Logo" class="h-11 w-auto object-contain rounded" src="https://lh3.googleusercontent.com/aida/AEtjO1Wau4Qotv1UKkd7aDu8wuRyAkM-8JJqfZiW_fQlFrPLuRnYwVmHIjM3nvcljdEdjBkpkXY4pwx1ol4Y2muDmc2PPUTw1JY0xU4Cg4KGA-WBZp2Ioxkfk07KH-wlAqrBZ8XZWM8uu9_WdPyVcTJNQCVOa36hHn6IkHx3xzA9oeP9kTBbu0Ef-3pRUMiickzghxzjtSezQ19DqKufyKm2UJcHGr7dpRzJewhafpDI_Blu8wv734IoaKj6u1Oj"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary font-extrabold tracking-tight uppercase leading-none">Shubh Engineering Academy</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-0.5">GPSC • GSSSB • GPSSB Civil Cadres</span></div></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="bg-primary text-on-primary font-title-md rounded-lg px-space-sm py-1.5"><a class="font-title-md text-title-md text-on-surface-variant hover:text-primary transition-colors px-space-sm py-1.5" data-path="targeted-exams" href="#">Targeted Exams</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-primary transition-colors px-space-sm py-1.5" data-path="batches-and-admissions" href="#">Batches &amp; Admissions</a><a class="font-title-md text-title-md text-primary font-bold border-b-2 border-secondary px-space-sm py-1.5" data-path="excellence-and-results" href="#">Excellence &amp; Results</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-primary transition-colors px-space-sm py-1.5" data-path="alumni-network" href="#">Alumni Network</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-primary transition-colors px-space-sm py-1.5" data-path="contact-and-centers" href="#">Contact &amp; Centers</a></nav><div class="flex items-center gap-space-md"><a class="bg-primary text-on-primary border border-secondary/40 px-space-md py-2 rounded-lg font-label-lg text-label-lg hover:bg-primary-container transition-all shadow-[0_2px_8px_rgba(43,58,85,0.2)] flex items-center gap-1.5" data-path="student-portal" href="#"><span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">lock</span> Student Portal</a><div class="flex items-center gap-space-sm pl-space-xs border-l border-[#B89E58]/30"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrq1sbV9oXsvteuhuxtj0zsHAcElTf6l70H_Bv12DV82aFnVS1wldB2nDqXAaUsw3cXSx415XlXs1TCW572jZxfU7paLKsSEXRaGLBb3Yike2NFP7L-LPp6yYKgHW6ttBpItE8feysGe4_BMzz2AGeRgKxzwF7eUaMMVkbDk65_mIV01EV1UMK0iu-y6DWrLEznUWil_M8V-_mk0r31NFTb5lPLp07jSxPHhVlBZMwZZDdw3YV_IuVqg"/><div class="hidden lg:flex flex-col"><span class="font-label-sm text-label-sm font-bold text-primary leading-tight">Director Desk</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">GPSC Mentorship</span></div></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Editorial Authority Hero -->
+<section class="relative w-full overflow-hidden bg-primary text-on-primary py-space-xl px-margin border-b border-[#B89E58]/30">
+<div class="absolute inset-0 bg-gradient-to-r from-[#1E2A40] via-[#2B3A55] to-[#1E2A40] opacity-95 pointer-events-none"></div>
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-[#D4AB3F] opacity-10 blur-3xl pointer-events-none"></div>
+<div class="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-end justify-between gap-space-lg">
+<div class="max-w-3xl space-y-space-sm">
+<div class="inline-flex items-center gap-space-xs bg-[#FAF7F0]/10 border border-[#B89E58]/50 text-secondary px-space-sm py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+          State Cadre Merit Ledger • 2016–2025
+        </div>
+<h1 class="font-display-lg text-display-lg text-on-primary tracking-tight">
+          Proven Hall of Fame: <span class="text-secondary">1,450+ Selections</span> in GPSC, GSSSB &amp; GPSSB
+        </h1>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl leading-relaxed">
+          Gujarat's premier dedicated civil engineering competitive institute. Institutional precision, field-tested structural modules, and uncompromised state-level merit across Roads &amp; Buildings, Narmada, and Water Resources cadres.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full lg:w-auto">
+<div class="bg-[#FAF7F0]/10 backdrop-blur-md p-space-md rounded-xl text-left border border-[#B89E58]/40 shadow-inner">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block font-bold">Official Gazette Record</span>
+<span class="font-headline-md text-headline-md text-on-primary font-bold">AIR / State Rank 1</span>
+<span class="font-body-sm text-body-sm text-on-primary-container block mt-0.5">Consecutive 6 Exam Cycles</span>
+</div>
+<a class="bg-secondary text-primary font-bold px-space-lg py-space-md rounded-lg font-label-lg text-label-lg text-center hover:bg-secondary-fixed transition-all shadow-lg hover:shadow-xl border border-secondary" href="#rankers-grid">
+          Inspect Merits
+        </a>
+</div>
+</div>
+</section>
+<!-- Quantified Cadre Impact Counter Strip -->
+<section class="w-full bg-surface-container-lowest py-space-xl px-margin shadow-sm border-b border-[#B89E58]/20">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-low p-space-lg rounded-xl relative overflow-hidden group hover:shadow-md transition-shadow border border-[#B89E58]/25">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary tracking-wider">Class 1 &amp; 2 Cadre</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">assured_workload</span>
+</div>
+<div class="font-display-lg text-display-lg text-primary font-extrabold tracking-tight">420<span class="text-secondary">+</span></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+            Gazetted officers currently serving in Gujarat PWD Roads &amp; Buildings, GWSSB &amp; Sardar Sarovar Narmada Nigam.
+          </p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl relative overflow-hidden group hover:shadow-md transition-shadow border border-[#B89E58]/25">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary tracking-wider">Direct AAE Technical</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">construction</span>
+</div>
+<div class="font-display-lg text-display-lg text-primary font-extrabold tracking-tight">850<span class="text-secondary">+</span></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+            GSSSB Additional Assistant Engineers inducted into urban municipal corporations and state irrigation wings.
+          </p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl relative overflow-hidden group hover:shadow-md transition-shadow border border-[#B89E58]/25">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary tracking-wider">GPSC Mains Ratio</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">analytics</span>
+</div>
+<div class="font-display-lg text-display-lg text-primary font-extrabold tracking-tight">94.2<span class="text-secondary">%</span></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+            Success rate in GPSC Civil Engineering conventional Mains examination from regular Gandhinagar &amp; Ahmedabad batches.
+          </p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl relative overflow-hidden group hover:shadow-md transition-shadow border border-[#B89E58]/25">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary tracking-wider">Pedagogical Record</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="font-display-lg text-display-lg text-primary font-extrabold tracking-tight">28<span class="text-secondary">x</span></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+            Consecutive state examination announcements where Shubh Engineering Academy produced Top 10 rankers.
+          </p>
+</div>
+</div>
+<!-- State Merit Blueprint Visualization -->
+<div class="mt-space-lg p-space-lg bg-surface-container rounded-xl flex flex-col lg:flex-row items-center justify-between gap-space-lg border border-[#B89E58]/30">
+<div class="space-y-space-xs max-w-xl">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md uppercase font-bold text-primary">Department Selection Distribution</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-primary font-bold">Gujarat State Civil Engineering Cadre Appointments</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Validated against GPSC Advt 20/2022-23 to 48/2024-25 final appointment gazette records.</p>
+</div>
+<div class="w-full lg:w-1/2 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-primary font-semibold">Roads &amp; Buildings (R&amp;B Cadre)</span>
+<span class="font-bold text-primary">48% (696 Appointees)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 48%"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm pt-space-xs">
+<span class="text-primary font-semibold">Water Resources &amp; GWSSB (Irrigation)</span>
+<span class="font-bold text-primary">34% (493 Appointees)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 34%"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm pt-space-xs">
+<span class="text-primary font-semibold">GPSSB Panchayat &amp; Urban Development</span>
+<span class="font-bold text-primary">18% (261 Appointees)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 18%"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Hall of Fame Showcase -->
+<section class="w-full py-space-xl px-margin bg-background" id="rankers-grid">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm font-bold uppercase text-secondary tracking-wider">First-Attempt State Ranks</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">Hall of Fame: Certified Top Rankers</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+            Authentic results verified with state gazetted roll numbers, merit positions, and allocated ministerial postings.
+          </p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container p-1 rounded-lg border border-[#B89E58]/30">
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm">All Services</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors">GPSC Class 1 &amp; 2</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors">GSSSB AAE</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Rank 1: Er. Hardik Patel -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-all border border-[#B89E58]/30">
+<div class="p-space-lg space-y-space-md">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container">
+<span class="bg-primary text-secondary border border-secondary/40 px-space-sm py-1 rounded-lg font-label-sm text-label-sm uppercase font-bold tracking-wider">
+                State Rank 1 • GPSC Class 1
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Advt. No. 24/2023-24</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-md items-start sm:items-center">
+<div class="relative w-28 h-28 rounded-xl overflow-hidden flex-shrink-0 bg-surface-container border border-[#B89E58]/30">
+<img class="w-full h-full object-cover" data-alt="Portrait of Er. Hardik Patel, a confident Indian civil engineer in formal navy blue blazer, smart academic look, studio lighting on subtle slate architectural backdrop, Shubh Engineering Academy top ranker" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4pul6KlOYJn-HpdPllNi05FzEIsjtIEmDk68QWxfh5b-flKRv9I1Vzl1lVsy74JCivzaaAX2_zkZ9jqqw_Q_GADux5MPHOR6HAuIjoivk_tkz4yKE2DW4wsnJ9M9f6RrWXBcygQ_pbwjqWXiLgOJrL-HGxXZfFlbZx8DBwRBSodDnBAwcq5R7qSlkovE1G02_8J9w1SNqsuvOhzwZs7WObKFW5_JnAfwxyTu42Cq6cJ_Za_uuQA_ImA"/>
+<div class="absolute bottom-1 right-1 bg-secondary text-primary font-extrabold text-label-sm font-label-sm px-1.5 py-0.5 rounded shadow">
+                  Score 248/500
+                </div>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline-md text-headline-md font-bold text-primary">Er. Hardik Patel</h3>
+<p class="font-label-lg text-label-lg text-primary font-semibold">Executive Engineer (Class 1)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Roads &amp; Buildings Department, Gandhinagar</p>
+<div class="flex items-center gap-space-sm pt-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="font-bold text-primary">Roll No:</span> 10842918 • <span class="text-secondary font-bold">1st Attempt</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg space-y-space-xs border border-[#B89E58]/20">
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-bold uppercase">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                Interview Summary &amp; Strategy Quote
+              </div>
+<p class="font-body-md text-body-md text-on-surface italic">
+                “The Academy’s 45 full-length conventional test series and formula handbooks for Structural Analysis and Soil Mechanics were the absolute differentiator. Writing answers in exact GPSC Mains ledger sheets built unmatched speed.”
+              </p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md flex items-center justify-between border-t border-[#B89E58]/20">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-sm">verified</span> Verified Gujarat Gazette Final List
+            </span>
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-bold hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-base">smart_display</span> Watch Interview (18m)
+            </button>
+</div>
+</div>
+<!-- Rank 2: Er. Pooja Joshi -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-all border border-[#B89E58]/30">
+<div class="p-space-lg space-y-space-md">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container">
+<span class="bg-secondary text-primary px-space-sm py-1 rounded-lg font-label-sm text-label-sm uppercase font-bold tracking-wider">
+                State Rank 2 • GPSC Class 2
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Advt. No. 27/2023-24</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-md items-start sm:items-center">
+<div class="relative w-28 h-28 rounded-xl overflow-hidden flex-shrink-0 bg-surface-container border border-[#B89E58]/30">
+<img class="w-full h-full object-cover" data-alt="Professional studio portrait of Er. Pooja Joshi, young Indian female civil engineer wearing professional formal dress, calm smiling demeanor, neutral warm background, academic excellence portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6TrDjxb7FlIk0gTQ2bdXmsUiIsdC-d5MrneWauTda30az92u0VujhR_sF8RisonT1bAJrLvc5xkgsyHACa78TmnHh_tZCe_QYE5KJQsh9CqYU2xE7VWG3MPZ00Sve2blprCisozmqFFnJ8tQNzZSsrHlYJeEyrEN7joiONf7HpNZhikAl6uIqAU1aHUnq_MH1ZlvzBDueZDr07xXlfetf0sI-Ul4JXXwNrUVc7OVhXOId8QLiUYyVXQ"/>
+<div class="absolute bottom-1 right-1 bg-secondary text-primary font-extrabold text-label-sm font-label-sm px-1.5 py-0.5 rounded shadow">
+                  Score 239/500
+                </div>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline-md text-headline-md font-bold text-primary">Er. Pooja Joshi</h3>
+<p class="font-label-lg text-label-lg text-primary font-semibold">Assistant Engineer (Class 2)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Narmada, Water Resources &amp; Kalpsar Dept</p>
+<div class="flex items-center gap-space-sm pt-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="font-bold text-primary">Roll No:</span> 20491823 • <span class="text-secondary font-bold">Classroom Batch 2023</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg space-y-space-xs border border-[#B89E58]/20">
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-bold uppercase">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                Interview Summary &amp; Strategy Quote
+              </div>
+<p class="font-body-md text-body-md text-on-surface italic">
+                “Fluid Mechanics and Hydrology were my weaker zones. Director Desk mentorship and customized structural notes simplified multi-variable derivations. Cleared in 1st attempt with highest female candidate marks.”
+              </p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md flex items-center justify-between border-t border-[#B89E58]/20">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-sm">verified</span> Highest Marks in Technical Paper II
+            </span>
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-bold hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-base">smart_display</span> Watch Interview (14m)
+            </button>
+</div>
+</div>
+<!-- Rank 1: Er. Mehul Solanki -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-all border border-[#B89E58]/30">
+<div class="p-space-lg space-y-space-md">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container">
+<span class="bg-primary text-secondary border border-secondary/40 px-space-sm py-1 rounded-lg font-label-sm text-label-sm uppercase font-bold tracking-wider">
+                State Rank 1 • GSSSB AAE
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Advt. No. 198/2023</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-md items-start sm:items-center">
+<div class="relative w-28 h-28 rounded-xl overflow-hidden flex-shrink-0 bg-surface-container border border-[#B89E58]/30">
+<img class="w-full h-full object-cover" data-alt="Portrait of Er. Mehul Solanki, professional Indian engineer in collared shirt, intelligent focused demeanor, warm studio lighting, civil engineering topper Gujarat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3ASXrZqi0bAfB9JqI3pB3BvReyBbJTyi9oAN6m7mMlNovo-sYpRnMXY629_OpSxYGVgoSlqJzJEPZ1xAYylUhCxoxvtfGsfQ-xFVEsBiN6RS1VPvESaJHXzvk4BPraNxv64zJzGW6a47KhF6KdsKbClfJQzirZWcAS3HtYZpziCj8cWbnAUZuNUjdQ4Zj6fnx1BlUAh6_Xf-LGQh9XT-qJkj_QasCcwKTW-DJGu3hwU95HuiNHYLOCw"/>
+<div class="absolute bottom-1 right-1 bg-secondary text-primary font-extrabold text-label-sm font-label-sm px-1.5 py-0.5 rounded shadow">
+                  Score 182/210
+                </div>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline-md text-headline-md font-bold text-primary">Er. Mehul Solanki</h3>
+<p class="font-label-lg text-label-lg text-primary font-semibold">Additional Assistant Engineer (AAE)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Urban Development &amp; Urban Housing Dept</p>
+<div class="flex items-center gap-space-sm pt-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="font-bold text-primary">Roll No:</span> 55102941 • <span class="text-secondary font-bold">1st Attempt Rank 1</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg space-y-space-xs border border-[#B89E58]/20">
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-bold uppercase">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                Interview Summary &amp; Strategy Quote
+              </div>
+<p class="font-body-md text-body-md text-on-surface italic">
+                “GSSSB requires lightning speed in formula calculations and IS Code 456 memorization. The Academy’s OMR simulator test series mirrored the exact examination pressure and negative marking control.”
+              </p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md flex items-center justify-between border-t border-[#B89E58]/20">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-sm">verified</span> 100% Accuracy in Highway Engg
+            </span>
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-bold hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-base">smart_display</span> Watch Interview (22m)
+            </button>
+</div>
+</div>
+<!-- Rank 3: Er. Chirag Dave -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-all border border-[#B89E58]/30">
+<div class="p-space-lg space-y-space-md">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container">
+<span class="bg-surface-container-high text-primary border border-[#B89E58]/40 px-space-sm py-1 rounded-lg font-label-sm text-label-sm uppercase font-bold tracking-wider">
+                Rank 3 • GPSSB Junior Engineer
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Advt. No. 13/2023-24</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-md items-start sm:items-center">
+<div class="relative w-28 h-28 rounded-xl overflow-hidden flex-shrink-0 bg-surface-container border border-[#B89E58]/30">
+<img class="w-full h-full object-cover" data-alt="Portrait of Er. Chirag Dave, young Gujarati male civil engineer in formal attire, energetic expression, office setting soft background, government exam success portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBetpokv2xQUaA2jl-5kJVnBn4527JfXS0YJtapRcDq6-f_1oBvLRg1r_zgnFM5RRWRUXa5eOTXqGMRnWr7_v75VMIkRfyaOE1NykEzYAdGjoPttq00ATi2J4EYdaa_7BUtpVygfycweyp8upv3t63X-3ahE4vTB_NKgew52dVybbuLuZ-oQHPy9y-1-J1pWfd0nKMhefvRtUXicGV-WwgxZJhG6ZNmESK-sA0sR_Lm2XSgoLxV2zdhhA"/>
+<div class="absolute bottom-1 right-1 bg-secondary text-primary font-extrabold text-label-sm font-label-sm px-1.5 py-0.5 rounded shadow">
+                  Score 89/100
+                </div>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline-md text-headline-md font-bold text-primary">Er. Chirag Dave</h3>
+<p class="font-label-lg text-label-lg text-primary font-semibold">Junior Engineer (Civil)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">District Panchayat Ahmedabad Division</p>
+<div class="flex items-center gap-space-sm pt-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="font-bold text-primary">Roll No:</span> 99182304 • <span class="text-secondary font-bold">Weekend Cadre Batch</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg space-y-space-xs border border-[#B89E58]/20">
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-bold uppercase">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                Interview Summary &amp; Strategy Quote
+              </div>
+<p class="font-body-md text-body-md text-on-surface italic">
+                “Balancing field work with exam preparation seemed impossible. The weekend batch modular sheets and concise Building Materials notes allowed me to score Rank 3 in Ahmedabad district on my first try.”
+              </p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md flex items-center justify-between border-t border-[#B89E58]/20">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-sm">verified</span> Ahmedabad Cadre Allotment
+            </span>
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-bold hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-base">smart_display</span> Watch Interview (11m)
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Topper Strategy & Preparation Guides -->
+<section class="w-full py-space-xl px-margin bg-surface-container-low border-y border-[#B89E58]/25">
+<div class="max-w-7xl mx-auto space-y-space-lg">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm font-bold uppercase text-secondary tracking-wider">Aspirant Knowledge Repository</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">Topper Strategy &amp; Academic Archives</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+            Download verified ranker scorecards, handwritten class notes, and technical solution blueprints.
+          </p>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-primary font-bold hover:text-secondary transition-colors" href="#">
+          View Complete 10-Year Subject Vault
+          <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Asset 1: Geotechnical Notes -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md border border-[#B89E58]/25">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="bg-surface-container text-primary font-label-sm text-label-sm px-space-sm py-1 rounded font-bold uppercase border border-[#B89E58]/20">PDF Handout</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">48 Pages • 8.4 MB</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Geotechnical Engineering &amp; Foundation Design</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Full handwritten compilation by Er. Hardik Patel (Rank 1). Features Mohr-Coulomb failure criteria, Terzaghi bearing capacity derivations, and direct GPSC solved numericals.
+            </p>
+<div class="flex items-center gap-space-sm text-label-sm font-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              Includes IS 6403 Bearing Code References
+            </div>
+</div>
+<button class="w-full bg-primary text-on-primary py-2.5 rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-sm border border-secondary/20">
+<span class="material-symbols-outlined text-base">download</span> Download Handwritten PDF
+          </button>
+</div>
+<!-- Asset 2: RCC Design & Limit State Notes -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md border border-[#B89E58]/25">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="bg-surface-container text-primary font-label-sm text-label-sm px-space-sm py-1 rounded font-bold uppercase border border-[#B89E58]/20">Topper Blueprint</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">62 Pages • 11.2 MB</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Reinforced Concrete Design (RCC) &amp; IS 456:2000</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Authored by Er. Pooja Joshi (Rank 2). Comprehensive breakdown of Limit State Method for flexure, shear, compression, and earthquake resistant detailing per IS 13920.
+            </p>
+<div class="flex items-center gap-space-sm text-label-sm font-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              Clause-by-Clause GSSSB Rapid Checklists
+            </div>
+</div>
+<button class="w-full bg-primary text-on-primary py-2.5 rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-sm border border-secondary/20">
+<span class="material-symbols-outlined text-base">download</span> Download Handwritten PDF
+          </button>
+</div>
+<!-- Asset 3: Official Marksheets & Trend Analysis -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md border border-[#B89E58]/25">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="bg-secondary/20 text-primary font-label-sm text-label-sm px-space-sm py-1 rounded font-bold uppercase border border-secondary/40">Official Gazette</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">18 Pages • 3.6 MB</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">GPSC &amp; GSSSB Topper Scorecards &amp; Cutoff Trends</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Actual certified scorecards, subject-wise Prelims + Mains mark distributions, and safe-score threshold analysis for 2018–2024 recruitment cycles.
+            </p>
+<div class="flex items-center gap-space-sm text-label-sm font-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              RTI Marksheets &amp; Category Wise Split
+            </div>
+</div>
+<button class="w-full bg-secondary text-primary font-bold py-2.5 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-secondary-fixed transition-colors shadow-sm border border-secondary">
+<span class="material-symbols-outlined text-base">visibility</span> View Gazette Scorecards
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Annual Felicitations Ceremony Gallery & Chief Guest Testimonials -->
+<section class="w-full py-space-xl px-margin bg-background">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<div>
+<span class="font-label-sm text-label-sm font-bold uppercase text-secondary tracking-wider">State Administrative Recognition</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">Annual Officer Felicitations &amp; Academic Honors</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+          Every year, successful cadets are formally inducted and honored in Gandhinagar in the presence of veteran Chief Engineers and state administrative leaders.
+        </p>
+</div>
+<!-- Ceremony Imagery Bento -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="md:col-span-2 relative h-80 rounded-xl overflow-hidden bg-surface-container border border-[#B89E58]/30">
+<img class="w-full h-full object-cover" data-alt="Grand ceremonial auditorium stage in Gandhinagar, Gujarat, filled with newly recruited civil engineering officers in formal suits receiving mementos from retired chief engineers, large banner in background, bright theatrical lighting, dignified atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACGJ000KIS16OcnxNoSKSrvE7artK1zF_VGmrg-x2O_NTx2_im9bWYVZXLsIGJxmp8XzoZRoqvsx-iusQD6gHVmCy0d2A0Dk_uZPT1KS7oSrxwaRRoSsYT5nnD-erVlnEuSYG1ilYIXnNzM5z9-d6DIa6j8Rn2e5RfgXutwafEUNhIwKBNxvFHmDTtZs--G75SL-kwmwuMOTCgiEO5BzCDTXCXMhi_GlN4WuSL716gp3JH7gZH2ZP8tQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/40 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-on-primary space-y-1">
+<span class="bg-secondary text-primary text-label-sm font-label-sm px-2 py-0.5 rounded uppercase font-bold">Convocation 2024</span>
+<p class="font-title-md text-title-md font-bold">142 Newly Selected Class 1, 2 &amp; AAE Officers Felicitated at Mahatma Mandir Hall</p>
+<p class="font-body-sm text-body-sm text-on-primary-container">Attended by senior directors of Sardar Sarovar Narmada Nigam and Gujarat Water Supply Board.</p>
+</div>
+</div>
+<div class="relative h-80 rounded-xl overflow-hidden bg-surface-container border border-[#B89E58]/30">
+<img class="w-full h-full object-cover" data-alt="Close up photograph of a veteran senior Indian civil engineer presenting a golden trophy and certificate to a smiling young female engineer on an official stage, prestigious government academy event, soft golden lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu55tKaZ0Up8asd6XYWVIyzwmRUM_DitaMN0hJ7MIIV9z_Hr9mDUY4n6WV14ZDLBBk3PYlkrRRiEucmQxoU1wGnyptHTQYufoc1_tTQohV3U6hAadBjITPTdLjtWZ6GoiNIG6mT0FJLbSaWHDC91FlI8wntPl4raKZzBo1WChWPGOZvX6sgpxgqvphetFAIFdrxcIgYF0fwWzVEGABtpiTmS_4Gbmhv9gsbZ14gOXZP6lPdwNCh5v_LA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/40 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-on-primary space-y-1">
+<span class="bg-surface-container-lowest text-primary text-label-sm font-label-sm px-2 py-0.5 rounded uppercase font-bold border border-secondary/40">Merit Memento</span>
+<p class="font-title-md text-title-md font-bold">Topper Medal Conferment</p>
+<p class="font-body-sm text-body-sm text-on-primary-container">Er. Hardik Patel receiving the Cadre Roll of Honor.</p>
+</div>
+</div>
+</div>
+<!-- Chief Guest Testimonials -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md border border-[#B89E58]/30">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container flex-shrink-0 ring-2 ring-[#B89E58]/40">
+<img class="w-full h-full object-cover" data-alt="Dignified portrait of Er. K. V. Mehta, distinguished retired Chief Engineer of Gujarat PWD Roads and Buildings department, senior Indian gentleman with silver hair, glasses, gentle wise smile, formal dress" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy2Atj_zB-fROP3CP_6vwlLGsnKwNAHpc6p-dHTdoxhBFAdSozsscUZj6IDwDbAkUNffZl0NWxbrzkw1__zutbtPdh8smfLL9CIIkNb2L6Prr4aNNsk3qw0-gRTGnPo9sp9mddDutqWFqx9Wu_SzY349n5w3gvZS8GTgDBLPcDNCA8tFjt7-Zwt5s3BeFXZvUMUWrvqagQfTfaeZlhMvDR0Ix4a_ZYZQ058m5oQLgGSu3DAW4PctGm7w"/>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-primary">Er. K. V. Mehta (Retd.)</h3>
+<p class="font-label-sm text-label-sm text-secondary font-bold">Former Chief Engineer &amp; Addl. Secretary</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Roads &amp; Buildings Dept, Govt. of Gujarat</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            “When recruits come from Shubh Engineering Academy into state service, their practical grounding in Gujarat PWD specifications, bridge hydraulics, and IS code provisions is evident from day one. This academy is not merely coaching for an exam; it is molding disciplined public infrastructure leaders.”
+          </p>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-primary font-bold">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">stars</span> Chief Guest, 8th Annual Cadre Convocation
+          </div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md border border-[#B89E58]/30">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container flex-shrink-0 ring-2 ring-[#B89E58]/40">
+<img class="w-full h-full object-cover" data-alt="Portrait of Er. R. S. Bhatt, retired Chief Technical Advisor for Gujarat Water Resources and Narmada project, senior Gujarati professional with distinguished demeanor and formal suit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALWX6wYXJ1no1yCxm64BlRFhHzAZsMahgs7xibagx5HP4dq3FopMGBWcD6LKpdKlcWameTMUvqFFpcFKJpvoE3TN28EeGKk5rsA1v-W2lJlIusiOIH7VyTsuMS9mPWK2b4nfJ34kUjAtDwldzno-3cBCniJhZA9BkbjL3D1385gHVrMx40eo67hcjQQ0HJd6y1C_2qaZVc_x2ZGN-jFjjYprZjOp9P8nrvS1TMKV6KR6pg7Knz59iQYA"/>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-primary">Er. R. S. Bhatt (Retd.)</h3>
+<p class="font-label-sm text-label-sm text-secondary font-bold">Former Technical Advisor &amp; Chief Engineer</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Narmada Water Resources &amp; Water Supply</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            “The sheer consistency of their classroom students securing top ranks in GPSC technical papers over eight consecutive years is unprecedented in Gujarat’s competitive landscape. Their pedagogy reflects real engineering rigour rather than superficial shortcuts.”
+          </p>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-primary font-bold">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">stars</span> Presiding Dignitary, Annual Merit Assembly
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Gazette Verification CTA -->
+<section class="w-full bg-primary text-on-primary py-space-xl px-margin border-t border-[#B89E58]/30">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-space-lg bg-primary-container p-space-xl rounded-xl border border-[#B89E58]/30 shadow-lg">
+<div class="space-y-space-xs max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary tracking-wider">Uncompromising Transparency</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-primary">Verify Any Roll Number Against Official Gazette</h2>
+<p class="font-body-md text-body-md text-on-primary-container">
+          We maintain a 100% auditable record of every student enrolled in our classroom, online, and test series batches. Search our public selection register from 2016 through 2025.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm w-full lg:w-auto">
+<div class="relative">
+<input class="bg-surface-container-lowest text-on-surface px-space-md py-3 rounded-lg font-body-sm text-body-sm focus:outline-none w-full sm:w-64 placeholder:text-on-surface-variant border border-[#B89E58]/40" placeholder="Enter GPSC / GSSSB Roll No..." type="text"/>
+</div>
+<button class="bg-secondary text-primary font-bold px-space-lg py-3 rounded-lg font-label-md text-label-md hover:bg-secondary-fixed transition-all flex items-center justify-center gap-2 shadow-md">
+<span class="material-symbols-outlined text-base">search</span> Verify Selection
+        </button>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interaction for filter tabs on Rankers Grid
+  document.querySelectorAll('#rankers-grid button').forEach(button => {
+    button.addEventListener('click', function() {
+      const parent = this.parentElement;
+      parent.querySelectorAll('button').forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        btn.classList.add('text-on-surface-variant');
+      });
+      this.classList.remove('text-on-surface-variant');
+      this.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    });
+  });
+</script></main><footer class="w-full bg-[#1E2A40] text-on-primary pt-space-xl pb-space-lg border-t border-[#B89E58]/30"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg pb-space-xl"><div class="lg:col-span-2 space-y-space-sm"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="Shubh Engineering Academy Logo" class="h-10 w-auto object-contain rounded" src="https://lh3.googleusercontent.com/aida/AEtjO1Wau4Qotv1UKkd7aDu8wuRyAkM-8JJqfZiW_fQlFrPLuRnYwVmHIjM3nvcljdEdjBkpkXY4pwx1ol4Y2muDmc2PPUTw1JY0xU4Cg4KGA-WBZp2Ioxkfk07KH-wlAqrBZ8XZWM8uu9_WdPyVcTJNQCVOa36hHn6IkHx3xzA9oeP9kTBbu0Ef-3pRUMiickzghxzjtSezQ19DqKufyKm2UJcHGr7dpRzJewhafpDI_Blu8wv734IoaKj6u1Oj"/><span class="font-title-md text-title-md text-on-primary font-bold">Shubh Engineering Academy</span></div><p class="font-body-sm text-body-sm text-on-primary-container max-w-sm">Premier technical civil engineering academy specializing in GPSC Class 1 &amp; 2 Executive Engineer, GSSSB Additional Assistant Engineer (AAE), and GPSSB cadre recruitments across Gujarat state governance.</p><div class="pt-space-xs"><p class="font-label-sm text-label-sm text-secondary font-bold uppercase mb-1">Accreditation &amp; Affiliation</p><p class="font-body-sm text-body-sm text-on-primary-container">ISO 9001:2015 Technical Pedagogical Certified Coaching Establishment for State Engineering Competitive Services.</p></div></div><div class="space-y-space-sm"><h3 class="font-label-lg text-label-lg text-secondary font-bold uppercase tracking-wider">State Syllabus</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-on-primary-container"><li><a class="hover:text-secondary transition-colors" data-path="targeted-exams" href="#">GPSC Class 1-2 Executive Engg</a></li><li><a class="hover:text-secondary transition-colors" data-path="targeted-exams" href="#">GSSSB AAE Civil Syllabus</a></li><li><a class="hover:text-secondary transition-colors" data-path="targeted-exams" href="#">GPSSB Additional Asst Engineer</a></li><li><a class="hover:text-secondary transition-colors" data-path="targeted-exams" href="#">Gujarat Water Resources (GWSSB)</a></li><li><a class="hover:text-secondary transition-colors" data-path="targeted-exams" href="#">Road &amp; Building Dept (R&amp;B) Module</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-label-lg text-label-lg text-secondary font-bold uppercase tracking-wider">Aspirant Resources</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-on-primary-container"><li><a class="hover:text-secondary transition-colors" data-path="resources" href="#">Civil Engineering Formula Handbooks</a></li><li><a class="hover:text-secondary transition-colors" data-path="resources" href="#">GSSSB Notification Alerts 2025</a></li><li><a class="hover:text-secondary transition-colors" data-path="test-series-portal" href="#">OMR Pattern Test Series Portal</a></li><li><a class="hover:text-secondary transition-colors" data-path="resources" href="#">GPSC Previous 10-Year Solved Papers</a></li><li><a class="hover:text-secondary transition-colors" data-path="resources" href="#">Verified Model Answer Keys</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-label-lg text-label-lg text-secondary font-bold uppercase tracking-wider">Head Office</h3><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Cadre Bhavan, 4th Floor, Sector 11, Near GH-Road Circle, Gandhinagar - 382011, Gujarat</p><p class="font-body-sm text-body-sm text-on-primary-container"><span class="font-bold text-on-primary">Phone:</span> +91 79 2320 0000</p><p class="font-body-sm text-body-sm text-on-primary-container"><span class="font-bold text-on-primary">Email:</span> admissions@shubhacademy.in</p><div class="pt-space-xs"><span class="inline-block bg-[#2B3A55] border border-[#B89E58]/40 text-secondary font-label-sm text-label-sm px-space-sm py-1 rounded-lg">Branch: Usmanpura, Ahmedabad</span></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between text-body-sm font-body-sm text-on-primary-container border-t border-[#B89E58]/20"><p>© 2025 Shubh Engineering Academy. All Rights Reserved. Dedicated to Gujarat Engineering Services.</p><div class="flex items-center gap-space-md mt-space-sm md:mt-0"><a class="hover:text-secondary transition-colors" href="#">Right to Information (RTI)</a><a class="hover:text-secondary transition-colors" href="#">Privacy Policy</a><a class="hover:text-secondary transition-colors" href="#">Terms of Enrollment</a></div></div></div></footer></body></html>
