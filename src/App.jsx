@@ -62,7 +62,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F6F0DF] text-[#1E1C12]">
+    <div className="min-h-screen flex flex-col bg-[#F6F0DF] text-[#1E1C12] overflow-x-hidden w-full max-w-full">
       <ScrollToTop />
 
       {/* Global Navigation Header */}
@@ -77,7 +77,7 @@ export default function App() {
       />
 
       {/* Main Routed Page Content */}
-      <main className="flex-grow">
+      <main className="flex-grow overflow-x-hidden w-full max-w-full">
         <Routes>
           <Route path="/" element={<TargetedExams onTriggerDownload={triggerDownload} />} />
           <Route path="/batches" element={<Batches />} />

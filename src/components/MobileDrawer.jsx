@@ -10,7 +10,8 @@ export default function MobileDrawer({ isOpen, onClose }) {
     { name: 'Targeted Exams', path: '/', icon: 'rule' },
     { name: 'Batches & Fees', path: '/batches', icon: 'school' },
     { name: 'Results & Rankers', path: '/results', icon: 'military_tech' },
-    { name: 'Alumni Network', path: '/alumni', icon: 'groups' }
+    { name: 'Alumni Network', path: '/alumni', icon: 'groups' },
+    { name: 'Inquire Now', path: '/contact', icon: 'contact_support', isHighlight: true }
   ];
 
   return (
@@ -22,16 +23,19 @@ export default function MobileDrawer({ isOpen, onClose }) {
       />
 
       {/* Drawer */}
-      <aside className="fixed top-0 right-0 w-80 max-w-[85%] h-full bg-[#FAF7F0] border-l border-[#B89E58]/40 z-50 shadow-2xl p-6 flex flex-col justify-between animate-slide-left">
+      <aside className="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-[#FAF7F0] border-l border-[#B89E58]/40 z-50 shadow-2xl p-5 sm:p-6 flex flex-col justify-between overflow-y-auto animate-slide-left">
         <div>
           {/* Header */}
           <div className="flex items-center justify-between pb-4 border-b border-[#B89E58]/30">
-            <div className="flex items-center">
+            <div className="flex items-center gap-2">
               <img
-                src="/sea-logo-horizontal.png"
-                alt="Shubh Engineering Academy"
-                className="h-8 sm:h-9 w-auto object-contain"
+                src="/sea-logo-badge.jpg"
+                alt="SEA"
+                className="w-7 h-7 rounded-full object-cover border border-[#D4AB3F]"
               />
+              <span className="text-xs font-black tracking-tight text-[#2B3A55] uppercase font-display">
+                SHUBH ACADEMY
+              </span>
             </div>
             <button
               onClick={onClose}
@@ -43,15 +47,36 @@ export default function MobileDrawer({ isOpen, onClose }) {
           </div>
 
           {/* Links */}
-          <nav className="flex flex-col gap-2 mt-6">
+          <nav className="flex flex-col gap-2 mt-5">
             {navLinks.map((item) => {
               const isActive = location.pathname === item.path;
+              if (item.isHighlight) {
+                return (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    onClick={onClose}
+                    className="mt-2 px-4 py-3 rounded-xl text-sm font-extrabold flex items-center justify-between bg-[#2B3A55] text-white shadow-md border border-[#D4AB3F] group"
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className="material-symbols-outlined text-[#D4AB3F]">
+                        {item.icon}
+                      </span>
+                      <span>{item.name}</span>
+                    </div>
+                    <span className="material-symbols-outlined text-xs text-[#D4AB3F] group-hover:translate-x-1 transition-transform">
+                      arrow_forward
+                    </span>
+                  </Link>
+                );
+              }
+
               return (
                 <Link
                   key={item.path}
                   to={item.path}
                   onClick={onClose}
-                  className={`px-3.5 py-3 rounded-xl text-sm font-bold flex items-center gap-3 transition-colors ${
+                  className={`px-3.5 py-2.5 rounded-xl text-sm font-bold flex items-center gap-3 transition-colors ${
                     isActive
                       ? 'bg-[#2B3A55] text-white shadow-sm'
                       : 'text-[#566277] hover:bg-[#EEE7D2] hover:text-[#2B3A55]'

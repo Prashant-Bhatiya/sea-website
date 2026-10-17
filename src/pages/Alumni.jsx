@@ -249,7 +249,7 @@ export default function Alumni({ onOpenMentor, onOpenConclave }) {
         </div>
 
         {/* Department Filter Buttons */}
-        <div className="overflow-x-auto pb-4 mb-6 no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0">
+        <div className="overflow-x-auto pb-4 mb-6 no-scrollbar w-full max-w-full">
           <div className="flex items-center gap-2 w-max">
             {[
               { id: 'all', label: 'All State Cadres (8,000+)' },

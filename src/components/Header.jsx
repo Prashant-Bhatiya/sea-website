@@ -31,15 +31,33 @@ export default function Header({ onOpenMobileMenu }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
         
         {/* Official Brand Logo */}
-        <Link to="/" className="flex items-center gap-2 group shrink-0 py-0.5">
+        <Link to="/" className="flex items-center gap-2 group shrink-0 py-0.5 max-w-[70%] sm:max-w-none">
+          {/* Mobile View: Compact Badge Logo + Clean Text (Prevents header overflow) */}
+          <div className="flex items-center gap-2 sm:hidden">
+            <img
+              src="/sea-logo-badge.jpg"
+              alt="SEA"
+              className="w-8 h-8 rounded-full object-cover border border-[#D4AB3F] shadow-xs shrink-0"
+            />
+            <div className="flex flex-col min-w-0">
+              <span className="text-[12px] font-black tracking-tight text-[#2B3A55] uppercase leading-tight font-display truncate">
+                SHUBH ACADEMY
+              </span>
+              <span className="text-[9px] text-[#B89E58] font-bold tracking-wider leading-none">
+                CIVIL ENGINEERING
+              </span>
+            </div>
+          </div>
+
+          {/* Tablet & Desktop View: Full Official Horizontal Brand Logo */}
           <img
             src="/sea-logo-horizontal.png"
             alt="Shubh Engineering Academy - Inspire . Learn . Achieve"
-            className="h-10 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
+            className="hidden sm:block h-10 sm:h-12 w-auto max-w-[240px] md:max-w-none object-contain transition-transform duration-200 group-hover:scale-[1.02]"
           />
         </Link>
 
-        {/* Center Navigation Links */}
+        {/* Center Navigation Links (Desktop) */}
         <nav className="hidden lg:flex items-center gap-1.5 xl:gap-3">
           {navItems.map((item) => {
             const isActive = location.pathname === item.path;
@@ -62,11 +80,12 @@ export default function Header({ onOpenMobileMenu }) {
           })}
         </nav>
 
-        {/* Right Action CTA */}
-        <div className="flex items-center gap-3">
+        {/* Right Action CTA & Mobile Toggle */}
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          {/* Desktop ONLY: Inquire Now button */}
           <Link
             to="/contact"
-            className="group relative inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-[#2B3A55] text-white text-xs sm:text-sm font-bold shadow-md hover:bg-[#1E2A40] hover:shadow-lg transition-all duration-200 border border-[#D4AB3F]/40 hover:border-[#D4AB3F]"
+            className="hidden lg:inline-flex group relative items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-[#2B3A55] text-white text-xs sm:text-sm font-bold shadow-md hover:bg-[#1E2A40] hover:shadow-lg transition-all duration-200 border border-[#D4AB3F]/40 hover:border-[#D4AB3F]"
           >
             <span>Inquire Now</span>
             <span className="material-symbols-outlined text-sm text-[#D4AB3F] group-hover:translate-x-0.5 transition-transform">
@@ -77,7 +96,7 @@ export default function Header({ onOpenMobileMenu }) {
           {/* Mobile Hamburger Button */}
           <button
             onClick={onOpenMobileMenu}
-            className="lg:hidden p-2 rounded-xl text-[#2B3A55] bg-white border border-[#B89E58]/30 hover:bg-[#EEE7D2] transition-colors flex items-center justify-center shadow-xs"
+            className="lg:hidden p-2 rounded-xl text-[#2B3A55] bg-white border border-[#B89E58]/30 hover:bg-[#EEE7D2] transition-colors flex items-center justify-center shadow-xs shrink-0 focus:outline-none"
             aria-label="Open Navigation Menu"
           >
             <span className="material-symbols-outlined text-2xl">menu</span>

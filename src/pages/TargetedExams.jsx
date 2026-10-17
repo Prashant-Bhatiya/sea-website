@@ -112,9 +112,9 @@ export default function TargetedExams({ onTriggerDownload }) {
             
             {/* Left Hero Text Block */}
             <div className="lg:col-span-7 space-y-5 sm:space-y-6 text-left">
-              <div className="inline-flex items-center gap-2.5 bg-[#EEE7D2] text-[#2B3A55] font-bold text-[11px] sm:text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider border border-[#B89E58]/40 shadow-xs">
-                <img src="/sea-logo-badge.jpg" alt="SEA" className="w-5 h-5 rounded-full object-cover border border-[#D4AB3F]" />
-                <span>Shubh Engineering Academy • Inspire . Learn . Achieve</span>
+              <div className="inline-flex items-center gap-2 bg-[#EEE7D2] text-[#2B3A55] font-bold text-[10px] sm:text-xs px-3 py-1.5 rounded-full uppercase tracking-wider border border-[#B89E58]/40 shadow-xs max-w-full">
+                <img src="/sea-logo-badge.jpg" alt="SEA" className="w-4 h-4 sm:w-5 sm:h-5 rounded-full object-cover border border-[#D4AB3F] shrink-0" />
+                <span className="truncate">Shubh Engineering Academy • Inspire . Learn . Achieve</span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl text-[#2B3A55] tracking-tight font-extrabold leading-tight">
