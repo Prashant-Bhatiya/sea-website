@@ -1,8 +1,11 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Header({ onOpenMobileMenu }) {
-  const location = useLocation();
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -31,7 +34,7 @@ export default function Header({ onOpenMobileMenu }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
         
         {/* Official Brand Logo */}
-        <Link to="/" className="flex items-center gap-2 group shrink-0 py-0.5">
+        <Link href="/" className="flex items-center gap-2 group shrink-0 py-0.5">
           <img
             src="/sea-logo-horizontal.png"
             alt="Shubh Engineering Academy - Inspire . Learn . Achieve"
@@ -42,11 +45,11 @@ export default function Header({ onOpenMobileMenu }) {
         {/* Center Navigation Links (Desktop) */}
         <nav className="hidden lg:flex items-center gap-1.5 xl:gap-3">
           {navItems.map((item) => {
-            const isActive = location.pathname === item.path;
+            const isActive = pathname === item.path;
             return (
               <Link
                 key={item.path}
-                to={item.path}
+                href={item.path}
                 className={`relative px-4 py-2 rounded-xl text-xs xl:text-sm font-bold tracking-wide transition-all duration-200 ${
                   isActive
                     ? 'text-[#2B3A55] bg-[#EEE7D2] shadow-xs'
@@ -66,7 +69,7 @@ export default function Header({ onOpenMobileMenu }) {
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           {/* Desktop ONLY: Inquire Now button */}
           <Link
-            to="/contact"
+            href="/contact"
             className="hidden lg:inline-flex group relative items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-[#2B3A55] text-white text-xs sm:text-sm font-bold shadow-md hover:bg-[#1E2A40] hover:shadow-lg transition-all duration-200 border border-[#D4AB3F]/40 hover:border-[#D4AB3F]"
           >
             <span>Inquire Now</span>

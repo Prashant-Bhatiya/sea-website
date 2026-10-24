@@ -1,8 +1,11 @@
+'use client';
+
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function MobileDrawer({ isOpen, onClose }) {
-  const location = useLocation();
+  const pathname = usePathname();
 
   if (!isOpen) return null;
 
@@ -46,12 +49,12 @@ export default function MobileDrawer({ isOpen, onClose }) {
           {/* Links */}
           <nav className="flex flex-col gap-2 mt-5">
             {navLinks.map((item) => {
-              const isActive = location.pathname === item.path;
+              const isActive = pathname === item.path;
               if (item.isHighlight) {
                 return (
                   <Link
                     key={item.path}
-                    to={item.path}
+                    href={item.path}
                     onClick={onClose}
                     className="mt-2 px-4 py-3 rounded-xl text-sm font-extrabold flex items-center justify-between bg-[#2B3A55] text-white shadow-md border border-[#D4AB3F] group"
                   >
@@ -71,7 +74,7 @@ export default function MobileDrawer({ isOpen, onClose }) {
               return (
                 <Link
                   key={item.path}
-                  to={item.path}
+                  href={item.path}
                   onClick={onClose}
                   className={`px-3.5 py-2.5 rounded-xl text-sm font-bold flex items-center gap-3 transition-colors ${
                     isActive
@@ -92,7 +95,7 @@ export default function MobileDrawer({ isOpen, onClose }) {
         {/* Bottom CTA in Drawer */}
         <div className="pt-5 border-t border-[#B89E58]/30 space-y-3">
           <Link
-            to="/contact"
+            href="/contact"
             onClick={onClose}
             className="w-full bg-[#2B3A55] text-white py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 shadow-md border border-[#D4AB3F]/40 hover:bg-[#1E2A40]"
           >

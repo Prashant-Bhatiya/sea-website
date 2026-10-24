@@ -1,6 +1,10 @@
 # Dependencies
 node_modules/
 
+# Next.js build
+.next/
+out/
+
 # Production build
 dist/
 dist-ssr/
@@ -24,4 +28,3 @@ Thumbs.db
 .env
 .env.*
 !.env.example
-

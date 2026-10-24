@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 
 export default function Contact() {
@@ -397,7 +399,7 @@ export default function Contact() {
                       required
                       value={inquiryData.message}
                       onChange={(e) => setInquiryData({ ...inquiryData, message: e.target.value })}
-                      placeholder="e.g. I want to inquire about Sea Foundation Batch admission details, class schedule, and study materials..."
+                      placeholder="e.g. I want to inquire about fees amount and admission process for Foundation Batch 2026, Saksham Batch, or Interview Batch..."
                       className="w-full p-3.5 text-xs bg-[#FAF7F0] rounded-xl border border-[#B89E58]/30 focus:outline-none focus:ring-2 focus:ring-[#D4AB3F] leading-relaxed"
                     ></textarea>
                   </div>

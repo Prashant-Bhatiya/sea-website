@@ -1,5 +1,7 @@
+'use client';
+
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export default function Footer({ onTriggerDownload }) {
   return (
@@ -100,17 +102,17 @@ export default function Footer({ onTriggerDownload }) {
                 </button>
               </li>
               <li>
-                <Link to="/batches" className="hover:text-[#D4AB3F] transition-colors">
+                <Link href="/batches" className="hover:text-[#D4AB3F] transition-colors">
                   Upcoming Batches &amp; Timings
                 </Link>
               </li>
               <li>
-                <Link to="/results" className="hover:text-[#D4AB3F] transition-colors">
+                <Link href="/results" className="hover:text-[#D4AB3F] transition-colors">
                   State Rank 1 Hall of Fame
                 </Link>
               </li>
               <li>
-                <Link to="/alumni" className="hover:text-[#D4AB3F] transition-colors">
+                <Link href="/alumni" className="hover:text-[#D4AB3F] transition-colors">
                   Gujarat Officer Network
                 </Link>
               </li>
@@ -140,7 +142,7 @@ export default function Footer({ onTriggerDownload }) {
 
             <div className="pt-2">
               <Link
-                to="/contact"
+                href="/contact"
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#FAF7F0] text-[#2B3A55] text-xs font-bold hover:bg-[#D4AB3F] transition-colors"
               >
                 <span>Send Admission Query</span>
@@ -163,7 +165,7 @@ export default function Footer({ onTriggerDownload }) {
               <span>Follow on Instagram</span>
               <span className="material-symbols-outlined text-xs">arrow_outward</span>
             </a>
-            <Link to="/contact" className="hover:text-[#D4AB3F] transition-colors">
+            <Link href="/contact" className="hover:text-[#D4AB3F] transition-colors">
               Visit Gandhinagar Centers
             </Link>
           </div>

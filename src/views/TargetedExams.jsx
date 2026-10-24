@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export default function TargetedExams({ onTriggerDownload }) {
   const [selectedDiscipline, setSelectedDiscipline] = useState('all');
@@ -125,24 +127,23 @@ export default function TargetedExams({ onTriggerDownload }) {
                 Precision tactical coaching for Gujarat's most elite civil administrative appointments. We bridge structural analysis, fluid mechanics, soil dynamics, and state development codes directly with GPSC, GSSSB, and GPSSB marking schemes.
               </p>
 
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
+              <div className="flex flex-wrap items-center gap-3 sm:gap-3.5 pt-2">
                 <a
                   href="#exam-cards"
-                  className="bg-[#2B3A55] text-white px-6 py-3 rounded-lg text-xs sm:text-sm font-bold hover:bg-[#1E2A40] transition-all shadow-md flex items-center justify-center gap-2 border border-[#B89E58]/40 text-center"
+                  className="inline-flex items-center justify-center px-5 sm:px-6 py-3 rounded-xl bg-[#2B3A55] text-white text-xs sm:text-sm font-bold hover:bg-[#1E2A40] transition-all shadow-md border border-[#D4AB3F]/40 whitespace-nowrap"
                 >
                   <span>Explore Targeted Cadres</span>
-                  <span className="material-symbols-outlined text-[18px] text-[#D4AB3F]">south</span>
                 </a>
                 <a
                   href="#matrix-roadmap"
-                  className="bg-white text-[#2B3A55] px-6 py-3 rounded-lg text-xs sm:text-sm font-bold hover:bg-[#FAF7F0] transition-all flex items-center justify-center gap-2 border border-[#B89E58]/30 shadow-sm text-center"
+                  className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 rounded-xl bg-white text-[#2B3A55] text-xs sm:text-sm font-bold hover:bg-[#FAF7F0] transition-all border border-[#B89E58]/30 shadow-xs whitespace-nowrap"
                 >
-                  <span className="material-symbols-outlined text-[18px] text-[#B89E58]">table_chart</span>
+                  <span className="material-symbols-outlined text-base text-[#B89E58]">table_chart</span>
                   <span>Weightage Matrix</span>
                 </a>
-                <div className="flex items-center justify-center sm:justify-start gap-1.5 text-xs font-semibold text-[#566277] pt-1 sm:pt-0 sm:pl-2">
-                  <span className="material-symbols-outlined text-[#D4AB3F] text-[18px]">verified</span>
-                  <span>2024-25 Syllabus Re-mapped</span>
+                <div className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-[#EEE7D2]/80 border border-[#B89E58]/30 text-xs font-bold text-[#2B3A55] whitespace-nowrap shadow-xs">
+                  <span className="material-symbols-outlined text-[#D4AB3F] text-base">verified</span>
+                  <span>2025–26 Syllabus Mapped</span>
                 </div>
               </div>
             </div>
