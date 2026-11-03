@@ -127,7 +127,7 @@ export default function Alumni({ onOpenMentor, onOpenConclave }) {
                 Gujarat State Civil Engineering Officers Alumni Association
               </h1>
               <p className="text-base sm:text-lg text-[#d8e1f0] max-w-3xl leading-relaxed">
-                Uniting over 3,000+ Class 2 and 5,000+ Class 3 technical officers across all 33 districts of Gujarat trained by Shubh Engineering Academy (2019–2026). From the Gandhinagar Swarnim Sankul secretariat to critical field engineering divisions, our alumni build, manage, and safeguard the physical infrastructure of Gujarat.
+                Uniting over 863+ Class 2 and 3,266+ Class 3 technical officers across all 33 districts of Gujarat trained by Shubh Engineering Academy (2019–2026). From the Gandhinagar Swarnim Sankul secretariat to critical field engineering divisions, our alumni build, manage, and safeguard the physical infrastructure of Gujarat.
               </p>
               <div className="flex flex-wrap gap-4 pt-2">
                 <a
@@ -158,11 +158,11 @@ export default function Alumni({ onOpenMentor, onOpenConclave }) {
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <div className="bg-[#1E2A40]/90 p-4 rounded-xl border border-[#B89E58]/20">
-                  <div className="text-2xl font-bold text-[#D4AB3F]">3,000+</div>
+                  <div className="text-2xl font-bold text-[#D4AB3F]">863+</div>
                   <div className="text-[11px] text-[#d8e1f0] uppercase">Class 2 Officers</div>
                 </div>
                 <div className="bg-[#1E2A40]/90 p-4 rounded-xl border border-[#B89E58]/20">
-                  <div className="text-2xl font-bold text-[#D4AB3F]">5,000+</div>
+                  <div className="text-2xl font-bold text-[#D4AB3F]">3,266+</div>
                   <div className="text-[11px] text-[#d8e1f0] uppercase">Class 3 Officers</div>
                 </div>
               </div>
@@ -179,7 +179,7 @@ export default function Alumni({ onOpenMentor, onOpenConclave }) {
               <span className="material-symbols-outlined text-2xl text-[#D4AB3F]">account_balance</span>
             </div>
             <div>
-              <div className="text-xl font-bold text-[#2B3A55]">3,000+</div>
+              <div className="text-xl font-bold text-[#2B3A55]">863+</div>
               <div className="text-xs text-[#566277]">Class 2 Officers</div>
             </div>
           </div>
@@ -189,7 +189,7 @@ export default function Alumni({ onOpenMentor, onOpenConclave }) {
               <span className="material-symbols-outlined text-2xl text-[#D4AB3F]">engineering</span>
             </div>
             <div>
-              <div className="text-xl font-bold text-[#2B3A55]">5,000+</div>
+              <div className="text-xl font-bold text-[#2B3A55]">3,266+</div>
               <div className="text-xs text-[#566277]">Class 3 Officers</div>
             </div>
           </div>
@@ -199,7 +199,7 @@ export default function Alumni({ onOpenMentor, onOpenConclave }) {
               <span className="material-symbols-outlined text-2xl text-[#D4AB3F]">military_tech</span>
             </div>
             <div>
-              <div className="text-xl font-bold text-[#2B3A55]">8,000+</div>
+              <div className="text-xl font-bold text-[#2B3A55]">4,129+</div>
               <div className="text-xs text-[#566277]">Total Selections (2019-2026)</div>
             </div>
           </div>
@@ -254,7 +254,7 @@ export default function Alumni({ onOpenMentor, onOpenConclave }) {
         <div className="overflow-x-auto pb-4 mb-6 no-scrollbar w-full max-w-full">
           <div className="flex items-center gap-2 w-max">
             {[
-              { id: 'all', label: 'All State Cadres (8,000+)' },
+              { id: 'all', label: 'All State Cadres (4,129+)' },
               { id: 'rnb', label: 'Roads & Buildings (R&B)' },
               { id: 'gwssb', label: 'GWSSB Water Cadres' },
               { id: 'nwrws', label: 'NWRWS (Narmada & Water Resources)' },

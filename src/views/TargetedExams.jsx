@@ -154,41 +154,39 @@ export default function TargetedExams({ onTriggerDownload }) {
                 <div className="flex items-center justify-between pb-3 border-b border-[#B89E58]/20">
                   <div className="flex items-center gap-2">
                     <span className="w-3 h-3 rounded-full bg-[#D4AB3F]"></span>
-                    <span className="text-xs uppercase font-bold text-[#2B3A55]">State Merit Ratio 2024</span>
+                    <span className="text-xs uppercase font-bold text-[#2B3A55]">Gujarat Selections Track Record</span>
                   </div>
-                  <span className="font-mono text-[11px] text-[#566277]">CADRE-ACC/REF-09</span>
+                  <span className="text-xs font-bold text-[#566277]">2019–2026</span>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center bg-[#F6F0DF] p-4 rounded-lg border border-[#B89E58]/30">
                   <div className="relative flex items-center justify-center mx-auto sm:mx-0">
                     <svg className="w-28 h-28 transform -rotate-90" viewBox="0 0 36 36">
                       <path className="text-[#E4DCC4]" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeWidth="3.8"></path>
-                      <path className="text-[#2B3A55]" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeDasharray="68, 100" strokeLinecap="round" strokeWidth="3.8"></path>
-                      <path className="text-[#D4AB3F]" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeDasharray="24, 100" strokeDashoffset="-68" strokeLinecap="round" strokeWidth="3.8"></path>
+                      <path className="text-[#2B3A55]" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeDasharray="79, 100" strokeLinecap="round" strokeWidth="3.8"></path>
+                      <path className="text-[#D4AB3F]" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeDasharray="21, 100" strokeDashoffset="-79" strokeLinecap="round" strokeWidth="3.8"></path>
                     </svg>
                     <div className="absolute text-center">
-                      <span className="text-2xl font-extrabold text-[#2B3A55] block leading-none">68%</span>
-                      <span className="text-[10px] text-[#566277] font-bold uppercase">Cadre Merit</span>
+                      <span className="text-2xl font-extrabold text-[#2B3A55] block leading-none">4,129+</span>
+                      <span className="text-[10px] text-[#566277] font-bold uppercase">Officers</span>
                     </div>
                   </div>
                   <div className="space-y-2 text-xs">
                     <div className="flex items-center justify-between">
                       <span className="text-[#566277] flex items-center gap-1.5 font-medium">
-                        <span className="w-2 h-2 rounded bg-[#2B3A55]"></span> GPSC EE/AE
+                        <span className="w-2 h-2 rounded bg-[#D4AB3F]"></span> Class 2 Cadre
                       </span>
-                      <span className="font-bold text-[#2B3A55] font-mono">148 Ranks</span>
+                      <span className="font-bold text-[#2B3A55]">863+ Passed</span>
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-[#566277] flex items-center gap-1.5 font-medium">
-                        <span className="w-2 h-2 rounded bg-[#D4AB3F]"></span> GSSSB AAE
+                        <span className="w-2 h-2 rounded bg-[#2B3A55]"></span> Class 3 Cadre
                       </span>
-                      <span className="font-bold text-[#2B3A55] font-mono">312 Seats</span>
+                      <span className="font-bold text-[#2B3A55]">3,266+ Passed</span>
                     </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-[#566277] flex items-center gap-1.5 font-medium">
-                        <span className="w-2 h-2 rounded bg-[#B89E58]"></span> GPSSB JE
-                      </span>
-                      <span className="font-bold text-[#2B3A55] font-mono">194 Seats</span>
+                    <div className="flex items-center justify-between pt-1 border-t border-[#B89E58]/20">
+                      <span className="text-[#2B3A55] font-bold">Total Selected</span>
+                      <span className="font-extrabold text-[#D4AB3F]">4,129+ Students</span>
                     </div>
                   </div>
                 </div>
@@ -578,9 +576,9 @@ export default function TargetedExams({ onTriggerDownload }) {
                         </div>
                         <span className="text-[11px] text-[#566277] block pl-6 font-normal mt-0.5">{row.subtopics}</span>
                       </td>
-                      <td className="py-4 px-3 sm:px-4 text-center font-mono font-bold text-[#2B3A55]">{row.gpsc}</td>
-                      <td className="py-4 px-3 sm:px-4 text-center font-mono font-bold text-[#2B3A55]">{row.gsssb}</td>
-                      <td className="py-4 px-3 sm:px-4 text-center font-mono font-bold text-[#2B3A55]">{row.gpssb}</td>
+                      <td className="py-4 px-3 sm:px-4 text-center font-bold text-[#2B3A55]">{row.gpsc}</td>
+                      <td className="py-4 px-3 sm:px-4 text-center font-bold text-[#2B3A55]">{row.gsssb}</td>
+                      <td className="py-4 px-3 sm:px-4 text-center font-bold text-[#2B3A55]">{row.gpssb}</td>
                       <td className="py-4 px-3 sm:px-4 text-center">
                         <span className={`px-2.5 py-0.5 rounded text-[10px] sm:text-[11px] uppercase font-bold inline-block ${row.statusClass}`}>
                           {row.status}
@@ -602,10 +600,19 @@ export default function TargetedExams({ onTriggerDownload }) {
             <div>
               <span className="text-xs text-[#D4AB3F] uppercase font-bold tracking-widest block">Aspirant Repository</span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2B3A55] tracking-tight mt-1">Official Syllabi &amp; 10-Year Solved PYQs</h2>
+              <p className="text-xs sm:text-sm text-[#566277] max-w-md mt-1">
+                Direct verified archives released by Gujarat Public Service Commission &amp; Selection Boards, plus complete Google Drive study material.
+              </p>
             </div>
-            <p className="text-xs sm:text-sm text-[#566277] max-w-md">
-              Direct verified PDF archives including provisional and final answer keys released by Gujarat Public Service Commission &amp; Selection Boards.
-            </p>
+            <div className="flex flex-wrap items-center gap-2.5">
+              <Link
+                href="/free-material"
+                className="inline-flex items-center gap-1.5 px-4 py-2.5 bg-[#2B3A55] text-white text-xs font-bold rounded-lg hover:bg-[#1E2A40] transition-colors border border-[#D4AB3F]/40 shadow-xs"
+              >
+                <span>Free Study Material &amp; Google Drive</span>
+                <span className="material-symbols-outlined text-xs text-[#D4AB3F]">arrow_forward</span>
+              </Link>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">

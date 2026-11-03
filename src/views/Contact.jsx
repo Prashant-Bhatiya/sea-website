@@ -60,7 +60,7 @@ export default function Contact() {
                 <span>Shubh Engineering Academy • Inspire . Learn . Achieve</span>
               </div>
               
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-tight font-display">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
                 Admissions &amp; Academic Help Desk
               </h1>
               

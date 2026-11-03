@@ -35,7 +35,8 @@ module.exports = {
         "on-surface-variant": "#566277"
       },
       fontFamily: {
-        sans: ["Plus Jakarta Sans", "sans-serif"]
+        sans: ["Plus Jakarta Sans", "sans-serif"],
+        display: ["Plus Jakarta Sans", "sans-serif"]
       },
       borderRadius: {
         DEFAULT: "0.25rem",

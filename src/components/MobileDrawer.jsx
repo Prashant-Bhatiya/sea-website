@@ -12,8 +12,8 @@ export default function MobileDrawer({ isOpen, onClose }) {
   const navLinks = [
     { name: 'Targeted Exams', path: '/', icon: 'rule' },
     { name: 'Batches & Fees', path: '/batches', icon: 'school' },
-    { name: 'Results & Rankers', path: '/results', icon: 'military_tech' },
-    { name: 'Alumni Network', path: '/alumni', icon: 'groups' },
+    { name: 'Free Material', path: '/free-material', icon: 'folder_shared' },
+    { name: 'Results & Alumni Network', path: '/results', icon: 'military_tech' },
     { name: 'Inquire Now', path: '/contact', icon: 'contact_support', isHighlight: true }
   ];
 
@@ -90,6 +90,34 @@ export default function MobileDrawer({ isOpen, onClose }) {
               );
             })}
           </nav>
+
+          {/* Quick Google Drive Study Material Links in Mobile Drawer */}
+          <div className="mt-5 p-3.5 bg-[#EEE7D2]/80 rounded-xl border border-[#B89E58]/30 space-y-2">
+            <div className="flex items-center gap-1.5 text-[11px] font-bold text-[#2B3A55] uppercase">
+              <span className="material-symbols-outlined text-[#D4AB3F] text-base">cloud_download</span>
+              <span>Free Google Drive Notes</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2 pt-0.5">
+              <a
+                href="https://drive.google.com/drive/folders/1uH5js-rnb3-Gvw8dIrDi2ITNONJdrFow"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#2B3A55] text-white text-[11px] font-bold py-2 px-2.5 rounded-lg text-center flex items-center justify-center gap-1 shadow-xs hover:bg-[#1E2A40]"
+              >
+                <span>Class 2 Drive</span>
+                <span className="material-symbols-outlined text-xs text-[#D4AB3F]">open_in_new</span>
+              </a>
+              <a
+                href="https://drive.google.com/drive/folders/1Z6A4rF2wrd3ze8yy9EakwZMwy989e65f"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#D4AB3F] text-[#1E1C12] text-[11px] font-bold py-2 px-2.5 rounded-lg text-center flex items-center justify-center gap-1 shadow-xs hover:bg-[#D4AB3F]/90"
+              >
+                <span>Class 3 Drive</span>
+                <span className="material-symbols-outlined text-xs">open_in_new</span>
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Bottom CTA in Drawer */}

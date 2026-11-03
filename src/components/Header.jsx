@@ -19,8 +19,8 @@ export default function Header({ onOpenMobileMenu }) {
   const navItems = [
     { name: 'Targeted Exams', path: '/' },
     { name: 'Batches & Fees', path: '/batches' },
-    { name: 'Results & Rankers', path: '/results' },
-    { name: 'Alumni Network', path: '/alumni' }
+    { name: 'Free Material', path: '/free-material' },
+    { name: 'Results & Alumni', path: '/results' }
   ];
 
   return (
@@ -45,7 +45,7 @@ export default function Header({ onOpenMobileMenu }) {
         {/* Center Navigation Links (Desktop) */}
         <nav className="hidden lg:flex items-center gap-1.5 xl:gap-3">
           {navItems.map((item) => {
-            const isActive = pathname === item.path;
+            const isActive = pathname === item.path || (item.path === '/results' && pathname === '/alumni');
             return (
               <Link
                 key={item.path}
@@ -70,7 +70,7 @@ export default function Header({ onOpenMobileMenu }) {
           {/* Desktop ONLY: Inquire Now button */}
           <Link
             href="/contact"
-            className="hidden lg:inline-flex group relative items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-[#2B3A55] text-white text-xs sm:text-sm font-bold shadow-md hover:bg-[#1E2A40] hover:shadow-lg transition-all duration-200 border border-[#D4AB3F]/40 hover:border-[#D4AB3F]"
+            className="hidden lg:inline-flex group relative items-center gap-2 px-4 py-2 rounded-xl bg-[#2B3A55] text-white text-xs xl:text-sm font-bold shadow-md hover:bg-[#1E2A40] transition-all duration-200 border border-[#D4AB3F]/40 hover:border-[#D4AB3F]"
           >
             <span>Inquire Now</span>
             <span className="material-symbols-outlined text-sm text-[#D4AB3F] group-hover:translate-x-0.5 transition-transform">

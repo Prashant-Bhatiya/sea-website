@@ -86,6 +86,37 @@ export default function Footer({ onTriggerDownload }) {
             <h3 className="text-xs text-[#D4AB3F] font-bold uppercase tracking-wider">Aspirant Resources</h3>
             <ul className="space-y-2 text-xs text-[#FAF7F0]/80">
               <li>
+                <Link
+                  href="/free-material"
+                  className="hover:text-[#D4AB3F] transition-colors inline-flex items-center gap-1 text-left font-semibold text-[#D4AB3F]"
+                >
+                  <span>Free Study Material &amp; Drive</span>
+                  <span className="material-symbols-outlined text-[13px]">arrow_forward</span>
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/drive/folders/1uH5js-rnb3-Gvw8dIrDi2ITNONJdrFow"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#D4AB3F] transition-colors inline-flex items-center gap-1 text-left"
+                >
+                  <span>Class 2 Google Drive</span>
+                  <span className="material-symbols-outlined text-[13px]">open_in_new</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/drive/folders/1Z6A4rF2wrd3ze8yy9EakwZMwy989e65f"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#D4AB3F] transition-colors inline-flex items-center gap-1 text-left"
+                >
+                  <span>Class 3 Google Drive</span>
+                  <span className="material-symbols-outlined text-[13px]">open_in_new</span>
+                </a>
+              </li>
+              <li>
                 <button
                   onClick={() => onTriggerDownload && onTriggerDownload('Civil-Formula-Handbook-Gandhinagar.pdf')}
                   className="hover:text-[#D4AB3F] transition-colors text-left"
@@ -94,26 +125,18 @@ export default function Footer({ onTriggerDownload }) {
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => onTriggerDownload && onTriggerDownload('GPSC-10-Year-Solved-Papers.zip')}
-                  className="hover:text-[#D4AB3F] transition-colors text-left"
-                >
-                  GPSC 10-Year Solved Papers
-                </button>
-              </li>
-              <li>
                 <Link href="/batches" className="hover:text-[#D4AB3F] transition-colors">
-                  Upcoming Batches &amp; Timings
+                  Active Batches &amp; Fees Inquiries
                 </Link>
               </li>
               <li>
                 <Link href="/results" className="hover:text-[#D4AB3F] transition-colors">
-                  State Rank 1 Hall of Fame
+                  Results &amp; Officers Alumni (4,129+)
                 </Link>
               </li>
               <li>
-                <Link href="/alumni" className="hover:text-[#D4AB3F] transition-colors">
-                  Gujarat Officer Network
+                <Link href="/results#official-table" className="hover:text-[#D4AB3F] transition-colors">
+                  Official Vacancy Selection Record (850+)
                 </Link>
               </li>
             </ul>
@@ -166,7 +189,7 @@ export default function Footer({ onTriggerDownload }) {
               <span className="material-symbols-outlined text-xs">arrow_outward</span>
             </a>
             <Link href="/contact" className="hover:text-[#D4AB3F] transition-colors">
-              Visit Gandhinagar Centers
+              Visit Gandhinagar Center
             </Link>
           </div>
         </div>

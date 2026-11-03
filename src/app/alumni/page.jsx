@@ -1,10 +1,10 @@
 'use client';
 
-import Alumni from '@/views/Alumni';
+import Results from '@/views/Results';
 import { useApp } from '@/context/AppContext';
 
 export default function AlumniPage() {
-  const { openMentor, openConclave } = useApp();
-  return <Alumni onOpenMentor={openMentor} onOpenConclave={openConclave} />;
+  const { openVideo, openMentor, openConclave } = useApp();
+  return <Results onOpenVideo={openVideo} onOpenMentor={openMentor} onOpenConclave={openConclave} />;
 }
 
