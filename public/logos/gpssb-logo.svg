@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Circular text paths -->
+    <path id="textPathTopGpssb" d="M 50,200 A 150,150 0 1,1 350,200" fill="none" />
+    <path id="textPathBottomGpssb" d="M 350,200 A 150,150 0 0,1 50,200" fill="none" />
+    <linearGradient id="goldRingGpssb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C59B27" />
+      <stop offset="50%" stop-color="#F1D67B" />
+      <stop offset="100%" stop-color="#9A7718" />
+    </linearGradient>
+    <linearGradient id="innerGlowGpssb" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F0" />
+      <stop offset="100%" stop-color="#F2ECE1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="200" cy="200" r="192" fill="#2B3A55" stroke="url(#goldRingGpssb)" stroke-width="6" />
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#FAF7F0" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6" />
+
+  <!-- Inner Background Circle -->
+  <circle cx="200" cy="200" r="126" fill="url(#innerGlowGpssb)" stroke="url(#goldRingGpssb)" stroke-width="4" />
+
+  <!-- Gujarati Board Name (Top arc) -->
+  <text font-family="'Noto Sans Gujarati', 'Shruti', 'Segoe UI', Arial, sans-serif" font-size="16.5" font-weight="bold" fill="#FDFBF7" letter-spacing="1.2">
+    <textPath href="#textPathTopGpssb" startOffset="50%" text-anchor="middle">
+      ગુજરાત પંચાયત સેવા પસંદગી બોર્ડ
+    </textPath>
+  </text>
+
+  <!-- English Board Name & City (Bottom arc) -->
+  <text font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#D4AB3F" letter-spacing="1.5">
+    <textPath href="#textPathBottomGpssb" startOffset="50%" text-anchor="middle">
+      • GPSSB GANDHINAGAR •
+    </textPath>
+  </text>
+
+  <!-- Decorative Stars on sides -->
+  <polygon points="40,200 43,207 50,207 44,212 46,219 40,214 34,219 36,212 30,207 37,207" fill="#F1D67B" />
+  <polygon points="360,200 363,207 370,207 364,212 366,219 360,214 354,219 356,212 350,207 357,207" fill="#F1D67B" />
+
+  <!-- Official Government of Gujarat State Seal inside center -->
+  <image href="/logos/gujarat-govt.svg" x="90" y="86" width="220" height="220" preserveAspectRatio="xMidYMid meet" />
+</svg>
+

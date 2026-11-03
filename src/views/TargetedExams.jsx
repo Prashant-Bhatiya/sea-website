@@ -223,16 +223,84 @@ export default function TargetedExams({ onTriggerDownload }) {
             </p>
           </div>
 
+          {/* Official Gujarat Government Recruitment Portals Strip */}
+          <div className="bg-white rounded-xl p-3 sm:p-4 border border-[#B89E58]/30 shadow-xs flex flex-wrap items-center justify-between gap-3">
+            <div className="flex items-center gap-2">
+              <span className="material-symbols-outlined text-[#B89E58] text-[20px]">account_balance</span>
+              <span className="text-xs font-bold text-[#2B3A55] uppercase tracking-wider">Official Government Portals:</span>
+            </div>
+            <div className="flex flex-wrap items-center gap-2.5 sm:gap-4">
+              <a
+                href="https://gpsc.gujarat.gov.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-[#FAF7F0] hover:bg-[#FAF7F0]/80 px-3 py-1.5 rounded-lg border border-[#B89E58]/20 transition-colors group"
+              >
+                <img src="/logos/gpsc-logo.jpg" alt="GPSC Official" className="w-5 h-5 object-contain rounded-full" />
+                <span className="text-xs font-bold text-[#2B3A55] group-hover:text-[#D4AB3F]">GPSC Portal</span>
+                <span className="material-symbols-outlined text-[13px] text-[#566277]">open_in_new</span>
+              </a>
+              <a
+                href="https://gsssb.gujarat.gov.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-[#FAF7F0] hover:bg-[#FAF7F0]/80 px-3 py-1.5 rounded-lg border border-[#B89E58]/20 transition-colors group"
+              >
+                <img src="/logos/gsssb-logo.svg" alt="GSSSB Official" className="w-5 h-5 object-contain rounded-full" />
+                <span className="text-xs font-bold text-[#2B3A55] group-hover:text-[#D4AB3F]">GSSSB Board</span>
+                <span className="material-symbols-outlined text-[13px] text-[#566277]">open_in_new</span>
+              </a>
+              <a
+                href="https://gpssb.gujarat.gov.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-[#FAF7F0] hover:bg-[#FAF7F0]/80 px-3 py-1.5 rounded-lg border border-[#B89E58]/20 transition-colors group"
+              >
+                <img src="/logos/gpssb-logo.svg" alt="GPSSB Official" className="w-5 h-5 object-contain rounded-full" />
+                <span className="text-xs font-bold text-[#2B3A55] group-hover:text-[#D4AB3F]">GPSSB Board</span>
+                <span className="material-symbols-outlined text-[13px] text-[#566277]">open_in_new</span>
+              </a>
+              <a
+                href="https://ojas.gujarat.gov.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-[#FAF7F0] hover:bg-[#FAF7F0]/80 px-3 py-1.5 rounded-lg border border-[#B89E58]/20 transition-colors group"
+              >
+                <img src="/logos/ojas-logo.png" alt="OJAS Gujarat Official" className="w-5 h-5 object-contain" />
+                <span className="text-xs font-bold text-[#2B3A55] group-hover:text-[#D4AB3F]">OJAS Application</span>
+                <span className="material-symbols-outlined text-[13px] text-[#566277]">open_in_new</span>
+              </a>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {/* Card 1: GPSC */}
             <div className="bg-white rounded-xl shadow-md p-5 sm:p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative overflow-hidden group border border-[#B89E58]/30">
               <div className="absolute top-0 left-0 right-0 h-1.5 bg-[#2B3A55]"></div>
               <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <span className="bg-[#FAF7F0] text-[#2B3A55] text-[11px] font-bold px-2.5 py-1 rounded uppercase tracking-wider border border-[#B89E58]/30">
-                    Class 1 &amp; Class 2 Gazetted
-                  </span>
-                  <span className="font-mono text-xs text-[#D4AB3F] font-bold">GES Cadre</span>
+                <div className="flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <img
+                      src="/logos/gpsc-logo.jpg"
+                      alt="GPSC Official Emblem"
+                      className="w-12 h-12 object-contain rounded-full bg-white p-0.5 border border-[#B89E58]/40 shadow-sm shrink-0"
+                    />
+                    <div className="min-w-0">
+                      <span className="bg-[#FAF7F0] text-[#2B3A55] text-[10.5px] font-bold px-2 py-0.5 rounded uppercase tracking-wider border border-[#B89E58]/30 inline-block">
+                        Class 1 &amp; 2 Gazetted
+                      </span>
+                      <a
+                        href="https://gpsc.gujarat.gov.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[11px] text-[#2B3A55] hover:text-[#D4AB3F] font-semibold flex items-center gap-0.5 mt-0.5 truncate"
+                      >
+                        <span className="truncate">gpsc.gujarat.gov.in</span>
+                        <span className="material-symbols-outlined text-[13px] shrink-0">open_in_new</span>
+                      </a>
+                    </div>
+                  </div>
+                  <span className="font-mono text-xs text-[#D4AB3F] font-bold shrink-0">GES Cadre</span>
                 </div>
 
                 <div className="relative h-44 rounded-lg overflow-hidden bg-[#FAF7F0]">
@@ -299,11 +367,29 @@ export default function TargetedExams({ onTriggerDownload }) {
             <div className="bg-white rounded-xl shadow-md p-5 sm:p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative overflow-hidden group border border-[#B89E58]/30">
               <div className="absolute top-0 left-0 right-0 h-1.5 bg-[#D4AB3F]"></div>
               <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <span className="bg-[#D4AB3F]/20 text-[#1E1C12] text-[11px] font-bold px-2.5 py-1 rounded uppercase tracking-wider border border-[#D4AB3F]/40">
-                    Subordinate Executive
-                  </span>
-                  <span className="font-mono text-xs text-[#D4AB3F] font-bold">CBRT Mode</span>
+                <div className="flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <img
+                      src="/logos/gsssb-logo.svg"
+                      alt="GSSSB Official Board Logo"
+                      className="w-12 h-12 object-contain rounded-full bg-white p-0.5 border border-[#D4AB3F]/40 shadow-sm shrink-0"
+                    />
+                    <div className="min-w-0">
+                      <span className="bg-[#D4AB3F]/20 text-[#1E1C12] text-[10.5px] font-bold px-2 py-0.5 rounded uppercase tracking-wider border border-[#D4AB3F]/40 inline-block">
+                        Subordinate Executive
+                      </span>
+                      <a
+                        href="https://gsssb.gujarat.gov.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[11px] text-[#2B3A55] hover:text-[#D4AB3F] font-semibold flex items-center gap-0.5 mt-0.5 truncate"
+                      >
+                        <span className="truncate">gsssb.gujarat.gov.in</span>
+                        <span className="material-symbols-outlined text-[13px] shrink-0">open_in_new</span>
+                      </a>
+                    </div>
+                  </div>
+                  <span className="font-mono text-xs text-[#D4AB3F] font-bold shrink-0">CBRT Mode</span>
                 </div>
 
                 <div className="relative h-44 rounded-lg overflow-hidden bg-[#FAF7F0]">
@@ -370,11 +456,29 @@ export default function TargetedExams({ onTriggerDownload }) {
             <div className="bg-white rounded-xl shadow-md p-5 sm:p-6 flex flex-col justify-between hover:shadow-xl transition-all duration-300 relative overflow-hidden group border border-[#B89E58]/30">
               <div className="absolute top-0 left-0 right-0 h-1.5 bg-[#B89E58]"></div>
               <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <span className="bg-[#FAF7F0] text-[#2B3A55] text-[11px] font-bold px-2.5 py-1 rounded uppercase tracking-wider border border-[#B89E58]/30">
-                    Panchayat Cadre
-                  </span>
-                  <span className="font-mono text-xs text-[#D4AB3F] font-bold">OMR Based</span>
+                <div className="flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <img
+                      src="/logos/gpssb-logo.svg"
+                      alt="GPSSB Official Board Logo"
+                      className="w-12 h-12 object-contain rounded-full bg-white p-0.5 border border-[#B89E58]/40 shadow-sm shrink-0"
+                    />
+                    <div className="min-w-0">
+                      <span className="bg-[#FAF7F0] text-[#2B3A55] text-[10.5px] font-bold px-2 py-0.5 rounded uppercase tracking-wider border border-[#B89E58]/30 inline-block">
+                        Panchayat Cadre
+                      </span>
+                      <a
+                        href="https://gpssb.gujarat.gov.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[11px] text-[#2B3A55] hover:text-[#D4AB3F] font-semibold flex items-center gap-0.5 mt-0.5 truncate"
+                      >
+                        <span className="truncate">gpssb.gujarat.gov.in</span>
+                        <span className="material-symbols-outlined text-[13px] shrink-0">open_in_new</span>
+                      </a>
+                    </div>
+                  </div>
+                  <span className="font-mono text-xs text-[#D4AB3F] font-bold shrink-0">OMR Based</span>
                 </div>
 
                 <div className="relative h-44 rounded-lg overflow-hidden bg-[#FAF7F0]">

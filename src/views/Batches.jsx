@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 
 export default function Batches() {
   const [activeFilter, setActiveFilter] = useState('all');
-  const [activeScheduleTab, setActiveScheduleTab] = useState('morning');
   const [selectedPoster, setSelectedPoster] = useState(null);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -21,13 +20,13 @@ export default function Batches() {
     {
       id: 'foundation-2026',
       type: 'gpsc',
-      badge: 'Official Flagship Course',
+      badge: 'Official Flagship',
       statusBadge: 'Admissions Open 2026',
       poster: '/batches/foundation-batch-2026.jpg',
       targetCadre: 'GPSC Class 1/2 – Civil Engineering',
       title: 'Foundation Batch 2026',
       taglineHighlight: 'BUILD THE FOUNDATION. CRACK THE COMPETITION.',
-      description: 'A complete foundation program for future civil engineering officers. Comprehensive coverage from core basics to advanced design specifications for Gujarat Public Service Commission Class 1 & 2 examinations.',
+      description: 'Comprehensive foundation program for future civil engineering officers. Complete coverage from core basics to advanced design specifications for Gujarat Public Service Commission Class 1 & 2 examinations.',
       metrics: [
         { label: 'Mode', value: 'ONLINE + OFFLINE' },
         { label: 'Delivery', value: 'Hybrid Program' },
@@ -35,12 +34,10 @@ export default function Batches() {
       ],
       features: [
         'GPSC Class 1/2 માટે Complete Foundation Program From Basics',
-        'Online + Offline Hybrid Learning with Live Interactive Classroom & Recorded Archives',
+        'Online + Offline Hybrid Learning with Live Classroom & Recorded Archives',
         'Application Access with High-Quality Recorded Lectures until Exam Day',
         'Short, Precise & Exam-Oriented SEA Specialized Civil Study Materials',
         'Structured Study Plan & Regular 1-on-1 Academic Faculty Guidance',
-        'Comprehensive Syllabus Coverage (All Technical Civil Subjects + General Studies)',
-        'Regular Revision Cycles & Daily In-Lecture MCQ Practice Drills',
         'Subject-Wise Diagnostic Tests & Full Combined Mock Test Series'
       ],
       inquiryNote: 'Inquire for Fees Amount • Concessions Available via Counseling',
@@ -62,11 +59,12 @@ export default function Batches() {
         { label: 'Practice', value: 'Subject + 3 Full Tests' }
       ],
       features: [
-        'Technical Subjects Covered: SOM, SA, RCC, Steel, BM, BC, Bridge, Irrigation, Hydrology, Environmental Engg, Geotechnical Engg, Surveying, CPM/PPV, Transportation, Fluid Mechanics, etc.',
-        'Complete Non-Technical Module: General Studies (GS), Mathematics & Logical Reasoning',
+        'Technical Subjects Covered: SOM, SA, RCC, Steel, BM, BC, Bridge, Surveying, etc.',
+        'Complete Non-Technical Module: General Studies (GS), Mathematics & Reasoning',
         'Continuous In-Lecture MCQ & Past Year Questions (PYQ) Solving Drills',
-        'Regular Test Series: Subject-Wise Tests, Combined Tests & 3 Full-Length Simulated Mocks',
-        'Specialized shortcuts for formula recall, speed calculation & negative marking mitigation'
+        'Regular Test Series: Subject-Wise Tests, Combined Tests & 3 Full Simulated Mocks',
+        'Specialized shortcuts for formula recall, speed calculation & negative marking control',
+        'Full digital archives and study material kits available until exam cycle'
       ],
       inquiryNote: 'Inquire for Fees Amount • Early Bird & Merit Concessions',
       accentColor: 'bg-[#D4AB3F]'
@@ -89,30 +87,14 @@ export default function Batches() {
       features: [
         '1 Comprehensive Mock Interview Included (Online or Offline with Panel Experts)',
         'In-Depth Subject-Wise Learning & Live Practical Problem Analysis',
-        'Exclusive 6-Point Site Visit Program: Reservoir Visit, Water Treatment Plant (WTP) Visit, Road Construction Visit, Live Working Site Visit, RMC Plant Visit, and Green Building Visit',
+        'Exclusive 6-Point Site Visit Program: Reservoir, WTP, Working Site & RMC Plant',
         'Personalized Interview Transcript Evaluation & Customized Answer Strategy Feedback',
         'Live Lectures from Serving State Gazetted Officers & Civil Engineering Experts',
-        'Comprehensive E-Material Kit, Recorded Strategy Videos on SEA App & Dedicated WhatsApp Discussion Group'
+        'Comprehensive E-Material Kit, Recorded Strategy Videos on SEA App & Discussion Group'
       ],
       inquiryNote: 'Inquire for Fees Amount • Panel Booking on Advance Registration',
       accentColor: 'bg-[#B89E58]'
     }
-  ];
-
-  const morningSchedule = [
-    { time: '07:30 – 08:30 AM', title: 'Technical Concept Foundation', desc: 'Core Civil subject deep dive (Theory, standard IS specifications, formula derivation).' },
-    { time: '08:35 – 09:35 AM', title: 'Numerical & Analytical Workshop', desc: 'Real exam numerical solving and GPSC/GSSSB past question pattern breakdowns.' },
-    { time: '09:35 – 09:50 AM', title: 'Academic Recess & Tea Break', desc: 'Library clearing, faculty interaction, and study partner peer sync.' },
-    { time: '09:50 – 10:45 AM', title: 'General Studies & Gujarat State Affairs', desc: 'Gujarat geography, culture, constitution, and current policy developments.' },
-    { time: '10:45 – 11:30 AM', title: 'Daily Speed Test & OMR Evaluation', desc: 'Timed 30-question diagnostic drill on morning delivered modules with instant negative marks analysis.' }
-  ];
-
-  const eveningSchedule = [
-    { time: '05:30 – 06:30 PM', title: 'Core Technical Module Lecture', desc: 'Direct exam-oriented structural, geotechnical, and highway engineering lecture series.' },
-    { time: '06:35 – 07:35 PM', title: 'High-Yield Numericals & IS Code Checks', desc: 'Fast calculation methods, elimination tactics, and GSSSB/GPSC past test papers.' },
-    { time: '07:35 – 07:50 PM', title: 'Evening Refreshment Break', desc: 'Informal discussion with on-duty ranker mentors and study desk refreshment.' },
-    { time: '07:50 – 08:45 PM', title: 'Language & General Knowledge Syllabus', desc: 'Gujarati Grammar, English comprehension, and general administration topics.' },
-    { time: '08:45 – 09:30 PM', title: 'Rapid-Fire MCQ Test & Doubts', desc: 'End-of-day verification test. Library remains open post-class till 02:00 AM for night shifts.' }
   ];
 
   const filteredBatches = activeFilter === 'all'
@@ -276,7 +258,7 @@ export default function Batches() {
             </div>
 
             {/* Filter Tabs */}
-            <div className="flex items-center gap-1.5 bg-white p-1 rounded-xl border border-[#B89E58]/30 shadow-xs self-start md:self-auto overflow-x-auto max-w-full">
+            <div className="flex items-center gap-1 sm:gap-1.5 bg-white p-1 rounded-xl border border-[#B89E58]/30 shadow-xs shrink-0 self-start md:self-auto no-scrollbar overflow-x-auto max-w-full">
               <button
                 onClick={() => setActiveFilter('all')}
                 className={`px-3.5 sm:px-4 py-1.5 rounded-lg text-xs font-bold transition-all whitespace-nowrap ${
@@ -305,27 +287,27 @@ export default function Batches() {
           </div>
 
           {/* Batches Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
             {filteredBatches.map((batch) => (
               <div
                 key={batch.id}
-                className="bg-white rounded-2xl p-5 sm:p-7 border border-[#B89E58]/40 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden group"
+                className="bg-white rounded-2xl p-5 sm:p-7 border border-[#B89E58]/40 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden group h-full"
               >
                 <div className={`absolute top-0 left-0 right-0 h-1.5 ${batch.accentColor}`}></div>
                 
-                <div className="space-y-4">
-                  {/* Badge & Target */}
-                  <div className="flex flex-wrap items-center justify-between gap-2 pt-1">
-                    <span className="bg-[#FAF7F0] text-[#2B3A55] font-bold border border-[#B89E58]/30 px-2.5 py-1 rounded text-[11px] uppercase tracking-wider">
+                <div className="space-y-4 flex-1 flex flex-col">
+                  {/* Badge & Target: strictly 1 row, fixed height so all 3 cards align perfectly */}
+                  <div className="flex items-center justify-between gap-2 pt-1 h-7">
+                    <span className="bg-[#FAF7F0] text-[#2B3A55] font-bold border border-[#B89E58]/30 px-2 py-0.5 rounded text-[10.5px] uppercase tracking-wider truncate">
                       {batch.badge}
                     </span>
-                    <span className="text-[#D4AB3F] text-[11px] font-bold bg-[#2B3A55] px-2.5 py-1 rounded shadow-xs">
+                    <span className="text-[#D4AB3F] text-[10.5px] font-bold bg-[#2B3A55] px-2.5 py-0.5 rounded shadow-xs whitespace-nowrap shrink-0">
                       {batch.statusBadge}
                     </span>
                   </div>
 
                   {/* Poster Thumbnail Preview */}
-                  <div className="relative rounded-xl overflow-hidden border border-[#B89E58]/30 bg-[#2B3A55] aspect-[4/3] group/poster">
+                  <div className="relative rounded-xl overflow-hidden border border-[#B89E58]/30 bg-[#2B3A55] aspect-[4/3] group/poster shrink-0">
                     <img
                       src={batch.poster}
                       alt={batch.title}
@@ -345,21 +327,21 @@ export default function Batches() {
                     </div>
                   </div>
 
-                  {/* Title & Tagline */}
+                  {/* Title & Tagline with standardized heights */}
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-extrabold text-[#2B3A55] leading-snug">
+                    <h3 className="text-xl sm:text-2xl font-extrabold text-[#2B3A55] leading-snug min-h-[3.25rem] flex items-center">
                       {batch.title}
                     </h3>
-                    <p className="text-[11px] font-bold text-[#D4AB3F] uppercase tracking-wider mt-0.5">
+                    <p className="text-[11px] font-bold text-[#D4AB3F] uppercase tracking-wider mt-0.5 h-4 truncate">
                       {batch.taglineHighlight}
                     </p>
-                    <p className="text-xs text-[#566277] mt-2 leading-relaxed">
+                    <p className="text-xs text-[#566277] mt-2 leading-relaxed min-h-[3.5rem] line-clamp-3">
                       {batch.description}
                     </p>
                   </div>
 
                   {/* Metrics Pills */}
-                  <div className="grid grid-cols-3 gap-2 py-2 bg-[#FAF7F0] p-2.5 rounded-xl border border-[#B89E58]/25 text-center">
+                  <div className="grid grid-cols-3 gap-2 py-2 bg-[#FAF7F0] p-2.5 rounded-xl border border-[#B89E58]/25 text-center shrink-0">
                     {batch.metrics.map((m, idx) => (
                       <div key={idx} className="border-r last:border-r-0 border-[#B89E58]/20 px-1">
                         <p className="text-[10px] text-[#566277] uppercase font-semibold">{m.label}</p>
@@ -369,7 +351,7 @@ export default function Batches() {
                   </div>
 
                   {/* Features List */}
-                  <div className="space-y-1.5 pt-1">
+                  <div className="space-y-1.5 pt-1 flex-1">
                     <span className="text-[11px] uppercase tracking-wider text-[#B89E58] font-bold block">
                       Program Curriculum &amp; Offerings
                     </span>
@@ -387,29 +369,15 @@ export default function Batches() {
                 </div>
 
                 {/* Card Action & Inquire for Fees Section */}
-                <div className="pt-4 mt-6 bg-[#FAF7F0] -mx-5 -mb-5 sm:-mx-7 sm:-mb-7 px-5 sm:px-7 py-4 rounded-b-2xl border-t border-[#B89E58]/30 space-y-3">
-                  <div>
-                    <span className="text-[10px] text-[#B89E58] uppercase font-bold tracking-wider block">
-                      Fee Amount &amp; Concessions
-                    </span>
-                    <div className="flex items-baseline gap-2 mt-0.5">
-                      <span className="text-base sm:text-lg font-extrabold text-[#2B3A55]">
-                        Inquire for Fee Amount
-                      </span>
-                    </div>
-                    <p className="text-[11px] text-[#566277] mt-0.5 leading-tight">
-                      No fixed public fees. Connect with admissions desk for mode-specific concession.
-                    </p>
-                  </div>
-
+                <div className="pt-4 mt-6 bg-[#FAF7F0] -mx-5 -mb-5 sm:-mx-7 sm:-mb-7 px-5 sm:px-7 py-4 rounded-b-2xl border-t border-[#B89E58]/30 shrink-0">
                   {/* Click Buttons */}
-                  <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 pt-1">
+                  <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
                     <button
                       onClick={() => handleInquireBatch(batch.title)}
                       className="flex-1 inline-flex items-center justify-center gap-1.5 bg-[#2B3A55] text-white hover:bg-[#1E2A40] px-4 py-2.5 rounded-xl text-xs font-bold transition-all shadow-md border border-[#D4AB3F]/40"
                     >
                       <span className="material-symbols-outlined text-sm text-[#D4AB3F]">help_outline</span>
-                      <span>Inquire for Amount</span>
+                      <span>Inquire for Fees</span>
                     </button>
 
                     <a
@@ -425,69 +393,6 @@ export default function Batches() {
                   </div>
                 </div>
 
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Daily Rigor Schedule (Morning & Evening Cohorts) */}
-      <section className="py-14 sm:py-16 max-w-7xl mx-auto px-4 sm:px-8 w-full border-t border-[#B89E58]/30">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
-          <div>
-            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#B89E58] mb-1">
-              <span className="material-symbols-outlined text-base text-[#D4AB3F]">schedule</span>
-              <span>Classroom Routine</span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2B3A55]">
-              Daily Routine &amp; Academic Structure
-            </h2>
-            <p className="text-xs sm:text-sm text-[#566277] mt-1 max-w-xl">
-              Consistent disciplined daily routine designed to build technical depth, numerical problem-solving reflex, and exam temperament.
-            </p>
-          </div>
-
-          <div className="flex items-center gap-2 bg-[#FAF7F0] p-1.5 rounded-xl border border-[#B89E58]/30 self-start md:self-auto">
-            <button
-              onClick={() => setActiveScheduleTab('morning')}
-              className={`px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all ${
-                activeScheduleTab === 'morning'
-                  ? 'bg-[#2B3A55] text-[#D4AB3F] shadow-sm'
-                  : 'text-[#566277] hover:text-[#2B3A55]'
-              }`}
-            >
-              <span className="material-symbols-outlined text-sm">wb_sunny</span>
-              <span>Morning Shift (07:30 AM)</span>
-            </button>
-            <button
-              onClick={() => setActiveScheduleTab('evening')}
-              className={`px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all ${
-                activeScheduleTab === 'evening'
-                  ? 'bg-[#2B3A55] text-[#D4AB3F] shadow-sm'
-                  : 'text-[#566277] hover:text-[#2B3A55]'
-              }`}
-            >
-              <span className="material-symbols-outlined text-sm">bedtime</span>
-              <span>Evening Shift (05:30 PM)</span>
-            </button>
-          </div>
-        </div>
-
-        {/* Schedule Timeline */}
-        <div className="bg-white rounded-2xl border border-[#B89E58]/30 p-6 sm:p-8 shadow-sm">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4 sm:gap-6">
-            {(activeScheduleTab === 'morning' ? morningSchedule : eveningSchedule).map((slot, idx) => (
-              <div key={idx} className="p-4 rounded-xl bg-[#FAF7F0] border border-[#B89E58]/20 flex flex-col justify-between space-y-2">
-                <div>
-                  <span className="inline-block bg-[#2B3A55] text-[#D4AB3F] text-[10px] font-bold px-2 py-0.5 rounded">
-                    {slot.time}
-                  </span>
-                  <h4 className="text-sm font-bold text-[#2B3A55] mt-2 leading-tight">{slot.title}</h4>
-                  <p className="text-xs text-[#566277] mt-1 leading-relaxed">{slot.desc}</p>
-                </div>
-                <div className="pt-2 border-t border-[#B89E58]/20 text-[10px] text-[#B89E58] font-bold uppercase">
-                  Step 0{idx + 1}
-                </div>
               </div>
             ))}
           </div>
